@@ -1,0 +1,95 @@
+{
+  "row_count": 55620,
+  "columns": {
+    "Year": {
+      "dtype": "int64",
+      "missing_pct": 0.0,
+      "unique_count": 12,
+      "mean": 2018.5,
+      "std": 3.452083562428217,
+      "min": 2013.0,
+      "max": 2024.0
+    },
+    "Industry_aggregation_NZSIOC": {
+      "dtype": "object",
+      "missing_pct": 0.0,
+      "unique_count": 3,
+      "mean": null,
+      "std": null,
+      "min": null,
+      "max": null
+    },
+    "Industry_code_NZSIOC": {
+      "dtype": "object",
+      "missing_pct": 0.0,
+      "unique_count": 140,
+      "mean": null,
+      "std": null,
+      "min": null,
+      "max": null
+    },
+    "Industry_name_NZSIOC": {
+      "dtype": "object",
+      "missing_pct": 0.0,
+      "unique_count": 119,
+      "mean": null,
+      "std": null,
+      "min": null,
+      "max": null
+    },
+    "Units": {
+      "dtype": "object",
+      "missing_pct": 0.0,
+      "unique_count": 3,
+      "mean": null,
+      "std": null,
+      "min": null,
+      "max": null
+    },
+    "Variable_code": {
+      "dtype": "object",
+      "missing_pct": 0.0,
+      "unique_count": 39,
+      "mean": null,
+      "std": null,
+      "min": null,
+      "max": null
+    },
+    "Variable_name": {
+      "dtype": "object",
+      "missing_pct": 0.0,
+      "unique_count": 41,
+      "mean": null,
+      "std": null,
+      "min": null,
+      "max": null
+    },
+    "Variable_category": {
+      "dtype": "object",
+      "missing_pct": 0.0,
+      "unique_count": 4,
+      "mean": null,
+      "std": null,
+      "min": null,
+      "max": null
+    },
+    "Value": {
+      "dtype": "object",
+      "missing_pct": 0.0,
+      "unique_count": 14801,
+      "mean": null,
+      "std": null,
+      "min": null,
+      "max": null
+    },
+    "Industry_code_ANZSIC06": {
+      "dtype": "object",
+      "missing_pct": 0.0,
+      "unique_count": 120,
+      "mean": null,
+      "std": null,
+      "min": null,
+      "max": null
+    }
+  }
+}
