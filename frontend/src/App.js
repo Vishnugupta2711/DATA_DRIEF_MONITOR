@@ -1,5 +1,6 @@
 import { useState, useEffect, useCallback } from "react";
 import "./App.css";
+import DriftChart from "./components/DriftChart";
 
 const API = "http://127.0.0.1:8000";
 
@@ -14,6 +15,16 @@ function App() {
   const [history, setHistory] = useState([]);
   const [selected, setSelected] = useState(null);
   const [compare, setCompare] = useState([]);
+
+  const trendLabels = history
+    .slice()
+    .reverse()
+    .map((h) => new Date(h.timestamp).toLocaleTimeString());
+
+  const trendValues = history
+    .slice()
+    .reverse()
+    .map((h) => h.drift_score || 0);
 
   const fetchHistory = useCallback(async () => {
     const res = await fetch(`${API}/history`, {
@@ -167,6 +178,13 @@ function App() {
         </div>
       </div>
 
+      {history.length > 1 && (
+        <div className="card">
+          <h3>Drift Trend</h3>
+          <DriftChart labels={trendLabels} values={trendValues} />
+        </div>
+      )}
+
       {result && (
         <div className="card">
           <h3>Analysis Result</h3>
@@ -204,10 +222,12 @@ function App() {
                 onChange={() => toggleCompare(h.id)}
               />
               <span onClick={() => loadSnapshot(h.id)}>
-                {h.dataset || "Dataset"} —{" "}
+                {h.dataset_name || "Dataset"} —{" "}
                 {new Date(h.timestamp).toLocaleString()}
               </span>
-              <span className={`badge ${h.severity}`}>{h.severity}</span>
+              <span className={`badge ${h.drift_severity}`}>
+                {h.drift_severity}
+              </span>
               <button onClick={() => deleteSnapshot(h.id)}>🗑</button>
             </li>
           ))}

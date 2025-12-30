@@ -182,3 +182,35 @@ def root():
             "snapshot comparison",
         ],
     }
+
+
+@app.get("/metrics/{snap_id}")
+def metrics(snap_id: str, user=Depends(get_current_user)):
+    snap = get_snapshot(snap_id)
+    if not snap or snap.user_email != user:
+        return {"error": "Not found"}
+
+    summary = snap.summary
+
+    numeric = summary.get("numeric", {})
+    metrics = []
+
+    for col, stats in numeric.items():
+        metrics.append({
+            "column": col,
+            "mean": stats.get("mean"),
+            "std": stats.get("std"),
+            "min": stats.get("min"),
+            "max": stats.get("max"),
+        })
+
+    return metrics
+
+
+@app.get("/trends")
+def trends(user=Depends(get_current_user)):
+    snaps = list_snapshots(user)
+    return snaps
+
+
+
