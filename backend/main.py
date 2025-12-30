@@ -1,5 +1,7 @@
 from fastapi import FastAPI, UploadFile
 from fastapi.middleware.cors import CORSMiddleware
+from backend.core.semantic_drift import detect_semantic_drift
+
 import shutil
 import os
 
@@ -44,7 +46,8 @@ async def analyze(file: UploadFile):
         old = load_snapshot(snapshots[-2]["id"])
         new = load_snapshot(snapshots[-1]["id"])
 
-        drift = detect_schema_drift(old, new) + detect_statistical_drift(old, new)
+        drift = (detect_schema_drift(old, new) + detect_statistical_drift(old, new) + detect_semantic_drift(old, new))
+
 
         # Try sending alert (non-blocking)
         if drift:

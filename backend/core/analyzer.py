@@ -1,13 +1,7 @@
 # backend/core/analyzer.py
-
 import pandas as pd
 
 def analyze_csv(path: str) -> dict:
-    """
-    Reads a CSV file and extracts schema + basic statistics.
-    Returns a dictionary describing the dataset.
-    """
-
     df = pd.read_csv(path)
 
     summary = {
@@ -24,13 +18,16 @@ def analyze_csv(path: str) -> dict:
             "unique_count": int(series.nunique())
         }
 
-        # Add numeric stats only if numeric
         if pd.api.types.is_numeric_dtype(series):
             col_info["mean"] = float(series.mean())
             col_info["std"] = float(series.std())
             col_info["min"] = float(series.min())
             col_info["max"] = float(series.max())
+            col_info["top_values"] = None
         else:
+            # Capture top 5 frequent values for semantic comparison
+            top_vals = series.value_counts().head(5).to_dict()
+            col_info["top_values"] = top_vals
             col_info["mean"] = None
             col_info["std"] = None
             col_info["min"] = None
