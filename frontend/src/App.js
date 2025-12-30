@@ -9,8 +9,11 @@ function App() {
   const [password, setPassword] = useState("");
   const [token, setToken] = useState(localStorage.getItem("token") || "");
   const [file, setFile] = useState(null);
+  const [dataset, setDataset] = useState("");
   const [result, setResult] = useState(null);
   const [history, setHistory] = useState([]);
+  const [selected, setSelected] = useState(null);
+  const [compare, setCompare] = useState([]);
 
   const fetchHistory = useCallback(async () => {
     const res = await fetch(`${API}/history`, {
@@ -27,41 +30,34 @@ function App() {
   const signup = async () => {
     const res = await fetch(
       `${API}/auth/signup?email=${email}&password=${password}`,
-      {
-        method: "POST",
-      }
+      { method: "POST" }
     );
     const data = await res.json();
     if (data.msg) {
       alert("Signup successful! Please login.");
       setMode("login");
-    } else {
-      alert(data.detail || "Signup failed");
-    }
+    } else alert(data.detail || "Signup failed");
   };
 
   const login = async () => {
     const res = await fetch(
       `${API}/auth/login?email=${email}&password=${password}`,
-      {
-        method: "POST",
-      }
+      { method: "POST" }
     );
     const data = await res.json();
     if (data.access_token) {
       localStorage.setItem("token", data.access_token);
       setToken(data.access_token);
-    } else {
-      alert(data.detail || "Login failed");
-    }
+    } else alert(data.detail || "Login failed");
   };
 
   const upload = async () => {
-    if (!file) return;
+    if (!file) return alert("Select a file first");
+
     const form = new FormData();
     form.append("file", file);
 
-    const res = await fetch(`${API}/analyze`, {
+    const res = await fetch(`${API}/analyze?dataset_name=${dataset}`, {
       method: "POST",
       body: form,
       headers: { Authorization: `Bearer ${token}` },
@@ -70,6 +66,32 @@ function App() {
     const data = await res.json();
     setResult(data);
     fetchHistory();
+  };
+
+  const loadSnapshot = async (id) => {
+    const res = await fetch(`${API}/snapshot/${id}`, {
+      headers: { Authorization: `Bearer ${token}` },
+    });
+    const data = await res.json();
+    setSelected(data);
+  };
+
+  const deleteSnapshot = async (id) => {
+    if (!window.confirm("Delete this snapshot?")) return;
+    await fetch(`${API}/snapshot/${id}`, {
+      method: "DELETE",
+      headers: { Authorization: `Bearer ${token}` },
+    });
+    fetchHistory();
+  };
+
+  const compareSnapshots = async () => {
+    if (compare.length !== 2) return;
+    const res = await fetch(`${API}/compare?a=${compare[0]}&b=${compare[1]}`, {
+      headers: { Authorization: `Bearer ${token}` },
+    });
+    const data = await res.json();
+    alert(JSON.stringify(data, null, 2));
   };
 
   const logout = () => {
@@ -85,7 +107,6 @@ function App() {
         <div className="auth-card">
           <h1>Data Drift Monitor</h1>
           <h3>{mode === "login" ? "Login" : "Signup"}</h3>
-
           <input
             placeholder="Email"
             onChange={(e) => setEmail(e.target.value)}
@@ -95,7 +116,6 @@ function App() {
             placeholder="Password"
             onChange={(e) => setPassword(e.target.value)}
           />
-
           {mode === "login" ? (
             <>
               <button onClick={login}>Login</button>
@@ -124,6 +144,10 @@ function App() {
       </div>
 
       <div className="card">
+        <input
+          placeholder="Dataset name"
+          onChange={(e) => setDataset(e.target.value)}
+        />
         <div className="upload-row">
           <input type="file" onChange={(e) => setFile(e.target.files[0])} />
           <button onClick={upload}>Analyze</button>
@@ -133,6 +157,12 @@ function App() {
       {result && (
         <div className="card">
           <h3>Analysis Result</h3>
+          <p>
+            <strong>Score:</strong> {result.score}
+          </p>
+          <p>
+            <strong>Severity:</strong> {result.severity}
+          </p>
           <div className="result-box">
             {result.drift.length === 0 ? (
               <p className="no-drift">No drift detected ✅</p>
@@ -152,12 +182,32 @@ function App() {
         <ul className="history-list">
           {history.map((h) => (
             <li key={h.id}>
-              <strong>{h.id.slice(0, 8)}</strong> —{" "}
-              {new Date(h.timestamp).toLocaleString()}
+              <input
+                type="checkbox"
+                onChange={(e) => {
+                  if (e.target.checked) setCompare([...compare, h.id]);
+                  else setCompare(compare.filter((x) => x !== h.id));
+                }}
+              />
+              <span onClick={() => loadSnapshot(h.id)}>
+                {h.dataset_name || "Dataset"} —{" "}
+                {new Date(h.timestamp).toLocaleString()}
+              </span>
+              <button onClick={() => deleteSnapshot(h.id)}>🗑</button>
             </li>
           ))}
         </ul>
+        {compare.length === 2 && (
+          <button onClick={compareSnapshots}>Compare</button>
+        )}
       </div>
+
+      {selected && (
+        <div className="card">
+          <h3>Snapshot Details</h3>
+          <pre className="result-box">{JSON.stringify(selected, null, 2)}</pre>
+        </div>
+      )}
     </div>
   );
 }

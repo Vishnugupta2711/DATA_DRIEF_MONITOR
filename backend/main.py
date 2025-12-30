@@ -1,23 +1,33 @@
-from fastapi import FastAPI, UploadFile, Depends
+from fastapi import FastAPI, UploadFile, Depends, Query, HTTPException
 from fastapi.middleware.cors import CORSMiddleware
 import shutil
 import os
 
 from backend.core.analyzer import analyze_csv
-from backend.storage.snapshot_store import save_snapshot, load_snapshot, list_snapshots
+from backend.storage.snapshot_store import (
+    save_snapshot,
+    load_snapshot,
+    list_snapshots,
+    get_snapshot,
+)
 from backend.core.drift import detect_schema_drift, detect_statistical_drift
 from backend.core.semantic_drift import detect_semantic_drift
+from backend.core.ml_drift import compute_drift_score
+from backend.services.severity import classify_severity
 from backend.services.alerts import send_email_alert
-
 from backend.auth.dependencies import get_current_user
 from backend.auth.routes import router as auth_router
+from backend.storage.database import SessionLocal
+from backend.storage.models import Snapshot
+
+# --------------------------------------------------
+# App Init
+# --------------------------------------------------
 
 app = FastAPI(title="Data Drift Monitor")
 
-# Register auth routes
 app.include_router(auth_router, prefix="/auth")
 
-# Enable CORS for frontend
 app.add_middleware(
     CORSMiddleware,
     allow_origins=["http://localhost:3000"],
@@ -25,58 +35,150 @@ app.add_middleware(
     allow_headers=["*"],
 )
 
+DATA_DIR = "data/raw"
+os.makedirs(DATA_DIR, exist_ok=True)
+
+# --------------------------------------------------
+# Analyze Dataset
+# --------------------------------------------------
 
 @app.post("/analyze")
-async def analyze(file: UploadFile, user: str = Depends(get_current_user)):
-    os.makedirs("data/raw", exist_ok=True)
-    path = f"data/raw/{file.filename}"
+async def analyze(
+    file: UploadFile,
+    dataset_name: str = Query("", description="Optional dataset name"),
+    user: str = Depends(get_current_user),
+):
+    if not file.filename.endswith(".csv"):
+        raise HTTPException(status_code=400, detail="Only CSV files supported")
 
-    # Save uploaded file
+    dataset_name = dataset_name or file.filename
+    path = f"{DATA_DIR}/{file.filename}"
+
     with open(path, "wb") as f:
         shutil.copyfileobj(file.file, f)
 
-    # Analyze dataset
     summary = analyze_csv(path)
 
-    # Save snapshot to DB (with user)
-    snap_id = save_snapshot(summary, user)
-
-    # Load history
-    snapshots = list_snapshots(user)
+    history = list_snapshots(user)
     drift = []
+    drift_score = 0.0
+    severity = "none"
 
-    # Detect drift if at least 2 snapshots exist
-    if len(snapshots) > 1:
-        old = load_snapshot(snapshots[-2]["id"])
-        new = load_snapshot(snapshots[-1]["id"])
+    # Compare with latest snapshot
+    if history:
+        last_summary = load_snapshot(history[0]["id"])
 
         drift = (
-            detect_schema_drift(old, new)
-            + detect_statistical_drift(old, new)
-            + detect_semantic_drift(old, new)
+            detect_schema_drift(last_summary, summary)
+            + detect_statistical_drift(last_summary, summary)
+            + detect_semantic_drift(last_summary, summary)
         )
 
-        # Send alert if drift detected (non-blocking)
-        if drift:
-            try:
-                send_email_alert(
-                    subject="⚠ Data Drift Detected",
-                    message="\n".join(drift)
-                )
-            except Exception as e:
-                print("Email alert failed:", e)
+        drift_score = compute_drift_score(last_summary, summary)
+        severity = classify_severity(drift_score)
+
+    snap_id = save_snapshot(
+        summary=summary,
+        user_email=user,
+        dataset_name=dataset_name,
+        drift_score=drift_score,
+        drift_severity=severity,
+    )
+
+    if severity in {"medium", "high"}:
+        try:
+            send_email_alert(
+                subject=f"⚠ Drift Alert ({severity.upper()})",
+                message=f"""
+Dataset: {dataset_name}
+User: {user}
+Score: {drift_score}
+Severity: {severity}
+""",
+            )
+        except Exception as e:
+            print("Email alert failed:", e)
 
     return {
         "snapshot_id": snap_id,
-        "drift": drift
+        "drift": drift,
+        "score": drift_score,
+        "severity": severity,
     }
 
+# --------------------------------------------------
+# Snapshot History
+# --------------------------------------------------
 
 @app.get("/history")
 def history(user: str = Depends(get_current_user)):
     return list_snapshots(user)
 
+@app.get("/snapshot/{snap_id}")
+def snapshot_details(snap_id: str, user: str = Depends(get_current_user)):
+    snap = get_snapshot(snap_id)
+    if not snap or snap.user_email != user:
+        raise HTTPException(status_code=404, detail="Snapshot not found")
+    return snap.summary
+
+@app.delete("/snapshot/{snap_id}")
+def delete_snapshot(snap_id: str, user: str = Depends(get_current_user)):
+    db = SessionLocal()
+    deleted = (
+        db.query(Snapshot)
+        .filter(Snapshot.id == snap_id, Snapshot.user_email == user)
+        .delete()
+    )
+    db.commit()
+    db.close()
+
+    if not deleted:
+        raise HTTPException(status_code=404, detail="Snapshot not found")
+
+    return {"status": "deleted"}
+
+# --------------------------------------------------
+# Compare Snapshots
+# --------------------------------------------------
+
+@app.get("/compare")
+def compare(
+    a: str = Query(..., description="Snapshot A ID"),
+    b: str = Query(..., description="Snapshot B ID"),
+    user: str = Depends(get_current_user),
+):
+    sa = get_snapshot(a)
+    sb = get_snapshot(b)
+
+    if not sa or not sb:
+        raise HTTPException(status_code=404, detail="Invalid snapshot id")
+
+    if sa.user_email != user or sb.user_email != user:
+        raise HTTPException(status_code=403, detail="Unauthorized")
+
+    return {
+        "statistical_drift": detect_statistical_drift(sa.summary, sb.summary),
+        "schema_drift": detect_schema_drift(sa.summary, sb.summary),
+        "semantic_drift": detect_semantic_drift(sa.summary, sb.summary),
+        "drift_score": compute_drift_score(sa.summary, sb.summary),
+    }
+
+# --------------------------------------------------
+# Health Check
+# --------------------------------------------------
 
 @app.get("/")
 def root():
-    return {"status": "ok", "message": "Data Drift Monitor API running"}
+    return {
+        "status": "ok",
+        "service": "Data Drift Monitor",
+        "features": [
+            "auth",
+            "snapshot history",
+            "dataset grouping",
+            "drift detection",
+            "ML scoring",
+            "email alerts",
+            "snapshot comparison",
+        ],
+    }
