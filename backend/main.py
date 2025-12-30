@@ -12,8 +12,7 @@ from backend.services.alerts import send_email_alert
 from backend.auth.dependencies import get_current_user
 from backend.auth.routes import router as auth_router
 
-
-app = FastAPI()
+app = FastAPI(title="Data Drift Monitor")
 
 # Register auth routes
 app.include_router(auth_router, prefix="/auth")
@@ -39,11 +38,11 @@ async def analyze(file: UploadFile, user: str = Depends(get_current_user)):
     # Analyze dataset
     summary = analyze_csv(path)
 
-    # Save snapshot to DB
-    snap_id = save_snapshot(summary)
+    # Save snapshot to DB (with user)
+    snap_id = save_snapshot(summary, user)
 
     # Load history
-    snapshots = list_snapshots()
+    snapshots = list_snapshots(user)
     drift = []
 
     # Detect drift if at least 2 snapshots exist
@@ -57,7 +56,7 @@ async def analyze(file: UploadFile, user: str = Depends(get_current_user)):
             + detect_semantic_drift(old, new)
         )
 
-        # Try sending alert (non-blocking)
+        # Send alert if drift detected (non-blocking)
         if drift:
             try:
                 send_email_alert(
@@ -75,4 +74,9 @@ async def analyze(file: UploadFile, user: str = Depends(get_current_user)):
 
 @app.get("/history")
 def history(user: str = Depends(get_current_user)):
-    return list_snapshots()
+    return list_snapshots(user)
+
+
+@app.get("/")
+def root():
+    return {"status": "ok", "message": "Data Drift Monitor API running"}

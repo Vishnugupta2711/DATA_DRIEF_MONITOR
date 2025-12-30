@@ -1,10 +1,10 @@
-import { useState, useEffect } from "react";
+import { useState, useEffect, useCallback } from "react";
 import "./App.css";
 
 const API = "http://127.0.0.1:8000";
 
 function App() {
-  const [mode, setMode] = useState("login"); // login or signup
+  const [mode, setMode] = useState("login");
   const [email, setEmail] = useState("");
   const [password, setPassword] = useState("");
   const [token, setToken] = useState(localStorage.getItem("token") || "");
@@ -12,9 +12,17 @@ function App() {
   const [result, setResult] = useState(null);
   const [history, setHistory] = useState([]);
 
+  const fetchHistory = useCallback(async () => {
+    const res = await fetch(`${API}/history`, {
+      headers: { Authorization: `Bearer ${token}` },
+    });
+    const data = await res.json();
+    if (Array.isArray(data)) setHistory(data);
+  }, [token]);
+
   useEffect(() => {
     if (token) fetchHistory();
-  }, [token]);
+  }, [token, fetchHistory]);
 
   const signup = async () => {
     const res = await fetch(
@@ -25,7 +33,7 @@ function App() {
     );
     const data = await res.json();
     if (data.msg) {
-      alert("Signup successful. Please login.");
+      alert("Signup successful! Please login.");
       setMode("login");
     } else {
       alert(data.detail || "Signup failed");
@@ -48,17 +56,8 @@ function App() {
     }
   };
 
-  const fetchHistory = async () => {
-    const res = await fetch(`${API}/history`, {
-      headers: { Authorization: `Bearer ${token}` },
-    });
-    const data = await res.json();
-    if (Array.isArray(data)) setHistory(data);
-  };
-
   const upload = async () => {
     if (!file) return;
-
     const form = new FormData();
     form.append("file", file);
 
@@ -73,52 +72,56 @@ function App() {
     fetchHistory();
   };
 
+  const logout = () => {
+    localStorage.removeItem("token");
+    setToken("");
+    setHistory([]);
+    setResult(null);
+  };
+
   if (!token) {
     return (
-      <div className="app">
-        <h1>{mode === "login" ? "Login" : "Signup"}</h1>
+      <div className="auth-container">
+        <div className="auth-card">
+          <h1>Data Drift Monitor</h1>
+          <h3>{mode === "login" ? "Login" : "Signup"}</h3>
 
-        <input placeholder="Email" onChange={(e) => setEmail(e.target.value)} />
-        <input
-          type="password"
-          placeholder="Password"
-          onChange={(e) => setPassword(e.target.value)}
-        />
+          <input
+            placeholder="Email"
+            onChange={(e) => setEmail(e.target.value)}
+          />
+          <input
+            type="password"
+            placeholder="Password"
+            onChange={(e) => setPassword(e.target.value)}
+          />
 
-        {mode === "login" ? (
-          <>
-            <button onClick={login}>Login</button>
-            <p>
-              No account?{" "}
-              <span
-                onClick={() => setMode("signup")}
-                style={{ color: "blue", cursor: "pointer" }}
-              >
-                Signup
-              </span>
-            </p>
-          </>
-        ) : (
-          <>
-            <button onClick={signup}>Signup</button>
-            <p>
-              Already have an account?{" "}
-              <span
-                onClick={() => setMode("login")}
-                style={{ color: "blue", cursor: "pointer" }}
-              >
-                Login
-              </span>
-            </p>
-          </>
-        )}
+          {mode === "login" ? (
+            <>
+              <button onClick={login}>Login</button>
+              <p onClick={() => setMode("signup")}>No account? Signup</p>
+            </>
+          ) : (
+            <>
+              <button onClick={signup}>Signup</button>
+              <p onClick={() => setMode("login")}>
+                Already have an account? Login
+              </p>
+            </>
+          )}
+        </div>
       </div>
     );
   }
 
   return (
     <div className="app">
-      <h1>Data Drift Monitor</h1>
+      <div className="top-bar">
+        <h1>Data Drift Monitor</h1>
+        <button className="logout" onClick={logout}>
+          Logout
+        </button>
+      </div>
 
       <div className="card">
         <div className="upload-row">
@@ -130,7 +133,17 @@ function App() {
       {result && (
         <div className="card">
           <h3>Analysis Result</h3>
-          <pre>{JSON.stringify(result, null, 2)}</pre>
+          <div className="result-box">
+            {result.drift.length === 0 ? (
+              <p className="no-drift">No drift detected ✅</p>
+            ) : (
+              result.drift.map((d, i) => (
+                <p key={i} className="drift">
+                  ⚠ {d}
+                </p>
+              ))
+            )}
+          </div>
         </div>
       )}
 

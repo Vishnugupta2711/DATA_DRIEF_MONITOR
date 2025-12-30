@@ -1,7 +1,7 @@
 body {
   margin: 0;
   font-family: "Inter", "Segoe UI", sans-serif;
-  background: #f4f6f9;
+  background: linear-gradient(135deg, #f4f6f9, #eef2ff);
 }
 
 .app {
@@ -10,16 +10,27 @@ body {
   padding: 20px;
 }
 
-.card {
-  background: white;
-  border-radius: 12px;
-  padding: 24px;
-  box-shadow: 0 8px 20px rgba(0,0,0,0.05);
+.top-bar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
   margin-bottom: 24px;
 }
 
-h1 {
-  margin-bottom: 20px;
+.logout {
+  background: #ef4444;
+}
+
+.logout:hover {
+  background: #dc2626;
+}
+
+.card {
+  background: white;
+  border-radius: 14px;
+  padding: 24px;
+  box-shadow: 0 10px 30px rgba(0,0,0,0.05);
+  margin-bottom: 24px;
 }
 
 .upload-row {
@@ -30,12 +41,13 @@ h1 {
 
 button {
   padding: 10px 18px;
-  border-radius: 8px;
+  border-radius: 10px;
   border: none;
   background: #2563eb;
   color: white;
   cursor: pointer;
   font-weight: 500;
+  transition: 0.2s ease;
 }
 
 button:hover {
@@ -49,15 +61,15 @@ button:hover {
 }
 
 .history-list li {
-  padding: 8px 12px;
+  padding: 10px 14px;
   border-bottom: 1px solid #eee;
   font-size: 14px;
 }
 
 .result-box {
   background: #f9fafb;
-  padding: 12px;
-  border-radius: 8px;
+  padding: 14px;
+  border-radius: 10px;
   font-size: 13px;
   overflow-x: auto;
 }
@@ -70,4 +82,34 @@ button:hover {
 .no-drift {
   color: #047857;
   font-weight: 600;
+}
+
+.auth-container {
+  display: flex;
+  height: 100vh;
+  justify-content: center;
+  align-items: center;
+}
+
+.auth-card {
+  background: white;
+  padding: 40px;
+  border-radius: 16px;
+  box-shadow: 0 20px 40px rgba(0,0,0,0.1);
+  width: 320px;
+  text-align: center;
+}
+
+.auth-card input {
+  width: 100%;
+  padding: 10px;
+  margin-bottom: 12px;
+  border-radius: 8px;
+  border: 1px solid #ddd;
+}
+
+.auth-card p {
+  cursor: pointer;
+  color: #2563eb;
+  margin-top: 12px;
 }

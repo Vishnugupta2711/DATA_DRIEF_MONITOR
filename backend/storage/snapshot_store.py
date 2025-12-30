@@ -1,33 +1,37 @@
-from backend.storage.metadata_db import SessionLocal, Snapshot
-from datetime import datetime
-import uuid
+from backend.storage.database import SessionLocal
+from backend.storage.models import Snapshot
 
-def save_snapshot(summary: dict) -> str:
+
+def save_snapshot(summary: dict, user_email: str):
     db = SessionLocal()
-    sid = str(uuid.uuid4())
-
-    snap = Snapshot(
-        id=sid,
-        timestamp=datetime.utcnow(),
-        summary=summary
-    )
-
+    snap = Snapshot(summary=summary, user_email=user_email)
     db.add(snap)
     db.commit()
+    db.refresh(snap)
     db.close()
+    return str(snap.id)
 
-    return sid
 
-
-def list_snapshots():
+def list_snapshots(user_email: str):
     db = SessionLocal()
-    snaps = db.query(Snapshot).order_by(Snapshot.timestamp).all()
+    snaps = (
+        db.query(Snapshot)
+        .filter(Snapshot.user_email == user_email)
+        .order_by(Snapshot.timestamp.desc())
+        .all()
+    )
     db.close()
-    return [{"id": s.id, "timestamp": s.timestamp} for s in snaps]
+    return [
+        {
+            "id": str(s.id),
+            "timestamp": s.timestamp.isoformat()
+        }
+        for s in snaps
+    ]
 
 
-def load_snapshot(sid: str) -> dict:
+def load_snapshot(snap_id: str):
     db = SessionLocal()
-    snap = db.query(Snapshot).filter(Snapshot.id == sid).first()
+    snap = db.query(Snapshot).filter(Snapshot.id == snap_id).first()
     db.close()
     return snap.summary if snap else None
