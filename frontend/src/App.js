@@ -9,10 +9,14 @@ function App() {
   const API = "http://127.0.0.1:8000";
 
   useEffect(() => {
-    fetch(`${API}/history`)
-      .then((res) => res.json())
-      .then(setHistory);
+    fetchHistory();
   }, []);
+
+  const fetchHistory = async () => {
+    const res = await fetch(`${API}/history`);
+    const data = await res.json();
+    setHistory(data);
+  };
 
   const upload = async () => {
     if (!file) return;
@@ -27,9 +31,7 @@ function App() {
 
     const data = await res.json();
     setResult(data);
-
-    const hist = await fetch(`${API}/history`).then((r) => r.json());
-    setHistory(hist);
+    fetchHistory();
   };
 
   return (
@@ -59,7 +61,10 @@ function App() {
         <h3>Snapshot History</h3>
         <ul className="history-list">
           {history.map((h) => (
-            <li key={h}>{h}</li>
+            <li key={h.id}>
+              <strong>{h.id.slice(0, 8)}</strong> —{" "}
+              {new Date(h.timestamp).toLocaleString()}
+            </li>
           ))}
         </ul>
       </div>

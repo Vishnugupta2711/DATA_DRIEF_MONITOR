@@ -1,31 +1,33 @@
-# backend/storage/snapshot_store.py
-
-import json
-import os
+from backend.storage.metadata_db import SessionLocal, Snapshot
 from datetime import datetime
-
-
-SNAPSHOT_DIR = "snapshots"
-
+import uuid
 
 def save_snapshot(summary: dict) -> str:
-    os.makedirs(SNAPSHOT_DIR, exist_ok=True)
+    db = SessionLocal()
+    sid = str(uuid.uuid4())
 
-    timestamp = datetime.now().strftime("%Y-%m-%dT%H-%M-%S")
-    path = os.path.join(SNAPSHOT_DIR, f"{timestamp}.json")
+    snap = Snapshot(
+        id=sid,
+        timestamp=datetime.utcnow(),
+        summary=summary
+    )
 
-    with open(path, "w") as f:
-        json.dump(summary, f, indent=2)
+    db.add(snap)
+    db.commit()
+    db.close()
 
-    return path
-
-
-def load_snapshot(path: str) -> dict:
-    with open(path, "r") as f:
-        return json.load(f)
+    return sid
 
 
-def list_snapshots() -> list:
-    if not os.path.exists(SNAPSHOT_DIR):
-        return []
-    return sorted(os.listdir(SNAPSHOT_DIR))
+def list_snapshots():
+    db = SessionLocal()
+    snaps = db.query(Snapshot).order_by(Snapshot.timestamp).all()
+    db.close()
+    return [{"id": s.id, "timestamp": s.timestamp} for s in snaps]
+
+
+def load_snapshot(sid: str) -> dict:
+    db = SessionLocal()
+    snap = db.query(Snapshot).filter(Snapshot.id == sid).first()
+    db.close()
+    return snap.summary if snap else None
