@@ -1,21 +1,59 @@
 import { useState, useEffect } from "react";
 import "./App.css";
 
+const API = "http://127.0.0.1:8000";
+
 function App() {
+  const [mode, setMode] = useState("login"); // login or signup
+  const [email, setEmail] = useState("");
+  const [password, setPassword] = useState("");
+  const [token, setToken] = useState(localStorage.getItem("token") || "");
   const [file, setFile] = useState(null);
   const [result, setResult] = useState(null);
   const [history, setHistory] = useState([]);
 
-  const API = "http://127.0.0.1:8000";
-
   useEffect(() => {
-    fetchHistory();
-  }, []);
+    if (token) fetchHistory();
+  }, [token]);
+
+  const signup = async () => {
+    const res = await fetch(
+      `${API}/auth/signup?email=${email}&password=${password}`,
+      {
+        method: "POST",
+      }
+    );
+    const data = await res.json();
+    if (data.msg) {
+      alert("Signup successful. Please login.");
+      setMode("login");
+    } else {
+      alert(data.detail || "Signup failed");
+    }
+  };
+
+  const login = async () => {
+    const res = await fetch(
+      `${API}/auth/login?email=${email}&password=${password}`,
+      {
+        method: "POST",
+      }
+    );
+    const data = await res.json();
+    if (data.access_token) {
+      localStorage.setItem("token", data.access_token);
+      setToken(data.access_token);
+    } else {
+      alert(data.detail || "Login failed");
+    }
+  };
 
   const fetchHistory = async () => {
-    const res = await fetch(`${API}/history`);
+    const res = await fetch(`${API}/history`, {
+      headers: { Authorization: `Bearer ${token}` },
+    });
     const data = await res.json();
-    setHistory(data);
+    if (Array.isArray(data)) setHistory(data);
   };
 
   const upload = async () => {
@@ -27,12 +65,56 @@ function App() {
     const res = await fetch(`${API}/analyze`, {
       method: "POST",
       body: form,
+      headers: { Authorization: `Bearer ${token}` },
     });
 
     const data = await res.json();
     setResult(data);
     fetchHistory();
   };
+
+  if (!token) {
+    return (
+      <div className="app">
+        <h1>{mode === "login" ? "Login" : "Signup"}</h1>
+
+        <input placeholder="Email" onChange={(e) => setEmail(e.target.value)} />
+        <input
+          type="password"
+          placeholder="Password"
+          onChange={(e) => setPassword(e.target.value)}
+        />
+
+        {mode === "login" ? (
+          <>
+            <button onClick={login}>Login</button>
+            <p>
+              No account?{" "}
+              <span
+                onClick={() => setMode("signup")}
+                style={{ color: "blue", cursor: "pointer" }}
+              >
+                Signup
+              </span>
+            </p>
+          </>
+        ) : (
+          <>
+            <button onClick={signup}>Signup</button>
+            <p>
+              Already have an account?{" "}
+              <span
+                onClick={() => setMode("login")}
+                style={{ color: "blue", cursor: "pointer" }}
+              >
+                Login
+              </span>
+            </p>
+          </>
+        )}
+      </div>
+    );
+  }
 
   return (
     <div className="app">
@@ -48,12 +130,7 @@ function App() {
       {result && (
         <div className="card">
           <h3>Analysis Result</h3>
-          <p className={result.drift.length ? "drift" : "no-drift"}>
-            {result.drift.length ? "⚠ Drift Detected" : "✓ No Drift Detected"}
-          </p>
-          <div className="result-box">
-            <pre>{JSON.stringify(result, null, 2)}</pre>
-          </div>
+          <pre>{JSON.stringify(result, null, 2)}</pre>
         </div>
       )}
 
