@@ -86,7 +86,7 @@ function App() {
   };
 
   const compareSnapshots = async () => {
-    if (compare.length !== 2) return;
+    if (compare.length !== 2) return alert("Select exactly 2 snapshots");
     const res = await fetch(`${API}/compare?a=${compare[0]}&b=${compare[1]}`, {
       headers: { Authorization: `Bearer ${token}` },
     });
@@ -94,11 +94,23 @@ function App() {
     alert(JSON.stringify(data, null, 2));
   };
 
+  const toggleCompare = (id) => {
+    if (compare.includes(id)) {
+      setCompare(compare.filter((x) => x !== id));
+    } else if (compare.length < 2) {
+      setCompare([...compare, id]);
+    } else {
+      alert("You can compare only 2 snapshots");
+    }
+  };
+
   const logout = () => {
     localStorage.removeItem("token");
     setToken("");
     setHistory([]);
     setResult(null);
+    setSelected(null);
+    setCompare([]);
   };
 
   if (!token) {
@@ -146,6 +158,7 @@ function App() {
       <div className="card">
         <input
           placeholder="Dataset name"
+          value={dataset}
           onChange={(e) => setDataset(e.target.value)}
         />
         <div className="upload-row">
@@ -161,7 +174,10 @@ function App() {
             <strong>Score:</strong> {result.score}
           </p>
           <p>
-            <strong>Severity:</strong> {result.severity}
+            <strong>Severity:</strong>{" "}
+            <span className={`badge ${result.severity}`}>
+              {result.severity}
+            </span>
           </p>
           <div className="result-box">
             {result.drift.length === 0 ? (
@@ -184,15 +200,14 @@ function App() {
             <li key={h.id}>
               <input
                 type="checkbox"
-                onChange={(e) => {
-                  if (e.target.checked) setCompare([...compare, h.id]);
-                  else setCompare(compare.filter((x) => x !== h.id));
-                }}
+                checked={compare.includes(h.id)}
+                onChange={() => toggleCompare(h.id)}
               />
               <span onClick={() => loadSnapshot(h.id)}>
-                {h.dataset_name || "Dataset"} —{" "}
+                {h.dataset || "Dataset"} —{" "}
                 {new Date(h.timestamp).toLocaleString()}
               </span>
+              <span className={`badge ${h.severity}`}>{h.severity}</span>
               <button onClick={() => deleteSnapshot(h.id)}>🗑</button>
             </li>
           ))}

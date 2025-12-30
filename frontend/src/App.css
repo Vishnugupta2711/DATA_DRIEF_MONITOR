@@ -113,3 +113,24 @@ button:hover {
   color: #2563eb;
   margin-top: 12px;
 }
+
+.badge {
+  padding: 4px 8px;
+  border-radius: 6px;
+  font-size: 11px;
+  font-weight: 600;
+  margin-right: 8px;
+}
+
+.badge.none { background: #d1fae5; color: #065f46; }
+.badge.low { background: #e0f2fe; color: #0369a1; }
+.badge.medium { background: #fef3c7; color: #92400e; }
+.badge.high { background: #fee2e2; color: #991b1b; }
+
+.history-list li {
+  cursor: pointer;
+}
+
+.history-list li:hover {
+  background: #f3f4f6;
+}

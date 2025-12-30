@@ -1,21 +1,27 @@
 from sklearn.ensemble import IsolationForest
 import numpy as np
 
-def compute_drift_score(old_summary, new_summary):
-    old_vals = []
-    new_vals = []
 
-    for col in old_summary["columns"]:
-        if col in new_summary["columns"] and "mean" in old_summary["columns"][col]:
-            old_vals.append(old_summary["columns"][col]["mean"])
-            new_vals.append(new_summary["columns"][col]["mean"])
+def extract_numeric(summary: dict):
+    """Extract numeric column means from summary."""
+    if not summary or "numeric" not in summary:
+        return []
 
-    if not old_vals:
-        return 0.0
+    return [v["mean"] for v in summary["numeric"].values() if v.get("mean") is not None]
 
-    X = np.abs(np.array(old_vals) - np.array(new_vals)).reshape(-1, 1)
-    model = IsolationForest(contamination=0.2)
-    model.fit(X)
-    score = -model.score_samples(X).mean()
 
-    return float(score)
+def compute_drift_score(old_summary: dict, new_summary: dict) -> float:
+    old_vals = extract_numeric(old_summary)
+    new_vals = extract_numeric(new_summary)
+
+    if not old_vals or not new_vals:
+        return 0.0  # No numeric data → no drift score
+
+    min_len = min(len(old_vals), len(new_vals))
+    old_vals = np.array(old_vals[:min_len])
+    new_vals = np.array(new_vals[:min_len])
+
+    diff = np.abs(old_vals - new_vals)
+    score = float(np.mean(diff))
+
+    return round(score, 4)
