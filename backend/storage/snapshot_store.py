@@ -2,14 +2,26 @@ from backend.storage.database import SessionLocal
 from backend.storage.models import Snapshot
 
 
-def save_snapshot(summary: dict, user_email: str):
+def save_snapshot(summary, user_email, dataset_name=None, drift_score=None, drift_severity=None):
     db = SessionLocal()
-    snap = Snapshot(summary=summary, user_email=user_email)
+    snap = Snapshot(
+        summary=summary,
+        user_email=user_email,
+        dataset_name=dataset_name,
+        drift_score=drift_score,
+        drift_severity=drift_severity
+    )
     db.add(snap)
     db.commit()
     db.refresh(snap)
     db.close()
-    return str(snap.id)
+    return snap.id
+
+def get_snapshot(snap_id):
+    db = SessionLocal()
+    snap = db.query(Snapshot).filter(Snapshot.id == snap_id).first()
+    db.close()
+    return snap
 
 
 def list_snapshots(user_email: str):
