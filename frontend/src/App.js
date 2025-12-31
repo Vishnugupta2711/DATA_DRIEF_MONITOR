@@ -15,6 +15,7 @@ function App() {
   const [history, setHistory] = useState([]);
   const [selected, setSelected] = useState(null);
   const [compare, setCompare] = useState([]);
+  const [isLoading, setIsLoading] = useState(false);
 
   const trendLabels = history
     .slice()
@@ -27,15 +28,11 @@ function App() {
     .map((h) => h.drift_score || 0);
 
   const fetchHistory = useCallback(async () => {
-    try {
-      const res = await fetch(`${API}/history`, {
-        headers: { Authorization: `Bearer ${token}` },
-      });
-      const data = await res.json();
-      if (Array.isArray(data)) setHistory(data);
-    } catch (err) {
-      console.error("Failed to fetch history:", err);
-    }
+    const res = await fetch(`${API}/history`, {
+      headers: { Authorization: `Bearer ${token}` },
+    });
+    const data = await res.json();
+    if (Array.isArray(data)) setHistory(data);
   }, [token]);
 
   useEffect(() => {
@@ -43,11 +40,13 @@ function App() {
   }, [token, fetchHistory]);
 
   const signup = async () => {
+    setIsLoading(true);
     const res = await fetch(
       `${API}/auth/signup?email=${email}&password=${password}`,
       { method: "POST" }
     );
     const data = await res.json();
+    setIsLoading(false);
     if (data.msg) {
       alert("Signup successful! Please login.");
       setMode("login");
@@ -55,11 +54,13 @@ function App() {
   };
 
   const login = async () => {
+    setIsLoading(true);
     const res = await fetch(
       `${API}/auth/login?email=${email}&password=${password}`,
       { method: "POST" }
     );
     const data = await res.json();
+    setIsLoading(false);
     if (data.access_token) {
       localStorage.setItem("token", data.access_token);
       setToken(data.access_token);
@@ -69,28 +70,20 @@ function App() {
   const upload = async () => {
     if (!file) return alert("Select a file first");
 
+    setIsLoading(true);
     const form = new FormData();
     form.append("file", file);
 
-    try {
-      const res = await fetch(`${API}/analyze?dataset_name=${dataset}`, {
-        method: "POST",
-        body: form,
-        headers: { Authorization: `Bearer ${token}` },
-      });
+    const res = await fetch(`${API}/analyze?dataset_name=${dataset}`, {
+      method: "POST",
+      body: form,
+      headers: { Authorization: `Bearer ${token}` },
+    });
 
-      const data = await res.json();
-      if (data.error || data.detail) {
-        alert(data.error || data.detail);
-        return;
-      }
-
-      setResult(data);
-      fetchHistory();
-    } catch (err) {
-      alert("Upload failed");
-      console.error(err);
-    }
+    const data = await res.json();
+    setIsLoading(false);
+    setResult(data);
+    fetchHistory();
   };
 
   const loadSnapshot = async (id) => {
@@ -117,18 +110,16 @@ function App() {
     });
     const data = await res.json();
     alert(JSON.stringify(data, null, 2));
-    setCompare([]);
   };
 
   const toggleCompare = (id) => {
-    setCompare((prev) => {
-      if (prev.includes(id)) return prev.filter((x) => x !== id);
-      if (prev.length >= 2) {
-        alert("You can compare only 2 snapshots");
-        return prev;
-      }
-      return [...prev, id];
-    });
+    if (compare.includes(id)) {
+      setCompare(compare.filter((x) => x !== id));
+    } else if (compare.length < 2) {
+      setCompare([...compare, id]);
+    } else {
+      alert("You can compare only 2 snapshots");
+    }
   };
 
   const logout = () => {
@@ -143,31 +134,73 @@ function App() {
   if (!token) {
     return (
       <div className="auth-container">
+        <div className="animated-bg">
+          <div className="gradient-orb orb-1"></div>
+          <div className="gradient-orb orb-2"></div>
+          <div className="gradient-orb orb-3"></div>
+        </div>
         <div className="auth-card">
-          <h1>Data Drift Monitor</h1>
-          <h3>{mode === "login" ? "Login" : "Signup"}</h3>
-          <input
-            placeholder="Email"
-            onChange={(e) => setEmail(e.target.value)}
-          />
-          <input
-            type="password"
-            placeholder="Password"
-            onChange={(e) => setPassword(e.target.value)}
-          />
-          {mode === "login" ? (
-            <>
-              <button onClick={login}>Login</button>
-              <p onClick={() => setMode("signup")}>No account? Signup</p>
-            </>
-          ) : (
-            <>
-              <button onClick={signup}>Signup</button>
-              <p onClick={() => setMode("login")}>
-                Already have an account? Login
-              </p>
-            </>
-          )}
+          <div className="logo-container">
+            <div className="logo-icon">
+              <div className="pulse-ring"></div>
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor">
+                <path
+                  d="M9 19v-6a2 2 0 00-2-2H5a2 2 0 00-2 2v6a2 2 0 002 2h2a2 2 0 002-2zm0 0V9a2 2 0 012-2h2a2 2 0 012 2v10m-6 0a2 2 0 002 2h2a2 2 0 002-2m0 0V5a2 2 0 012-2h2a2 2 0 012 2v14a2 2 0 01-2 2h-2a2 2 0 01-2-2z"
+                  strokeWidth="2"
+                  strokeLinecap="round"
+                  strokeLinejoin="round"
+                />
+              </svg>
+            </div>
+            <h1>Data Drift Monitor</h1>
+            <p className="subtitle">Real-time data quality tracking</p>
+          </div>
+
+          <div className="auth-tabs">
+            <button
+              className={mode === "login" ? "active" : ""}
+              onClick={() => setMode("login")}
+            >
+              Login
+            </button>
+            <button
+              className={mode === "signup" ? "active" : ""}
+              onClick={() => setMode("signup")}
+            >
+              Signup
+            </button>
+          </div>
+
+          <div className="input-group">
+            <input
+              type="email"
+              placeholder="Email"
+              value={email}
+              onChange={(e) => setEmail(e.target.value)}
+              className="styled-input"
+            />
+            <input
+              type="password"
+              placeholder="Password"
+              value={password}
+              onChange={(e) => setPassword(e.target.value)}
+              className="styled-input"
+            />
+          </div>
+
+          <button
+            className={`primary-btn ${isLoading ? "loading" : ""}`}
+            onClick={mode === "login" ? login : signup}
+            disabled={isLoading}
+          >
+            {isLoading ? (
+              <span className="spinner"></span>
+            ) : mode === "login" ? (
+              "Login"
+            ) : (
+              "Create Account"
+            )}
+          </button>
         </div>
       </div>
     );
@@ -175,79 +208,219 @@ function App() {
 
   return (
     <div className="app">
+      <div className="animated-bg">
+        <div className="gradient-orb orb-1"></div>
+        <div className="gradient-orb orb-2"></div>
+        <div className="gradient-orb orb-3"></div>
+      </div>
+
       <div className="top-bar">
-        <h1>Data Drift Monitor</h1>
-        <button className="logout" onClick={logout}>
+        <div className="logo-section">
+          <div className="logo-icon-small">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor">
+              <path
+                d="M9 19v-6a2 2 0 00-2-2H5a2 2 0 00-2 2v6a2 2 0 002 2h2a2 2 0 002-2zm0 0V9a2 2 0 012-2h2a2 2 0 012 2v10m-6 0a2 2 0 002 2h2a2 2 0 002-2m0 0V5a2 2 0 012-2h2a2 2 0 012 2v14a2 2 0 01-2 2h-2a2 2 0 01-2-2z"
+                strokeWidth="2"
+              />
+            </svg>
+          </div>
+          <h1>Data Drift Monitor</h1>
+        </div>
+        <button className="logout-btn" onClick={logout}>
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor">
+            <path
+              d="M17 16l4-4m0 0l-4-4m4 4H7m6 4v1a3 3 0 01-3 3H6a3 3 0 01-3-3V7a3 3 0 013-3h4a3 3 0 013 3v1"
+              strokeWidth="2"
+              strokeLinecap="round"
+              strokeLinejoin="round"
+            />
+          </svg>
           Logout
         </button>
       </div>
 
-      <div className="card">
-        <input
-          placeholder="Dataset name"
-          value={dataset}
-          onChange={(e) => setDataset(e.target.value)}
-        />
-        <div className="upload-row">
-          <input type="file" onChange={(e) => setFile(e.target.files[0])} />
-          <button onClick={upload}>Analyze</button>
-        </div>
-      </div>
-
-      {history.length > 1 && (
-        <div className="card">
-          <h3>Drift Trend</h3>
-          <DriftChart labels={trendLabels} values={trendValues} />
-        </div>
-      )}
-
-      {result && (
-        <div className="card">
-          <h3>Analysis Result</h3>
-          <p>
-            <strong>Score:</strong> {result.score}
-          </p>
-          <p>
-            <strong>Severity:</strong>{" "}
-            <span className={`badge ${result.severity}`}>
-              {result.severity}
-            </span>
-          </p>
-        </div>
-      )}
-
-      <div className="card">
-        <h3>Snapshot History</h3>
-        <ul className="history-list">
-          {history.map((h) => (
-            <li key={h.id}>
+      <div className="container">
+        <div className="card upload-card">
+          <div className="card-header">
+            <h3>Upload Dataset</h3>
+          </div>
+          <div className="card-content">
+            <input
+              placeholder="Dataset name"
+              value={dataset}
+              onChange={(e) => setDataset(e.target.value)}
+              className="styled-input"
+            />
+            <div className="upload-area">
               <input
-                type="checkbox"
-                checked={compare.includes(h.id)}
-                onChange={() => toggleCompare(h.id)}
+                type="file"
+                id="file-upload"
+                onChange={(e) => setFile(e.target.files[0])}
+                className="file-input"
               />
-              <span onClick={() => loadSnapshot(h.id)}>
-                {h.dataset_name || "Dataset"} —{" "}
-                {new Date(h.timestamp).toLocaleString()}
-              </span>
-              <span className={`badge ${h.drift_severity}`}>
-                {h.drift_severity}
-              </span>
-              <button onClick={() => deleteSnapshot(h.id)}>🗑</button>
-            </li>
-          ))}
-        </ul>
-        <button disabled={compare.length !== 2} onClick={compareSnapshots}>
-          Compare
-        </button>
-      </div>
-
-      {selected && (
-        <div className="card">
-          <h3>Snapshot Details</h3>
-          <pre className="result-box">{JSON.stringify(selected, null, 2)}</pre>
+              <label htmlFor="file-upload" className="file-label">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor">
+                  <path
+                    d="M7 16a4 4 0 01-.88-7.903A5 5 0 1115.9 6L16 6a5 5 0 011 9.9M15 13l-3-3m0 0l-3 3m3-3v12"
+                    strokeWidth="2"
+                    strokeLinecap="round"
+                    strokeLinejoin="round"
+                  />
+                </svg>
+                {file ? file.name : "Choose file"}
+              </label>
+              <button
+                className={`analyze-btn ${isLoading ? "loading" : ""}`}
+                onClick={upload}
+                disabled={isLoading}
+              >
+                {isLoading ? <span className="spinner"></span> : "Analyze"}
+              </button>
+            </div>
+          </div>
         </div>
-      )}
+
+        {history.length > 1 && (
+          <div className="card chart-card">
+            <div className="card-header">
+              <h3>Drift Trend</h3>
+            </div>
+            <div className="card-content">
+              <DriftChart labels={trendLabels} values={trendValues} />
+            </div>
+          </div>
+        )}
+
+        {result && (
+          <div className="card result-card">
+            <div className="card-header">
+              <h3>Analysis Result</h3>
+            </div>
+            <div className="card-content">
+              <div className="result-stats">
+                <div className="stat-item">
+                  <span className="stat-label">Score</span>
+                  <span className="stat-value">{result.score}</span>
+                </div>
+                <div className="stat-item">
+                  <span className="stat-label">Severity</span>
+                  <span className={`badge ${result.severity}`}>
+                    {result.severity}
+                  </span>
+                </div>
+              </div>
+              <div className="drift-list">
+                {result.drift.length === 0 ? (
+                  <div className="no-drift">
+                    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor">
+                      <path
+                        d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z"
+                        strokeWidth="2"
+                        strokeLinecap="round"
+                        strokeLinejoin="round"
+                      />
+                    </svg>
+                    No drift detected
+                  </div>
+                ) : (
+                  result.drift.map((d, i) => (
+                    <div key={i} className="drift-item">
+                      <svg
+                        viewBox="0 0 24 24"
+                        fill="none"
+                        stroke="currentColor"
+                      >
+                        <path
+                          d="M12 9v2m0 4h.01m-6.938 4h13.856c1.54 0 2.502-1.667 1.732-3L13.732 4c-.77-1.333-2.694-1.333-3.464 0L3.34 16c-.77 1.333.192 3 1.732 3z"
+                          strokeWidth="2"
+                          strokeLinecap="round"
+                          strokeLinejoin="round"
+                        />
+                      </svg>
+                      {d}
+                    </div>
+                  ))
+                )}
+              </div>
+            </div>
+          </div>
+        )}
+
+        <div className="card history-card">
+          <div className="card-header">
+            <h3>Snapshot History</h3>
+            {compare.length === 2 && (
+              <button className="compare-btn" onClick={compareSnapshots}>
+                Compare Selected
+              </button>
+            )}
+          </div>
+          <div className="card-content">
+            <ul className="history-list">
+              {history.map((h) => (
+                <li key={h.id} className="history-item">
+                  <input
+                    type="checkbox"
+                    checked={compare.includes(h.id)}
+                    onChange={() => toggleCompare(h.id)}
+                    className="history-checkbox"
+                  />
+                  <div
+                    className="history-info"
+                    onClick={() => loadSnapshot(h.id)}
+                  >
+                    <span className="history-name">
+                      {h.dataset_name || "Dataset"}
+                    </span>
+                    <span className="history-time">
+                      {new Date(h.timestamp).toLocaleString()}
+                    </span>
+                  </div>
+                  <span className={`badge ${h.drift_severity}`}>
+                    {h.drift_severity}
+                  </span>
+                  <button
+                    className="delete-btn"
+                    onClick={() => deleteSnapshot(h.id)}
+                  >
+                    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor">
+                      <path
+                        d="M19 7l-.867 12.142A2 2 0 0116.138 21H7.862a2 2 0 01-1.995-1.858L5 7m5 4v6m4-6v6m1-10V4a1 1 0 00-1-1h-4a1 1 0 00-1 1v3M4 7h16"
+                        strokeWidth="2"
+                        strokeLinecap="round"
+                        strokeLinejoin="round"
+                      />
+                    </svg>
+                  </button>
+                </li>
+              ))}
+            </ul>
+          </div>
+        </div>
+
+        {selected && (
+          <div className="card details-card">
+            <div className="card-header">
+              <h3>Snapshot Details</h3>
+              <button className="close-btn" onClick={() => setSelected(null)}>
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor">
+                  <path
+                    d="M6 18L18 6M6 6l12 12"
+                    strokeWidth="2"
+                    strokeLinecap="round"
+                    strokeLinejoin="round"
+                  />
+                </svg>
+              </button>
+            </div>
+            <div className="card-content">
+              <pre className="details-json">
+                {JSON.stringify(selected, null, 2)}
+              </pre>
+            </div>
+          </div>
+        )}
+      </div>
     </div>
   );
 }
