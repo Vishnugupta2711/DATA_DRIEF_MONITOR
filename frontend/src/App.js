@@ -379,19 +379,74 @@ function App() {
                   <span className={`badge ${h.drift_severity}`}>
                     {h.drift_severity}
                   </span>
-                  <button
-                    className="delete-btn"
-                    onClick={() => deleteSnapshot(h.id)}
-                  >
-                    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor">
-                      <path
-                        d="M19 7l-.867 12.142A2 2 0 0116.138 21H7.862a2 2 0 01-1.995-1.858L5 7m5 4v6m4-6v6m1-10V4a1 1 0 00-1-1h-4a1 1 0 00-1 1v3M4 7h16"
-                        strokeWidth="2"
-                        strokeLinecap="round"
-                        strokeLinejoin="round"
-                      />
-                    </svg>
-                  </button>
+                  <div className="history-actions">
+                    <button
+                      className="btn-secondary"
+                      onClick={() =>
+                        window.open(
+                          `${API}/report/${h.id}?format=pdf`,
+                          "_blank"
+                        )
+                      }
+                      title="Download PDF Report"
+                    >
+                      <svg
+                        viewBox="0 0 24 24"
+                        fill="none"
+                        stroke="currentColor"
+                      >
+                        <path
+                          d="M7 21h10a2 2 0 002-2V9.414a1 1 0 00-.293-.707l-5.414-5.414A1 1 0 0012.586 3H7a2 2 0 00-2 2v14a2 2 0 002 2z"
+                          strokeWidth="2"
+                          strokeLinecap="round"
+                          strokeLinejoin="round"
+                        />
+                      </svg>
+                      PDF
+                    </button>
+                    <button
+                      className="btn-secondary"
+                      onClick={() =>
+                        window.open(
+                          `${API}/report/${h.id}?format=csv`,
+                          "_blank"
+                        )
+                      }
+                      title="Download CSV Report"
+                    >
+                      <svg
+                        viewBox="0 0 24 24"
+                        fill="none"
+                        stroke="currentColor"
+                      >
+                        <path
+                          d="M9 17v-2m3 2v-4m3 4v-6m2 10H7a2 2 0 01-2-2V5a2 2 0 012-2h5.586a1 1 0 01.707.293l5.414 5.414a1 1 0 01.293.707V19a2 2 0 01-2 2z"
+                          strokeWidth="2"
+                          strokeLinecap="round"
+                          strokeLinejoin="round"
+                        />
+                      </svg>
+                      CSV
+                    </button>
+                    <button
+                      className="delete-btn"
+                      onClick={() => deleteSnapshot(h.id)}
+                      title="Delete Snapshot"
+                    >
+                      <svg
+                        viewBox="0 0 24 24"
+                        fill="none"
+                        stroke="currentColor"
+                      >
+                        <path
+                          d="M19 7l-.867 12.142A2 2 0 0116.138 21H7.862a2 2 0 01-1.995-1.858L5 7m5 4v6m4-6v6m1-10V4a1 1 0 00-1-1h-4a1 1 0 00-1 1v3M4 7h16"
+                          strokeWidth="2"
+                          strokeLinecap="round"
+                          strokeLinejoin="round"
+                        />
+                      </svg>
+                    </button>
+                  </div>
                 </li>
               ))}
             </ul>

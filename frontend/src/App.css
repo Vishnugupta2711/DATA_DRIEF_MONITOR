@@ -669,6 +669,12 @@ body {
   transform: translateX(4px);
 }
 
+.history-actions {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+
 .history-checkbox {
   width: 20px;
   height: 20px;
@@ -716,6 +722,33 @@ body {
 .delete-btn svg {
   width: 18px;
   height: 18px;
+}
+
+.btn-secondary {
+  display: flex;
+  align-items: center;
+  gap: 6px;
+  padding: 8px 14px;
+  background: rgba(102, 126, 234, 0.1);
+  border: 1px solid rgba(102, 126, 234, 0.3);
+  border-radius: 8px;
+  color: #a5b4fc;
+  font-size: 13px;
+  font-weight: 600;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+.btn-secondary:hover {
+  background: rgba(102, 126, 234, 0.2);
+  border-color: rgba(102, 126, 234, 0.5);
+  transform: translateY(-2px);
+  box-shadow: 0 4px 12px rgba(102, 126, 234, 0.3);
+}
+
+.btn-secondary svg {
+  width: 16px;
+  height: 16px;
 }
 
 /* Details Card */
