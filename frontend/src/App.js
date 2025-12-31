@@ -27,11 +27,15 @@ function App() {
     .map((h) => h.drift_score || 0);
 
   const fetchHistory = useCallback(async () => {
-    const res = await fetch(`${API}/history`, {
-      headers: { Authorization: `Bearer ${token}` },
-    });
-    const data = await res.json();
-    if (Array.isArray(data)) setHistory(data);
+    try {
+      const res = await fetch(`${API}/history`, {
+        headers: { Authorization: `Bearer ${token}` },
+      });
+      const data = await res.json();
+      if (Array.isArray(data)) setHistory(data);
+    } catch (err) {
+      console.error("Failed to fetch history:", err);
+    }
   }, [token]);
 
   useEffect(() => {
@@ -68,15 +72,25 @@ function App() {
     const form = new FormData();
     form.append("file", file);
 
-    const res = await fetch(`${API}/analyze?dataset_name=${dataset}`, {
-      method: "POST",
-      body: form,
-      headers: { Authorization: `Bearer ${token}` },
-    });
+    try {
+      const res = await fetch(`${API}/analyze?dataset_name=${dataset}`, {
+        method: "POST",
+        body: form,
+        headers: { Authorization: `Bearer ${token}` },
+      });
 
-    const data = await res.json();
-    setResult(data);
-    fetchHistory();
+      const data = await res.json();
+      if (data.error || data.detail) {
+        alert(data.error || data.detail);
+        return;
+      }
+
+      setResult(data);
+      fetchHistory();
+    } catch (err) {
+      alert("Upload failed");
+      console.error(err);
+    }
   };
 
   const loadSnapshot = async (id) => {
@@ -103,16 +117,18 @@ function App() {
     });
     const data = await res.json();
     alert(JSON.stringify(data, null, 2));
+    setCompare([]);
   };
 
   const toggleCompare = (id) => {
-    if (compare.includes(id)) {
-      setCompare(compare.filter((x) => x !== id));
-    } else if (compare.length < 2) {
-      setCompare([...compare, id]);
-    } else {
-      alert("You can compare only 2 snapshots");
-    }
+    setCompare((prev) => {
+      if (prev.includes(id)) return prev.filter((x) => x !== id);
+      if (prev.length >= 2) {
+        alert("You can compare only 2 snapshots");
+        return prev;
+      }
+      return [...prev, id];
+    });
   };
 
   const logout = () => {
@@ -197,17 +213,6 @@ function App() {
               {result.severity}
             </span>
           </p>
-          <div className="result-box">
-            {result.drift.length === 0 ? (
-              <p className="no-drift">No drift detected ✅</p>
-            ) : (
-              result.drift.map((d, i) => (
-                <p key={i} className="drift">
-                  ⚠ {d}
-                </p>
-              ))
-            )}
-          </div>
         </div>
       )}
 
@@ -232,9 +237,9 @@ function App() {
             </li>
           ))}
         </ul>
-        {compare.length === 2 && (
-          <button onClick={compareSnapshots}>Compare</button>
-        )}
+        <button disabled={compare.length !== 2} onClick={compareSnapshots}>
+          Compare
+        </button>
       </div>
 
       {selected && (

@@ -48,7 +48,7 @@ async def analyze(
     dataset_name: str = Query("", description="Optional dataset name"),
     user: str = Depends(get_current_user),
 ):
-    if not file.filename.endswith(".csv"):
+    if not file.filename.lower().endswith(".csv"):
         raise HTTPException(status_code=400, detail="Only CSV files supported")
 
     dataset_name = dataset_name or file.filename
@@ -64,18 +64,17 @@ async def analyze(
     drift_score = 0.0
     severity = "none"
 
-    # Compare with latest snapshot
     if history:
         last_summary = load_snapshot(history[0]["id"])
+        if last_summary:
+            drift = (
+                detect_schema_drift(last_summary, summary)
+                + detect_statistical_drift(last_summary, summary)
+                + detect_semantic_drift(last_summary, summary)
+            )
 
-        drift = (
-            detect_schema_drift(last_summary, summary)
-            + detect_statistical_drift(last_summary, summary)
-            + detect_semantic_drift(last_summary, summary)
-        )
-
-        drift_score = compute_drift_score(last_summary, summary)
-        severity = classify_severity(drift_score)
+            drift_score = compute_drift_score(last_summary, summary)
+            severity = classify_severity(drift_score)
 
     snap_id = save_snapshot(
         summary=summary,
@@ -164,6 +163,39 @@ def compare(
     }
 
 # --------------------------------------------------
+# Metrics for Visualization
+# --------------------------------------------------
+
+@app.get("/metrics/{snap_id}")
+def metrics(snap_id: str, user=Depends(get_current_user)):
+    snap = get_snapshot(snap_id)
+    if not snap or snap.user_email != user:
+        raise HTTPException(status_code=404, detail="Snapshot not found")
+
+    summary = snap.summary or {}
+    numeric = summary.get("numeric", {})
+
+    metrics = []
+    for col, stats in numeric.items():
+        metrics.append({
+            "column": col,
+            "mean": stats.get("mean"),
+            "std": stats.get("std"),
+            "min": stats.get("min"),
+            "max": stats.get("max"),
+        })
+
+    return metrics
+
+# --------------------------------------------------
+# Drift Trends
+# --------------------------------------------------
+
+@app.get("/trends")
+def trends(user=Depends(get_current_user)):
+    return list_snapshots(user)
+
+# --------------------------------------------------
 # Health Check
 # --------------------------------------------------
 
@@ -180,37 +212,7 @@ def root():
             "ML scoring",
             "email alerts",
             "snapshot comparison",
+            "metrics",
+            "trend visualization",
         ],
     }
-
-
-@app.get("/metrics/{snap_id}")
-def metrics(snap_id: str, user=Depends(get_current_user)):
-    snap = get_snapshot(snap_id)
-    if not snap or snap.user_email != user:
-        return {"error": "Not found"}
-
-    summary = snap.summary
-
-    numeric = summary.get("numeric", {})
-    metrics = []
-
-    for col, stats in numeric.items():
-        metrics.append({
-            "column": col,
-            "mean": stats.get("mean"),
-            "std": stats.get("std"),
-            "min": stats.get("min"),
-            "max": stats.get("max"),
-        })
-
-    return metrics
-
-
-@app.get("/trends")
-def trends(user=Depends(get_current_user)):
-    snaps = list_snapshots(user)
-    return snaps
-
-
-
