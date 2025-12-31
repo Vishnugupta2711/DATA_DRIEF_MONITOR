@@ -19,6 +19,8 @@ from backend.auth.dependencies import get_current_user
 from backend.auth.routes import router as auth_router
 from backend.storage.database import SessionLocal
 from backend.storage.models import Snapshot
+from fastapi.responses import StreamingResponse
+from backend.services.report import generate_pdf, generate_csv
 
 # --------------------------------------------------
 # App Init
@@ -199,6 +201,37 @@ def trends(user=Depends(get_current_user)):
 # Health Check
 # --------------------------------------------------
 
+
+@app.get("/report/{snap_id}")
+def download_report(
+    snap_id: str,
+    format: str = Query("pdf"),
+    user: str = Depends(get_current_user),
+):
+    snap = get_snapshot(snap_id)
+    if not snap or snap.user_email != user:
+        raise HTTPException(status_code=404, detail="Snapshot not found")
+
+    if format == "pdf":
+        buffer = generate_pdf(snap, user)
+        return StreamingResponse(
+            buffer,
+            media_type="application/pdf",
+            headers={"Content-Disposition": f"attachment; filename=drift_{snap_id}.pdf"},
+        )
+
+    if format == "csv":
+        output = generate_csv(snap)
+        return StreamingResponse(
+            iter([output.getvalue()]),
+            media_type="text/csv",
+            headers={"Content-Disposition": f"attachment; filename=drift_{snap_id}.csv"},
+        )
+
+    raise HTTPException(status_code=400, detail="Invalid format")
+
+
+
 @app.get("/")
 def root():
     return {
@@ -216,3 +249,5 @@ def root():
             "trend visualization",
         ],
     }
+
+
