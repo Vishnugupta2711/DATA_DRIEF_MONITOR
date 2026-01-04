@@ -15,6 +15,7 @@ function App() {
   const [history, setHistory] = useState([]);
   const [selected, setSelected] = useState(null);
   const [compare, setCompare] = useState([]);
+  const [compareResult, setCompareResult] = useState(null);
   const [isLoading, setIsLoading] = useState(false);
 
   const trendLabels = history
@@ -100,19 +101,27 @@ function App() {
       method: "DELETE",
       headers: { Authorization: `Bearer ${token}` },
     });
+    // Clear comparison if deleted snapshot was in compare list
+    if (compare.includes(id)) {
+      setCompare(compare.filter((x) => x !== id));
+      setCompareResult(null);
+    }
     fetchHistory();
   };
 
   const compareSnapshots = async () => {
     if (compare.length !== 2) return alert("Select exactly 2 snapshots");
+    setIsLoading(true);
     const res = await fetch(`${API}/compare?a=${compare[0]}&b=${compare[1]}`, {
       headers: { Authorization: `Bearer ${token}` },
     });
     const data = await res.json();
-    alert(JSON.stringify(data, null, 2));
+    setIsLoading(false);
+    setCompareResult(data);
   };
 
   const toggleCompare = (id) => {
+    setCompareResult(null); // Clear previous comparison
     if (compare.includes(id)) {
       setCompare(compare.filter((x) => x !== id));
     } else if (compare.length < 2) {
@@ -129,6 +138,7 @@ function App() {
     setResult(null);
     setSelected(null);
     setCompare([]);
+    setCompareResult(null);
   };
 
   if (!token) {
@@ -350,8 +360,16 @@ function App() {
           <div className="card-header">
             <h3>Snapshot History</h3>
             {compare.length === 2 && (
-              <button className="compare-btn" onClick={compareSnapshots}>
-                Compare Selected
+              <button
+                className={`compare-btn ${isLoading ? "loading" : ""}`}
+                onClick={compareSnapshots}
+                disabled={isLoading}
+              >
+                {isLoading ? (
+                  <span className="spinner"></span>
+                ) : (
+                  "Compare Selected"
+                )}
               </button>
             )}
           </div>
@@ -452,6 +470,150 @@ function App() {
             </ul>
           </div>
         </div>
+
+        {compareResult && (
+          <div className="card comparison-card">
+            <div className="card-header">
+              <h3>Comparison Results</h3>
+              <button
+                className="close-btn"
+                onClick={() => setCompareResult(null)}
+              >
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor">
+                  <path
+                    d="M6 18L18 6M6 6l12 12"
+                    strokeWidth="2"
+                    strokeLinecap="round"
+                    strokeLinejoin="round"
+                  />
+                </svg>
+              </button>
+            </div>
+            <div className="card-content">
+              <div className="comparison-grid">
+                <div className="comparison-section">
+                  <h4>Snapshot A</h4>
+                  <div className="comparison-details">
+                    <div className="detail-row">
+                      <span className="detail-label">Dataset:</span>
+                      <span className="detail-value">
+                        {compareResult.snapshot_a?.dataset_name || "N/A"}
+                      </span>
+                    </div>
+                    <div className="detail-row">
+                      <span className="detail-label">Timestamp:</span>
+                      <span className="detail-value">
+                        {compareResult.snapshot_a?.timestamp
+                          ? new Date(
+                              compareResult.snapshot_a.timestamp
+                            ).toLocaleString()
+                          : "N/A"}
+                      </span>
+                    </div>
+                    <div className="detail-row">
+                      <span className="detail-label">Drift Score:</span>
+                      <span className="detail-value">
+                        {compareResult.snapshot_a?.drift_score || "N/A"}
+                      </span>
+                    </div>
+                    <div className="detail-row">
+                      <span className="detail-label">Severity:</span>
+                      <span
+                        className={`badge ${
+                          compareResult.snapshot_a?.drift_severity || "low"
+                        }`}
+                      >
+                        {compareResult.snapshot_a?.drift_severity || "N/A"}
+                      </span>
+                    </div>
+                  </div>
+                </div>
+
+                <div className="comparison-divider">
+                  <svg viewBox="0 0 24 24" fill="none" stroke="currentColor">
+                    <path
+                      d="M8 7h12m0 0l-4-4m4 4l-4 4m0 6H4m0 0l4 4m-4-4l4-4"
+                      strokeWidth="2"
+                      strokeLinecap="round"
+                      strokeLinejoin="round"
+                    />
+                  </svg>
+                </div>
+
+                <div className="comparison-section">
+                  <h4>Snapshot B</h4>
+                  <div className="comparison-details">
+                    <div className="detail-row">
+                      <span className="detail-label">Dataset:</span>
+                      <span className="detail-value">
+                        {compareResult.snapshot_b?.dataset_name || "N/A"}
+                      </span>
+                    </div>
+                    <div className="detail-row">
+                      <span className="detail-label">Timestamp:</span>
+                      <span className="detail-value">
+                        {compareResult.snapshot_b?.timestamp
+                          ? new Date(
+                              compareResult.snapshot_b.timestamp
+                            ).toLocaleString()
+                          : "N/A"}
+                      </span>
+                    </div>
+                    <div className="detail-row">
+                      <span className="detail-label">Drift Score:</span>
+                      <span className="detail-value">
+                        {compareResult.snapshot_b?.drift_score || "N/A"}
+                      </span>
+                    </div>
+                    <div className="detail-row">
+                      <span className="detail-label">Severity:</span>
+                      <span
+                        className={`badge ${
+                          compareResult.snapshot_b?.drift_severity || "low"
+                        }`}
+                      >
+                        {compareResult.snapshot_b?.drift_severity || "N/A"}
+                      </span>
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+              {compareResult.differences && (
+                <div className="differences-section">
+                  <h4>Key Differences</h4>
+                  <div className="differences-list">
+                    {typeof compareResult.differences === "object" ? (
+                      Object.entries(compareResult.differences).map(
+                        ([key, value]) => (
+                          <div key={key} className="difference-item">
+                            <span className="difference-key">{key}:</span>
+                            <span className="difference-value">
+                              {JSON.stringify(value)}
+                            </span>
+                          </div>
+                        )
+                      )
+                    ) : (
+                      <p className="difference-text">
+                        {compareResult.differences}
+                      </p>
+                    )}
+                  </div>
+                </div>
+              )}
+
+              <div className="comparison-raw">
+                <details>
+                  <summary>View Raw Comparison Data</summary>
+                  <pre className="details-json">
+                    {JSON.stringify(compareResult, null, 2)}
+                  </pre>
+                </details>
+              </div>
+            </div>
+          </div>
+        )}
 
         {selected && (
           <div className="card details-card">
