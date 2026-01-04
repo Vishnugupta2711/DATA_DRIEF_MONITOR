@@ -1,6 +1,8 @@
 from fastapi import FastAPI, UploadFile, Depends, Query, HTTPException
 from fastapi.middleware.cors import CORSMiddleware
 from fastapi.responses import StreamingResponse
+from fastapi import WebSocket
+
 import shutil
 import os
 
@@ -517,3 +519,32 @@ def root():
             "pdf & csv reports",
         ],
     }
+
+
+# Add these endpoints to main.py:
+
+@app.post("/predict-drift")
+async def predict_drift(dataset_name: str, user: str = Depends(get_current_user)):
+    """Use ML to predict future drift based on historical patterns"""
+    # Implement ARIMA/LSTM model for time-series prediction
+    pass
+
+@app.post("/alert-config")
+async def configure_alerts(config: dict, user: str = Depends(get_current_user)):
+    """Configure custom alert thresholds and channels"""
+    pass
+
+@app.get("/feature-importance")
+async def feature_importance(snap_id: str, user: str = Depends(get_current_user)):
+    """Return which features contribute most to drift"""
+    pass
+
+@app.post("/remediation-suggest")
+async def suggest_remediation(snap_id: str, user: str = Depends(get_current_user)):
+    """AI-powered suggestions to fix drift issues"""
+    pass
+
+@app.websocket("/ws/live-monitoring")
+async def websocket_endpoint(websocket: WebSocket):
+    """Real-time drift monitoring via WebSocket"""
+    pass
