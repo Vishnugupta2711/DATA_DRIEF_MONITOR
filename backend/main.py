@@ -39,7 +39,9 @@ app.add_middleware(
 
 DATA_DIR = "data/raw"
 os.makedirs(DATA_DIR, exist_ok=True)
-
+# --------------------------------------------------
+# Analyze Dataset
+# --------------------------------------------------
 # --------------------------------------------------
 # Analyze Dataset
 # --------------------------------------------------
@@ -62,6 +64,11 @@ async def analyze(
 
     summary = analyze_csv(path)
 
+    # 🔍 DEBUG PRINTS
+    print("\n===== SUMMARY DEBUG =====")
+    print(summary)
+    print("========================")
+
     history = list_snapshots(user)
     drift = []
     drift_score = 0.0
@@ -69,6 +76,12 @@ async def analyze(
 
     if history:
         last_summary = load_snapshot(history[0]["id"])
+
+        # 🔍 DEBUG PRINT OLD SUMMARY
+        print("\n===== LAST SUMMARY DEBUG =====")
+        print(last_summary)
+        print("=============================")
+
         if last_summary:
             drift = (
                 detect_schema_drift(last_summary, summary)
