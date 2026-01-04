@@ -6,7 +6,8 @@ def analyze_csv(path: str) -> dict:
 
     summary = {
         "row_count": len(df),
-        "columns": {}
+        "columns": {},
+        "numeric": {}
     }
 
     for col in df.columns:
@@ -19,19 +20,36 @@ def analyze_csv(path: str) -> dict:
         }
 
         if pd.api.types.is_numeric_dtype(series):
-            col_info["mean"] = float(series.mean())
-            col_info["std"] = float(series.std())
-            col_info["min"] = float(series.min())
-            col_info["max"] = float(series.max())
-            col_info["top_values"] = None
+            mean = float(series.mean())
+            std = float(series.std())
+            minv = float(series.min())
+            maxv = float(series.max())
+
+            col_info.update({
+                "mean": mean,
+                "std": std,
+                "min": minv,
+                "max": maxv,
+                "top_values": None,
+            })
+
+            # 👇 This feeds the ML drift scorer
+            summary["numeric"][col] = {
+                "mean": mean,
+                "std": std,
+                "min": minv,
+                "max": maxv,
+            }
+
         else:
-            # Capture top 5 frequent values for semantic comparison
             top_vals = series.value_counts().head(5).to_dict()
-            col_info["top_values"] = top_vals
-            col_info["mean"] = None
-            col_info["std"] = None
-            col_info["min"] = None
-            col_info["max"] = None
+            col_info.update({
+                "top_values": top_vals,
+                "mean": None,
+                "std": None,
+                "min": None,
+                "max": None,
+            })
 
         summary["columns"][col] = col_info
 
