@@ -1,54 +1,50 @@
+
+
+
 import numpy as np
+
+EPS = 1e-6
 
 def extract_numeric(summary: dict):
     if not summary or "numeric" not in summary:
-        return []
+        return {}
 
-    out = []
+    out = {}
     for col, v in summary["numeric"].items():
         mean = v.get("mean")
         std = v.get("std")
-        print(f"[extract_numeric] {col}: mean={mean}, std={std}")
-        if mean is not None:
-            out.append((mean, std))
+        if mean is not None and std is not None:
+            out[col] = (float(mean), float(std))
     return out
 
 
 def compute_drift_score(old_summary: dict, new_summary: dict) -> float:
-    print("\n====== DRIFT SCORE DEBUG ======")
-    print("OLD SUMMARY numeric:", old_summary.get("numeric"))
-    print("NEW SUMMARY numeric:", new_summary.get("numeric"))
-
     old_vals = extract_numeric(old_summary)
     new_vals = extract_numeric(new_summary)
 
-    print("OLD VALS:", old_vals)
-    print("NEW VALS:", new_vals)
-
     if not old_vals or not new_vals:
-        print("❌ No numeric data extracted → returning 0")
         return 0.0
 
-    min_len = min(len(old_vals), len(new_vals))
-    old_vals = old_vals[:min_len]
-    new_vals = new_vals[:min_len]
+    common_cols = set(old_vals.keys()) & set(new_vals.keys())
+    if not common_cols:
+        return 0.0
 
     scores = []
-    for (old_mean, old_std), (new_mean, _) in zip(old_vals, new_vals):
-        if not old_std or old_std == 0:
-            print("⚠️ std is zero or missing, skipping column")
-            continue
 
-        z = abs(old_mean - new_mean) / old_std
-        print(f"Z-score = |{old_mean} - {new_mean}| / {old_std} = {z}")
-        scores.append(z)
+    for col in common_cols:
+        old_mean, old_std = old_vals[col]
+        new_mean, new_std = new_vals[col]
 
-    if not scores:
-        print("❌ No valid z-scores → returning 0")
-        return 0.0
+        denom = max(old_std, new_std, EPS)
 
-    score = float(np.mean(scores))
-    print("FINAL SCORE:", score)
-    print("===============================\n")
+        mean_shift = abs(old_mean - new_mean) / denom
+        std_shift = abs(old_std - new_std) / denom
 
-    return round(score, 4)
+        raw = (mean_shift + std_shift) / 2
+
+        # squash into [0,1] smoothly
+        normalized = 1 - np.exp(-raw)
+
+        scores.append(normalized)
+
+    return round(float(np.mean(scores)), 4)
