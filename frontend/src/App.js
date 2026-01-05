@@ -1,7 +1,6 @@
-import { useState, useEffect, useCallback, useRef } from "react";
+import { useState, useEffect, useCallback, useRef, useMemo } from "react";
 import "./App.css";
 import DriftChart from "./components/DriftChart";
-import { useMemo } from "react";
 
 const API = "http://127.0.0.1:8000";
 
@@ -33,7 +32,7 @@ function App() {
   });
   const [wsConnected, setWsConnected] = useState(false);
   const [liveUpdates, setLiveUpdates] = useState([]);
-  const [selectedDataset, setSelectedDataset] = useState("");
+  const [selectedDataset, setSelectedDataset] = useState("all");
   const [filterSeverity, setFilterSeverity] = useState("all");
 
   const wsRef = useRef(null);
@@ -229,7 +228,7 @@ function App() {
   };
 
   const predictDrift = async () => {
-    if (!selectedDataset) {
+    if (selectedDataset === "all" || !selectedDataset) {
       showNotification("Please select a specific dataset", "error");
       return;
     }
@@ -433,21 +432,21 @@ function App() {
     return matchesDataset && matchesSeverity;
   });
 
-  // Get unique datasets
+  // Get unique datasets using useMemo to prevent unnecessary re-renders
   const datasets = useMemo(() => {
     return [
-      ...new Set(
-        history
-          .map((h) => h.dataset_name?.trim())
-          .filter((name) => name && name.length > 0)
-      ),
+      "all",
+      ...new Set(history.map((h) => h.dataset_name).filter(Boolean)),
     ];
   }, [history]);
 
-  // Reset selected dataset if it no longer exists
+  // Set initial selected dataset when datasets change
   useEffect(() => {
-    if (selectedDataset && !datasets.includes(selectedDataset)) {
-      setSelectedDataset("");
+    if (
+      datasets.length > 1 &&
+      (selectedDataset === "all" || !datasets.includes(selectedDataset))
+    ) {
+      setSelectedDataset(datasets[1]); // Select first real dataset
     }
   }, [datasets, selectedDataset]);
 
@@ -661,7 +660,7 @@ function App() {
               <div className="stat-card purple">
                 <div className="stat-icon">🗂️</div>
                 <div className="stat-info">
-                  <div className="stat-value">{datasets.length}</div>
+                  <div className="stat-value">{datasets.length - 1}</div>
                   <div className="stat-label">Datasets</div>
                 </div>
               </div>
@@ -876,12 +875,13 @@ function App() {
                   onChange={(e) => setSelectedDataset(e.target.value)}
                   className="styled-input"
                 >
-                  <option value="">-- Select dataset --</option>
-                  {datasets.map((ds) => (
-                    <option key={ds} value={ds}>
-                      {ds}
-                    </option>
-                  ))}
+                  {datasets
+                    .filter((d) => d !== "all")
+                    .map((ds) => (
+                      <option key={ds} value={ds}>
+                        {ds}
+                      </option>
+                    ))}
                 </select>
               </div>
 

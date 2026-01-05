@@ -491,6 +491,7 @@ async def websocket_endpoint(websocket: WebSocket):
 def history(user: str = Depends(get_current_user)):
     return list_snapshots(user)
 
+
 @app.get("/snapshot/{snap_id}")
 def snapshot_details(snap_id: str, user: str = Depends(get_current_user)):
     snap = get_snapshot(snap_id)
