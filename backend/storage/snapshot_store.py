@@ -8,7 +8,7 @@ def save_snapshot(summary, user_email, dataset_name, drift_score, drift_severity
         summary=summary,
         user_email=user_email,
         dataset_name=dataset_name,
-        drift_score=drift_score,
+        drift_score=float(drift_score),
         drift_severity=drift_severity,
     )
     db.add(snap)
