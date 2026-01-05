@@ -1,6 +1,7 @@
-def classify_severity(score):
-    if score > 0.8:
-        return "high"
-    if score > 0.4:
+def classify_severity(score: float) -> str:
+    if score < 0.2:
+        return "low"
+    elif score < 0.4:
         return "medium"
-    return "low"
+    else:
+        return "high"
