@@ -1,7 +1,7 @@
 # backend/core/drift.py
 
 from scipy.stats import ks_2samp
-
+from backend.nlp.semantic_engine import semantic_drift_score, generate_drift_summary
 
 def detect_numeric_drift(old_col: dict, new_col: dict, threshold=0.1) -> bool:
     if old_col["mean"] is None or new_col["mean"] is None:
@@ -47,3 +47,22 @@ def detect_statistical_drift(old: dict, new: dict) -> list:
             drift.append(f"Missing rate drift in {col}")
 
     return drift
+
+
+
+def detect_semantic_drift(old_summary, new_summary):
+    old_text = old_summary.get("text_sample", [])
+    new_text = new_summary.get("text_sample", [])
+
+    if not old_text or not new_text:
+        return [], None
+
+    score = semantic_drift_score(old_text, new_text)
+
+    explanation = generate_drift_summary(old_text, new_text) if score > 0.25 else None
+
+    drift = []
+    if score > 0.4:
+        drift.append("Significant semantic shift in textual features")
+
+    return drift, explanation, score
