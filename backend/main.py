@@ -122,10 +122,12 @@ async def analyze(
     if history:
         last_summary = load_snapshot(history[0]["id"])
         if last_summary:
+            semantic, explanation, semantic_score = detect_semantic_drift(last_summary, summary)
+            
             drift = (
                 detect_schema_drift(last_summary, summary)
                 + detect_statistical_drift(last_summary, summary)
-                + detect_semantic_drift(last_summary, summary)
+                + semantic
             )
 
             drift_score = compute_drift_score(last_summary, summary)
@@ -192,31 +194,30 @@ Drifted Features: {len([f for f in drift_by_feature.values() if f > 0.2])}
 def calculate_feature_drift(old_summary: dict, new_summary: dict) -> dict:
     drift_scores = {}
 
-    old_numeric = old_summary.get("numeric", {})
-    new_numeric = new_summary.get("numeric", {})
+    old_cols = old_summary.get("columns", {})
+    new_cols = new_summary.get("columns", {})
 
-    for feature in old_numeric.keys():
-        if feature in new_numeric:
-            old_stats = old_numeric[feature]
-            new_stats = new_numeric[feature]
+    for feature, old_stats in old_cols.items():
+        new_stats = new_cols.get(feature)
+        if not new_stats:
+            continue
 
-            old_mean = old_stats.get("mean") or 0
-            new_mean = new_stats.get("mean") or 0
-            old_std = old_stats.get("std") or 0
-            new_std = new_stats.get("std") or 0
+        old_mean = old_stats.get("mean")
+        new_mean = new_stats.get("mean")
+        old_std = old_stats.get("std")
+        new_std = new_stats.get("std")
 
-            # Prevent division explosion
-            denom = max(old_std, new_std, 1e-6)
+        if old_mean is None or new_mean is None:
+            continue
 
-            mean_shift = abs(new_mean - old_mean) / denom
-            std_shift = abs(new_std - old_std) / denom
+        denom = max(old_std or 0, new_std or 0, 1e-6)
+        mean_shift = abs(new_mean - old_mean) / denom
+        std_shift = abs((new_std or 0) - (old_std or 0)) / denom
 
-            raw_score = (mean_shift + std_shift) / 2
-
-            # Smooth and cap
-            drift_scores[feature] = round(min(raw_score, 1.0), 4)
+        drift_scores[feature] = round(min((mean_shift + std_shift) / 2, 1.0), 4)
 
     return drift_scores
+
 
 
 def predict_model_impact(drift_score: float, drift_by_feature: dict) -> dict:
@@ -530,21 +531,26 @@ def compare(
     if sa.user_email != user or sb.user_email != user:
         raise HTTPException(status_code=403, detail="Unauthorized")
 
+    semantic, explanation, semantic_score = detect_semantic_drift(sa.summary, sb.summary)
+
     return {
         "statistical_drift": detect_statistical_drift(sa.summary, sb.summary),
         "schema_drift": detect_schema_drift(sa.summary, sb.summary),
-        "semantic_drift": detect_semantic_drift(sa.summary, sb.summary),
+        "semantic_drift": semantic,
+        "semantic_score": semantic_score,
+        "semantic_explanation": explanation,
         "drift_score": float(compute_drift_score(sa.summary, sb.summary)),
     }
 
+
 @app.get("/metrics/{snap_id}")
-def metrics(snap_id: str, user=Depends(get_current_user)):
+def metrics(snap_id: str, user: str = Depends(get_current_user)):  # Added type annotation
     snap = get_snapshot(snap_id)
     if not snap or snap.user_email != user:
         raise HTTPException(status_code=404, detail="Snapshot not found")
 
     summary = snap.summary or {}
-    numeric = summary.get("numeric", {})
+    numeric = summary.get("columns", {})
 
     return [
         {
@@ -555,12 +561,13 @@ def metrics(snap_id: str, user=Depends(get_current_user)):
             "max": stats.get("max"),
         }
         for col, stats in numeric.items()
+        if stats.get("mean") is not None
     ]
 
-@app.get("/trends")
-def trends(user=Depends(get_current_user)):
-    return list_snapshots(user)
 
+@app.get("/trends")
+def trends(user: str = Depends(get_current_user)):  # Added type annotation
+    return list_snapshots(user)
 @app.get("/report/{snap_id}")
 def download_report(
     snap_id: str,
