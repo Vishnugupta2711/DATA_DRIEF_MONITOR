@@ -1,11 +1,11 @@
 # backend/core/analyzer.py
 import pandas as pd
+from backend.nlp.semantic_engine import semantic_drift_score, generate_drift_summary
 
 def analyze_csv(path: str) -> dict:
     df = pd.read_csv(path)
 
     summary = {
-        "row_count": len(df),
         "columns": {},
         "numeric": {}
     }
@@ -20,31 +20,21 @@ def analyze_csv(path: str) -> dict:
         }
 
         if pd.api.types.is_numeric_dtype(series):
-            mean = float(series.mean())
-            std = float(series.std())
-            minv = float(series.min())
-            maxv = float(series.max())
-
             col_info.update({
-                "mean": mean,
-                "std": std,
-                "min": minv,
-                "max": maxv,
-                "top_values": None,
+                "mean": float(series.mean()),
+                "std": float(series.std()),
+                "min": float(series.min()),
+                "max": float(series.max()),
             })
 
-            # 👇 This feeds the ML drift scorer
             summary["numeric"][col] = {
-                "mean": mean,
-                "std": std,
-                "min": minv,
-                "max": maxv,
+                "mean": col_info["mean"],
+                "std": col_info["std"],
+                "min": col_info["min"],
+                "max": col_info["max"],
             }
-
         else:
-            top_vals = series.value_counts().head(5).to_dict()
             col_info.update({
-                "top_values": top_vals,
                 "mean": None,
                 "std": None,
                 "min": None,
@@ -54,3 +44,10 @@ def analyze_csv(path: str) -> dict:
         summary["columns"][col] = col_info
 
     return summary
+
+def extract_text_columns(df):
+    texts = []
+    for col in df.columns:
+        if df[col].dtype == "object":
+            texts.extend(df[col].dropna().astype(str).tolist())
+    return texts
