@@ -1707,3 +1707,21 @@ body {
     border: 1px solid #ddd;
   }
 }
+
+.drift-low {
+  background: rgba(34,197,94,0.15);
+  color: #22c55e;
+  border: 1px solid #22c55e55;
+}
+
+.drift-medium {
+  background: rgba(251,191,36,0.15);
+  color: #fbbf24;
+  border: 1px solid #fbbf2455;
+}
+
+.drift-high {
+  background: rgba(239,68,68,0.15);
+  color: #ef4444;
+  border: 1px solid #ef444455;
+}

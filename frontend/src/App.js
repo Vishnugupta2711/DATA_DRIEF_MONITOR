@@ -32,7 +32,7 @@ function App() {
   });
   const [wsConnected, setWsConnected] = useState(false);
   const [liveUpdates, setLiveUpdates] = useState([]);
-  const [selectedDataset, setSelectedDataset] = useState("all");
+  const [selectedDataset, setSelectedDataset] = useState("");
   const [filterSeverity, setFilterSeverity] = useState("all");
 
   const wsRef = useRef(null);
@@ -52,7 +52,7 @@ function App() {
     .reverse()
     .map((h) => h.drift_score || 0);
 
-  // WebSocket Connection
+  // WebSocket Connection - Fixed for stability
   useEffect(() => {
     if (!token) return;
 
@@ -72,7 +72,7 @@ function App() {
           showNotification(`New snapshot: ${data.data.dataset_name}`, "info");
           fetchHistory();
         } else if (data.type === "heartbeat") {
-          ws.send("ping");
+          // Optional keep-alive, no need to respond unless backend requires
         }
       };
 
@@ -80,6 +80,10 @@ function App() {
         console.log("WebSocket disconnected");
         setWsConnected(false);
         setTimeout(connectWebSocket, 5000);
+      };
+
+      ws.onerror = (error) => {
+        console.error("WebSocket error:", error);
       };
 
       wsRef.current = ws;
@@ -228,22 +232,21 @@ function App() {
   };
 
   const predictDrift = async () => {
-    if (selectedDataset === "all" || !selectedDataset) {
+    if (!selectedDataset || selectedDataset === "all") {
       showNotification("Please select a specific dataset", "error");
       return;
     }
 
     setIsLoading(true);
     try {
-      const res = await fetch(
-        `${API}/predict-drift?dataset_name=${encodeURIComponent(
-          selectedDataset
-        )}`,
-        {
-          method: "POST",
-          headers: { Authorization: `Bearer ${token}` },
-        }
-      );
+      const res = await fetch(`${API}/predict-drift`, {
+        method: "POST",
+        headers: {
+          Authorization: `Bearer ${token}`,
+          "Content-Type": "application/json",
+        },
+        body: JSON.stringify({ dataset_name: selectedDataset }),
+      });
 
       if (!res.ok) {
         const error = await res.json();
@@ -421,32 +424,38 @@ function App() {
     setFeatureImportance(null);
     setRemediation(null);
     setAlerts([]);
+    setLiveUpdates([]);
   };
 
   // Filter history
   const filteredHistory = history.filter((h) => {
     const matchesDataset =
-      selectedDataset === "all" || h.dataset_name === selectedDataset;
+      selectedDataset === "all" ||
+      selectedDataset === "" ||
+      h.dataset_name === selectedDataset;
     const matchesSeverity =
       filterSeverity === "all" || h.drift_severity === filterSeverity;
     return matchesDataset && matchesSeverity;
   });
 
-  // Get unique datasets using useMemo to prevent unnecessary re-renders
+  // Get unique datasets with proper filtering
   const datasets = useMemo(() => {
-    return [
-      "all",
-      ...new Set(history.map((h) => h.dataset_name).filter(Boolean)),
+    const uniqueDatasets = [
+      ...new Set(
+        history.map((h) => h.dataset_name?.trim()).filter(Boolean)
+      ),
     ];
+    return uniqueDatasets;
   }, [history]);
 
-  // Set initial selected dataset when datasets change
+  // Dataset initialization logic with edge case handling
   useEffect(() => {
-    if (
-      datasets.length > 1 &&
-      (selectedDataset === "all" || !datasets.includes(selectedDataset))
-    ) {
-      setSelectedDataset(datasets[1]); // Select first real dataset
+    if (datasets.length > 0 && !selectedDataset) {
+      setSelectedDataset(datasets[0]);
+    } else if (datasets.length === 0) {
+      setSelectedDataset("");
+    } else if (selectedDataset && !datasets.includes(selectedDataset)) {
+      setSelectedDataset(datasets[0]);
     }
   }, [datasets, selectedDataset]);
 
@@ -660,7 +669,7 @@ function App() {
               <div className="stat-card purple">
                 <div className="stat-icon">🗂️</div>
                 <div className="stat-info">
-                  <div className="stat-value">{datasets.length - 1}</div>
+                  <div className="stat-value">{datasets.length}</div>
                   <div className="stat-label">Datasets</div>
                 </div>
               </div>
@@ -862,7 +871,7 @@ function App() {
               <button
                 className="primary-btn"
                 onClick={predictDrift}
-                disabled={isLoading}
+                disabled={isLoading || !selectedDataset}
               >
                 {isLoading ? "Predicting..." : "Generate Prediction"}
               </button>
@@ -875,13 +884,15 @@ function App() {
                   onChange={(e) => setSelectedDataset(e.target.value)}
                   className="styled-input"
                 >
-                  {datasets
-                    .filter((d) => d !== "all")
-                    .map((ds) => (
+                  {datasets.length === 0 ? (
+                    <option value="">No datasets available</option>
+                  ) : (
+                    datasets.map((ds) => (
                       <option key={ds} value={ds}>
                         {ds}
                       </option>
-                    ))}
+                    ))
+                  )}
                 </select>
               </div>
 
@@ -1290,7 +1301,7 @@ function App() {
           </div>
         )}
 
-        {/* Comparison Result */}
+        {/* ✅ FIXED: Comparison Result with Proper Semantic Drift Rendering */}
         {compareResult && (
           <div className="card comparison-card">
             <div className="card-header">
@@ -1304,6 +1315,27 @@ function App() {
             </div>
             <div className="card-content">
               <div className="comparison-summary">
+                {/* Overall Drift Score */}
+                {compareResult.drift_score !== undefined && (
+                  <div className="drift-score-box">
+                    <strong>Overall Drift Score:</strong>
+                    <span className="score-value">
+                      {(compareResult.drift_score * 100).toFixed(1)}%
+                    </span>
+                  </div>
+                )}
+
+                {/* Semantic Score */}
+                {compareResult.semantic_score !== undefined && (
+                  <div className="drift-score-box">
+                    <strong>Semantic Drift Score:</strong>
+                    <span className="score-value">
+                      {(compareResult.semantic_score * 100).toFixed(1)}%
+                    </span>
+                  </div>
+                )}
+
+                {/* Statistical Drift */}
                 {compareResult.statistical_drift &&
                   compareResult.statistical_drift.length > 0 && (
                     <div className="drift-section">
@@ -1318,6 +1350,7 @@ function App() {
                     </div>
                   )}
 
+                {/* Schema Changes */}
                 {compareResult.schema_drift &&
                   compareResult.schema_drift.length > 0 && (
                     <div className="drift-section">
@@ -1332,6 +1365,7 @@ function App() {
                     </div>
                   )}
 
+                {/* ✅ FIXED: Semantic Drift with Object Rendering */}
                 {compareResult.semantic_drift &&
                   compareResult.semantic_drift.length > 0 && (
                     <div className="drift-section">
@@ -1339,21 +1373,65 @@ function App() {
                       <div className="drift-tags">
                         {compareResult.semantic_drift.map((drift, i) => (
                           <span key={i} className="drift-tag semantic">
-                            {drift}
+                            {typeof drift === "object" ? (
+                              <>
+                                {drift.type === "column_renamed_or_missing" && (
+                                  <>
+                                    🔁 Column <strong>{drift.old_column}</strong>{" "}
+                                    renamed/missing →{" "}
+                                    <strong>{drift.best_match || "none"}</strong> (
+                                    {((drift.similarity || 0) * 100).toFixed(0)}
+                                    %)
+                                  </>
+                                )}
+
+                                {drift.type === "type_changed" && (
+                                  <>
+                                    🔄 Type change in{" "}
+                                    <strong>{drift.column}</strong>:{" "}
+                                    {drift.old_type} → {drift.new_type}
+                                  </>
+                                )}
+
+                                {drift.type === "categorical_shift" && (
+                                  <>
+                                    📊 Categorical shift in{" "}
+                                    <strong>{drift.column}</strong> (Jaccard{" "}
+                                    {(
+                                      (drift.jaccard_similarity || 0) * 100
+                                    ).toFixed(0)}
+                                    %)
+                                  </>
+                                )}
+
+                                {!drift.type && JSON.stringify(drift)}
+                              </>
+                            ) : (
+                              drift
+                            )}
                           </span>
                         ))}
                       </div>
                     </div>
                   )}
 
-                {compareResult.drift_score && (
-                  <div className="drift-score-box">
-                    <strong>Overall Drift Score:</strong>
-                    <span className="score-value">
-                      {(compareResult.drift_score * 100).toFixed(1)}%
-                    </span>
-                  </div>
-                )}
+                {/* Semantic Explanation */}
+                {compareResult.semantic_explanation &&
+                  Object.keys(compareResult.semantic_explanation).length >
+                    0 && (
+                    <div className="drift-section">
+                      <h4>🔍 Semantic Explanation</h4>
+                      <ul className="explanation-list">
+                        {Object.entries(compareResult.semantic_explanation).map(
+                          ([col, msg], i) => (
+                            <li key={i}>
+                              <strong>{col}:</strong> {msg}
+                            </li>
+                          )
+                        )}
+                      </ul>
+                    </div>
+                  )}
               </div>
             </div>
           </div>
