@@ -1,0 +1,43 @@
+.auth-navbar {
+  position: fixed;
+  top: 0;
+  left: 0;
+  height: 64px;
+  width: 100%;
+  padding: 0 32px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background: rgba(10, 15, 30, 0.85);
+  backdrop-filter: blur(10px);
+  border-bottom: 1px solid rgba(255, 255, 255, 0.08);
+  z-index: 50;
+}
+
+.auth-navbar-left {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  color: #e5e7eb;
+}
+
+.brand-text {
+  font-size: 18px;
+  font-weight: 600;
+}
+
+.auth-navbar-right {
+  display: flex;
+  gap: 20px;
+}
+
+.auth-navbar-right a {
+  color: #9ca3af;
+  text-decoration: none;
+  font-size: 14px;
+  transition: color 0.2s ease;
+}
+
+.auth-navbar-right a:hover {
+  color: #e5e7eb;
+}
