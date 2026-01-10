@@ -1,6 +1,7 @@
 import { useState, useEffect, useCallback, useRef, useMemo } from "react";
 import "./App.css";
 import DriftChart from "./components/DriftChart";
+import AuthNavbar from "./components/AuthNavbar";
 
 const API = "http://127.0.0.1:8000";
 
@@ -641,44 +642,79 @@ function App() {
   }, [datasets, selectedDataset]);
 
   if (!token) {
-    return (
-      <div className="auth-container">
-        <div className="animated-bg">
-          <div className="gradient-orb orb-1"></div>
-          <div className="gradient-orb orb-2"></div>
-          <div className="gradient-orb orb-3"></div>
+  return (
+    <div className="auth-container">
+      {/* Navbar */}
+      <div className="auth-navbar">
+        <div className="auth-navbar-left">
+          <div className="navbar-logo">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor">
+              <path
+                d="M9 19v-6a2 2 0 00-2-2H5a2 2 0 00-2 2v6a2 2 0 002 2h2a2 2 0 002-2zm0 0V9a2 2 0 012-2h2a2 2 0 012 2v10m-6 0a2 2 0 002 2h2a2 2 0 002-2m0 0V5a2 2 0 012-2h2a2 2 0 012 2v14a2 2 0 01-2 2h-2a2 2 0 01-2-2z"
+                strokeWidth="2"
+              />
+            </svg>
+          </div>
+          <span className="navbar-title">Data Drift Monitor Pro</span>
         </div>
-        <div className="auth-card">
-          <div className="logo-container">
-            <div className="logo-icon">
-              <div className="pulse-ring"></div>
-              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor">
-                <path
-                  d="M9 19v-6a2 2 0 00-2-2H5a2 2 0 00-2 2v6a2 2 0 002 2h2a2 2 0 002-2zm0 0V9a2 2 0 012-2h2a2 2 0 012 2v10m-6 0a2 2 0 002 2h2a2 2 0 002-2m0 0V5a2 2 0 012-2h2a2 2 0 012 2v14a2 2 0 01-2 2h-2a2 2 0 01-2-2z"
-                  strokeWidth="2"
-                  strokeLinecap="round"
-                  strokeLinejoin="round"
-                />
-              </svg>
-            </div>
-            <h1>Data Drift Monitor Pro</h1>
-            <p className="subtitle">AI-powered ML monitoring v2.0</p>
-          </div>
 
-          <div className="auth-tabs">
-            <button
-              className={mode === "login" ? "active" : ""}
-              onClick={() => setMode("login")}
-            >
-              Login
-            </button>
-            <button
-              className={mode === "signup" ? "active" : ""}
-              onClick={() => setMode("signup")}
-            >
-              Signup
-            </button>
+        <div className="auth-navbar-right">
+          <button
+            className={mode === "login" ? "active" : ""}
+            onClick={() => setMode("login")}
+          >
+            Login
+          </button>
+          <button
+            className={mode === "signup" ? "active" : ""}
+            onClick={() => setMode("signup")}
+          >
+            Signup
+          </button>
+        </div>
+      </div>
+
+      {/* Background */}
+      <div className="animated-bg">
+        <div className="gradient-orb orb-1"></div>
+        <div className="gradient-orb orb-2"></div>
+        <div className="gradient-orb orb-3"></div>
+      </div>
+
+      {/* Auth Card */}
+      <div className="auth-card">
+        <div className="logo-container">
+          <div className="logo-icon">
+            <div className="pulse-ring"></div>
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor">
+              <path
+                d="M9 19v-6a2 2 0 00-2-2H5a2 2 0 00-2 2v6a2 2 0 002 2h2a2 2 0 002-2zm0 0V9a2 2 0 012-2h2a2 2 0 012 2v10m-6 0a2 2 0 002 2h2a2 2 0 002-2m0 0V5a2 2 0 012-2h2a2 2 0 012 2v14a2 2 0 01-2 2h-2a2 2 0 01-2-2z"
+                strokeWidth="2"
+                strokeLinecap="round"
+                strokeLinejoin="round"
+              />
+            </svg>
           </div>
+          <h1>Data Drift Monitor Pro</h1>
+          <p className="subtitle">AI-powered ML monitoring</p>
+        </div>
+
+        {/* Login / Signup Tabs */}
+        <div className="auth-tabs">
+          <button
+            className={mode === "login" ? "active" : ""}
+            onClick={() => setMode("login")}
+          >
+            Login
+          </button>
+          <button
+            className={mode === "signup" ? "active" : ""}
+            onClick={() => setMode("signup")}
+          >
+            Signup
+          </button>
+        </div>
+
 
           <div className="input-group">
             <input
@@ -753,7 +789,7 @@ function App() {
               />
             </svg>
           </div>
-          <h1>Drift Monitor Pro v2.0</h1>
+          <h1>Drift Monitor Pro</h1>
           {wsConnected && <span className="ws-status">🟢 Live</span>}
           {healthStatus && (
             <span

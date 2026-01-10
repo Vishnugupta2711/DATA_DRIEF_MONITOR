@@ -1725,3 +1725,52 @@ body {
   color: #ef4444;
   border: 1px solid #ef444455;
 }
+.with-navbar {
+  padding-top: 80px;
+}
+.auth-navbar {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  height: 64px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0 32px;
+  background: rgba(15, 23, 42, 0.9);
+  backdrop-filter: blur(12px);
+  border-bottom: 1px solid rgba(255, 255, 255, 0.05);
+  z-index: 50;
+}
+
+.auth-navbar-left {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+}
+
+.navbar-logo {
+  width: 28px;
+  height: 28px;
+  color: #8b5cf6;
+}
+
+.navbar-title {
+  font-weight: 600;
+  color: #e5e7eb;
+}
+
+.auth-navbar-right button {
+  background: transparent;
+  border: none;
+  color: #9ca3af;
+  font-size: 14px;
+  padding: 6px 12px;
+  cursor: pointer;
+}
+
+.auth-navbar-right button.active {
+  color: #fff;
+  border-bottom: 2px solid #8b5cf6;
+}
