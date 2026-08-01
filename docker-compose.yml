@@ -1,0 +1,47 @@
+version: "3.9"
+
+services:
+
+  backend:
+    build: ./backend
+    container_name: drift-backend
+    ports:
+      - "8000:8000"
+    env_file:
+      - .env
+    volumes:
+      - ./logs:/app/logs
+      - ./snapshots:/app/snapshots
+      - ./data:/app/data
+    depends_on:
+      - db
+      - redis
+    restart: always
+
+  frontend:
+    build: ./frontend
+    container_name: drift-frontend
+    ports:
+      - "3000:80"
+    depends_on:
+      - backend
+    restart: always
+
+  db:
+    image: postgres:15
+    container_name: drift-db
+    environment:
+      POSTGRES_USER: driftuser
+      POSTGRES_PASSWORD: driftpass
+      POSTGRES_DB: driftdb
+    volumes:
+      - postgres_data:/var/lib/postgresql/data
+    restart: always
+
+  redis:
+    image: redis:7
+    container_name: drift-redis
+    restart: always
+
+volumes:
+  postgres_data:
