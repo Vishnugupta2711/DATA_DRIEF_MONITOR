@@ -1,0 +1,8 @@
+__pycache__
+*.pyc
+*.pyo
+*.pyd
+.env.dev
+node_modules
+.git
+.gitignore
