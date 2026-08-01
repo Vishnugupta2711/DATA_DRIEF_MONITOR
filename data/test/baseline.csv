@@ -1,0 +1,501 @@
+FeatureID,FeatureName,FeatureDescription,Team,IssueID,Status,ChangedAt,AssignedTo,Priority
+GWATCH_FTR_001,Feature 1,Standard feature behavior,UI/UX Team,ISSUE_0001,Open,6/01/24 0:00,jordan,Medium
+GWATCH_FTR_002,Feature 2,Standard feature behavior,UI/UX Team,ISSUE_0002,Review,4/01/24 0:00,lee,High
+GWATCH_FTR_003,Feature 3,Standard feature behavior,UI/UX Team,ISSUE_0003,In Progress,14/01/24 0:00,sam,Low
+GWATCH_FTR_004,Feature 4,Standard feature behavior,UI/UX Team,ISSUE_0004,In Progress,15/01/24 0:00,lee,Medium
+GWATCH_FTR_005,Feature 5,Standard feature behavior,ML Team,ISSUE_0005,Open,11/01/24 0:00,lee,Low
+GWATCH_FTR_006,Feature 6,Standard feature behavior,Sensor Team,ISSUE_0006,In Progress,26/01/24 0:00,jordan,Medium
+GWATCH_FTR_007,Feature 7,Standard feature behavior,Sensor Team,ISSUE_0007,Review,4/01/24 0:00,jordan,Medium
+GWATCH_FTR_008,Feature 8,Standard feature behavior,UI/UX Team,ISSUE_0008,Open,13/01/24 0:00,lee,High
+GWATCH_FTR_009,Feature 9,Standard feature behavior,ML Team,ISSUE_0009,In Progress,15/01/24 0:00,lee,Medium
+GWATCH_FTR_010,Feature 10,Standard feature behavior,Sensor Team,ISSUE_0010,In Progress,14/01/24 0:00,lee,Medium
+GWATCH_FTR_011,Feature 11,Standard feature behavior,ML Team,ISSUE_0011,Open,13/01/24 0:00,lee,High
+GWATCH_FTR_012,Feature 12,Standard feature behavior,Sensor Team,ISSUE_0012,In Progress,1/01/24 0:00,lee,Medium
+GWATCH_FTR_013,Feature 13,Standard feature behavior,UI/UX Team,ISSUE_0013,In Progress,5/01/24 0:00,lee,Medium
+GWATCH_FTR_014,Feature 14,Standard feature behavior,UI/UX Team,ISSUE_0014,Open,18/01/24 0:00,jordan,Low
+GWATCH_FTR_015,Feature 15,Standard feature behavior,Sensor Team,ISSUE_0015,In Progress,10/01/24 0:00,sam,Medium
+GWATCH_FTR_016,Feature 16,Standard feature behavior,UI/UX Team,ISSUE_0016,Open,7/01/24 0:00,jordan,Low
+GWATCH_FTR_017,Feature 17,Standard feature behavior,Sensor Team,ISSUE_0017,Resolved,27/01/24 0:00,sam,Medium
+GWATCH_FTR_018,Feature 18,Standard feature behavior,UI/UX Team,ISSUE_0018,Open,9/01/24 0:00,sam,Medium
+GWATCH_FTR_019,Feature 19,Standard feature behavior,Sensor Team,ISSUE_0019,In Progress,26/01/24 0:00,mira,Low
+GWATCH_FTR_020,Feature 20,Standard feature behavior,ML Team,ISSUE_0020,Open,20/01/24 0:00,lee,Medium
+GWATCH_FTR_021,Feature 21,Standard feature behavior,Sensor Team,ISSUE_0021,Resolved,27/01/24 0:00,mira,High
+GWATCH_FTR_022,Feature 22,Standard feature behavior,UI/UX Team,ISSUE_0022,In Progress,4/01/24 0:00,sam,High
+GWATCH_FTR_023,Feature 23,Standard feature behavior,ML Team,ISSUE_0023,Open,20/01/24 0:00,jordan,High
+GWATCH_FTR_024,Feature 24,Standard feature behavior,Sensor Team,ISSUE_0024,In Progress,16/01/24 0:00,sam,High
+GWATCH_FTR_025,Feature 25,Standard feature behavior,Sensor Team,ISSUE_0025,Open,20/01/24 0:00,lee,Low
+GWATCH_FTR_026,Feature 26,Standard feature behavior,UI/UX Team,ISSUE_0026,Open,27/01/24 0:00,lee,Medium
+GWATCH_FTR_027,Feature 27,Standard feature behavior,Sensor Team,ISSUE_0027,In Progress,13/01/24 0:00,mira,Medium
+GWATCH_FTR_028,Feature 28,Standard feature behavior,Sensor Team,ISSUE_0028,In Progress,9/01/24 0:00,mira,Medium
+GWATCH_FTR_029,Feature 29,Standard feature behavior,UI/UX Team,ISSUE_0029,Resolved,6/01/24 0:00,sam,Low
+GWATCH_FTR_030,Feature 30,Standard feature behavior,Sensor Team,ISSUE_0030,In Progress,5/01/24 0:00,jordan,Low
+GWATCH_FTR_031,Feature 31,Standard feature behavior,UI/UX Team,ISSUE_0031,Review,11/01/24 0:00,mira,High
+GWATCH_FTR_032,Feature 32,Standard feature behavior,Sensor Team,ISSUE_0032,Open,12/01/24 0:00,lee,Medium
+GWATCH_FTR_033,Feature 33,Standard feature behavior,ML Team,ISSUE_0033,Resolved,6/01/24 0:00,jordan,Medium
+GWATCH_FTR_034,Feature 34,Standard feature behavior,UI/UX Team,ISSUE_0034,Resolved,10/01/24 0:00,mira,Medium
+GWATCH_FTR_035,Feature 35,Standard feature behavior,ML Team,ISSUE_0035,Review,12/01/24 0:00,lee,High
+GWATCH_FTR_036,Feature 36,Standard feature behavior,UI/UX Team,ISSUE_0036,Review,22/01/24 0:00,lee,Medium
+GWATCH_FTR_037,Feature 37,Standard feature behavior,UI/UX Team,ISSUE_0037,Review,17/01/24 0:00,sam,Low
+GWATCH_FTR_038,Feature 38,Standard feature behavior,Sensor Team,ISSUE_0038,Resolved,23/01/24 0:00,lee,Low
+GWATCH_FTR_039,Feature 39,Standard feature behavior,Sensor Team,ISSUE_0039,Resolved,22/01/24 0:00,mira,High
+GWATCH_FTR_040,Feature 40,Standard feature behavior,UI/UX Team,ISSUE_0040,Open,5/01/24 0:00,mira,High
+GWATCH_FTR_041,Feature 41,Standard feature behavior,UI/UX Team,ISSUE_0041,In Progress,11/01/24 0:00,lee,Low
+GWATCH_FTR_042,Feature 42,Standard feature behavior,Sensor Team,ISSUE_0042,Resolved,11/01/24 0:00,lee,High
+GWATCH_FTR_043,Feature 43,Standard feature behavior,UI/UX Team,ISSUE_0043,Resolved,3/01/24 0:00,lee,Medium
+GWATCH_FTR_044,Feature 44,Standard feature behavior,ML Team,ISSUE_0044,Resolved,28/01/24 0:00,sam,Low
+GWATCH_FTR_045,Feature 45,Standard feature behavior,ML Team,ISSUE_0045,In Progress,24/01/24 0:00,mira,Low
+GWATCH_FTR_046,Feature 46,Standard feature behavior,ML Team,ISSUE_0046,Resolved,1/01/24 0:00,jordan,Low
+GWATCH_FTR_047,Feature 47,Standard feature behavior,UI/UX Team,ISSUE_0047,In Progress,14/01/24 0:00,sam,High
+GWATCH_FTR_048,Feature 48,Standard feature behavior,Sensor Team,ISSUE_0048,Review,22/01/24 0:00,lee,High
+GWATCH_FTR_049,Feature 49,Standard feature behavior,Sensor Team,ISSUE_0049,Review,17/01/24 0:00,sam,High
+GWATCH_FTR_050,Feature 50,Standard feature behavior,Sensor Team,ISSUE_0050,Review,12/01/24 0:00,lee,Low
+GWATCH_FTR_051,Feature 51,Standard feature behavior,ML Team,ISSUE_0051,Review,11/01/24 0:00,jordan,High
+GWATCH_FTR_052,Feature 52,Standard feature behavior,UI/UX Team,ISSUE_0052,Review,20/01/24 0:00,jordan,High
+GWATCH_FTR_053,Feature 53,Standard feature behavior,Sensor Team,ISSUE_0053,In Progress,26/01/24 0:00,mira,Low
+GWATCH_FTR_054,Feature 54,Standard feature behavior,UI/UX Team,ISSUE_0054,Resolved,2/01/24 0:00,mira,Low
+GWATCH_FTR_055,Feature 55,Standard feature behavior,UI/UX Team,ISSUE_0055,Resolved,18/01/24 0:00,sam,High
+GWATCH_FTR_056,Feature 56,Standard feature behavior,UI/UX Team,ISSUE_0056,Resolved,26/01/24 0:00,lee,High
+GWATCH_FTR_057,Feature 57,Standard feature behavior,ML Team,ISSUE_0057,Review,13/01/24 0:00,lee,High
+GWATCH_FTR_058,Feature 58,Standard feature behavior,ML Team,ISSUE_0058,Open,5/01/24 0:00,sam,Low
+GWATCH_FTR_059,Feature 59,Standard feature behavior,Sensor Team,ISSUE_0059,Open,27/01/24 0:00,jordan,Medium
+GWATCH_FTR_060,Feature 60,Standard feature behavior,UI/UX Team,ISSUE_0060,In Progress,8/01/24 0:00,sam,Medium
+GWATCH_FTR_061,Feature 61,Standard feature behavior,ML Team,ISSUE_0061,Open,25/01/24 0:00,sam,Low
+GWATCH_FTR_062,Feature 62,Standard feature behavior,ML Team,ISSUE_0062,In Progress,16/01/24 0:00,sam,High
+GWATCH_FTR_063,Feature 63,Standard feature behavior,UI/UX Team,ISSUE_0063,In Progress,24/01/24 0:00,mira,Low
+GWATCH_FTR_064,Feature 64,Standard feature behavior,ML Team,ISSUE_0064,In Progress,28/01/24 0:00,sam,Low
+GWATCH_FTR_065,Feature 65,Standard feature behavior,UI/UX Team,ISSUE_0065,Review,26/01/24 0:00,sam,Low
+GWATCH_FTR_066,Feature 66,Standard feature behavior,Sensor Team,ISSUE_0066,In Progress,3/01/24 0:00,mira,High
+GWATCH_FTR_067,Feature 67,Standard feature behavior,ML Team,ISSUE_0067,In Progress,25/01/24 0:00,lee,High
+GWATCH_FTR_068,Feature 68,Standard feature behavior,Sensor Team,ISSUE_0068,Open,8/01/24 0:00,mira,Low
+GWATCH_FTR_069,Feature 69,Standard feature behavior,Sensor Team,ISSUE_0069,Review,27/01/24 0:00,lee,Low
+GWATCH_FTR_070,Feature 70,Standard feature behavior,ML Team,ISSUE_0070,Resolved,14/01/24 0:00,jordan,High
+GWATCH_FTR_071,Feature 71,Standard feature behavior,Sensor Team,ISSUE_0071,In Progress,27/01/24 0:00,mira,High
+GWATCH_FTR_072,Feature 72,Standard feature behavior,ML Team,ISSUE_0072,Review,10/01/24 0:00,sam,Medium
+GWATCH_FTR_073,Feature 73,Standard feature behavior,ML Team,ISSUE_0073,Resolved,10/01/24 0:00,jordan,Low
+GWATCH_FTR_074,Feature 74,Standard feature behavior,Sensor Team,ISSUE_0074,Open,4/01/24 0:00,lee,Medium
+GWATCH_FTR_075,Feature 75,Standard feature behavior,Sensor Team,ISSUE_0075,Resolved,12/01/24 0:00,jordan,High
+GWATCH_FTR_076,Feature 76,Standard feature behavior,UI/UX Team,ISSUE_0076,Open,7/01/24 0:00,jordan,High
+GWATCH_FTR_077,Feature 77,Standard feature behavior,ML Team,ISSUE_0077,In Progress,14/01/24 0:00,lee,High
+GWATCH_FTR_078,Feature 78,Standard feature behavior,ML Team,ISSUE_0078,Open,10/01/24 0:00,jordan,High
+GWATCH_FTR_079,Feature 79,Standard feature behavior,ML Team,ISSUE_0079,Resolved,27/01/24 0:00,jordan,Medium
+GWATCH_FTR_080,Feature 80,Standard feature behavior,UI/UX Team,ISSUE_0080,In Progress,23/01/24 0:00,sam,Low
+GWATCH_FTR_081,Feature 81,Standard feature behavior,UI/UX Team,ISSUE_0081,Open,21/01/24 0:00,sam,Medium
+GWATCH_FTR_082,Feature 82,Standard feature behavior,ML Team,ISSUE_0082,Open,3/01/24 0:00,mira,High
+GWATCH_FTR_083,Feature 83,Standard feature behavior,ML Team,ISSUE_0083,Review,11/01/24 0:00,lee,Low
+GWATCH_FTR_084,Feature 84,Standard feature behavior,ML Team,ISSUE_0084,Open,15/01/24 0:00,mira,Medium
+GWATCH_FTR_085,Feature 85,Standard feature behavior,Sensor Team,ISSUE_0085,Resolved,4/01/24 0:00,lee,High
+GWATCH_FTR_086,Feature 86,Standard feature behavior,UI/UX Team,ISSUE_0086,In Progress,3/01/24 0:00,jordan,Low
+GWATCH_FTR_087,Feature 87,Standard feature behavior,UI/UX Team,ISSUE_0087,Open,14/01/24 0:00,mira,Low
+GWATCH_FTR_088,Feature 88,Standard feature behavior,Sensor Team,ISSUE_0088,Open,7/01/24 0:00,sam,Medium
+GWATCH_FTR_089,Feature 89,Standard feature behavior,UI/UX Team,ISSUE_0089,Resolved,1/01/24 0:00,mira,Low
+GWATCH_FTR_090,Feature 90,Standard feature behavior,UI/UX Team,ISSUE_0090,In Progress,22/01/24 0:00,sam,Medium
+GWATCH_FTR_091,Feature 91,Standard feature behavior,Sensor Team,ISSUE_0091,Open,23/01/24 0:00,jordan,Low
+GWATCH_FTR_092,Feature 92,Standard feature behavior,ML Team,ISSUE_0092,Open,7/01/24 0:00,sam,Low
+GWATCH_FTR_093,Feature 93,Standard feature behavior,ML Team,ISSUE_0093,Review,15/01/24 0:00,mira,Low
+GWATCH_FTR_094,Feature 94,Standard feature behavior,UI/UX Team,ISSUE_0094,Open,25/01/24 0:00,mira,Medium
+GWATCH_FTR_095,Feature 95,Standard feature behavior,UI/UX Team,ISSUE_0095,Open,21/01/24 0:00,lee,High
+GWATCH_FTR_096,Feature 96,Standard feature behavior,UI/UX Team,ISSUE_0096,Review,8/01/24 0:00,jordan,Low
+GWATCH_FTR_097,Feature 97,Standard feature behavior,UI/UX Team,ISSUE_0097,Resolved,7/01/24 0:00,lee,Low
+GWATCH_FTR_098,Feature 98,Standard feature behavior,ML Team,ISSUE_0098,In Progress,15/01/24 0:00,lee,High
+GWATCH_FTR_099,Feature 99,Standard feature behavior,UI/UX Team,ISSUE_0099,Resolved,23/01/24 0:00,mira,High
+GWATCH_FTR_100,Feature 100,Standard feature behavior,UI/UX Team,ISSUE_0100,Resolved,13/01/24 0:00,sam,High
+GWATCH_FTR_101,Feature 101,Standard feature behavior,UI/UX Team,ISSUE_0101,Review,23/01/24 0:00,sam,Low
+GWATCH_FTR_102,Feature 102,Standard feature behavior,Sensor Team,ISSUE_0102,Resolved,21/01/24 0:00,jordan,High
+GWATCH_FTR_103,Feature 103,Standard feature behavior,Sensor Team,ISSUE_0103,Review,16/01/24 0:00,mira,Low
+GWATCH_FTR_104,Feature 104,Standard feature behavior,Sensor Team,ISSUE_0104,Review,21/01/24 0:00,lee,Medium
+GWATCH_FTR_105,Feature 105,Standard feature behavior,UI/UX Team,ISSUE_0105,Review,11/01/24 0:00,jordan,Low
+GWATCH_FTR_106,Feature 106,Standard feature behavior,UI/UX Team,ISSUE_0106,Review,19/01/24 0:00,lee,Medium
+GWATCH_FTR_107,Feature 107,Standard feature behavior,Sensor Team,ISSUE_0107,Resolved,16/01/24 0:00,jordan,Low
+GWATCH_FTR_108,Feature 108,Standard feature behavior,UI/UX Team,ISSUE_0108,Review,4/01/24 0:00,jordan,High
+GWATCH_FTR_109,Feature 109,Standard feature behavior,ML Team,ISSUE_0109,In Progress,8/01/24 0:00,jordan,High
+GWATCH_FTR_110,Feature 110,Standard feature behavior,UI/UX Team,ISSUE_0110,Open,3/01/24 0:00,lee,Medium
+GWATCH_FTR_111,Feature 111,Standard feature behavior,ML Team,ISSUE_0111,Open,1/01/24 0:00,mira,Medium
+GWATCH_FTR_112,Feature 112,Standard feature behavior,UI/UX Team,ISSUE_0112,Resolved,24/01/24 0:00,jordan,Medium
+GWATCH_FTR_113,Feature 113,Standard feature behavior,Sensor Team,ISSUE_0113,Resolved,3/01/24 0:00,lee,Medium
+GWATCH_FTR_114,Feature 114,Standard feature behavior,UI/UX Team,ISSUE_0114,In Progress,5/01/24 0:00,lee,Low
+GWATCH_FTR_115,Feature 115,Standard feature behavior,Sensor Team,ISSUE_0115,Resolved,1/01/24 0:00,jordan,Medium
+GWATCH_FTR_116,Feature 116,Standard feature behavior,Sensor Team,ISSUE_0116,Resolved,4/01/24 0:00,sam,Medium
+GWATCH_FTR_117,Feature 117,Standard feature behavior,ML Team,ISSUE_0117,Resolved,26/01/24 0:00,mira,High
+GWATCH_FTR_118,Feature 118,Standard feature behavior,ML Team,ISSUE_0118,In Progress,15/01/24 0:00,jordan,Low
+GWATCH_FTR_119,Feature 119,Standard feature behavior,ML Team,ISSUE_0119,Open,18/01/24 0:00,lee,High
+GWATCH_FTR_120,Feature 120,Standard feature behavior,Sensor Team,ISSUE_0120,Review,6/01/24 0:00,sam,Medium
+GWATCH_FTR_121,Feature 121,Standard feature behavior,Sensor Team,ISSUE_0121,In Progress,13/01/24 0:00,mira,High
+GWATCH_FTR_122,Feature 122,Standard feature behavior,Sensor Team,ISSUE_0122,In Progress,17/01/24 0:00,mira,Medium
+GWATCH_FTR_123,Feature 123,Standard feature behavior,Sensor Team,ISSUE_0123,Open,3/01/24 0:00,sam,Low
+GWATCH_FTR_124,Feature 124,Standard feature behavior,UI/UX Team,ISSUE_0124,In Progress,19/01/24 0:00,sam,High
+GWATCH_FTR_125,Feature 125,Standard feature behavior,Sensor Team,ISSUE_0125,Review,8/01/24 0:00,sam,Medium
+GWATCH_FTR_126,Feature 126,Standard feature behavior,ML Team,ISSUE_0126,In Progress,6/01/24 0:00,sam,Low
+GWATCH_FTR_127,Feature 127,Standard feature behavior,ML Team,ISSUE_0127,Resolved,8/01/24 0:00,lee,Low
+GWATCH_FTR_128,Feature 128,Standard feature behavior,ML Team,ISSUE_0128,Open,20/01/24 0:00,sam,High
+GWATCH_FTR_129,Feature 129,Standard feature behavior,Sensor Team,ISSUE_0129,Review,17/01/24 0:00,mira,Medium
+GWATCH_FTR_130,Feature 130,Standard feature behavior,Sensor Team,ISSUE_0130,Review,19/01/24 0:00,mira,Low
+GWATCH_FTR_131,Feature 131,Standard feature behavior,Sensor Team,ISSUE_0131,In Progress,15/01/24 0:00,jordan,High
+GWATCH_FTR_132,Feature 132,Standard feature behavior,Sensor Team,ISSUE_0132,In Progress,27/01/24 0:00,mira,Low
+GWATCH_FTR_133,Feature 133,Standard feature behavior,Sensor Team,ISSUE_0133,Review,6/01/24 0:00,sam,Medium
+GWATCH_FTR_134,Feature 134,Standard feature behavior,UI/UX Team,ISSUE_0134,In Progress,17/01/24 0:00,mira,High
+GWATCH_FTR_135,Feature 135,Standard feature behavior,Sensor Team,ISSUE_0135,Review,24/01/24 0:00,sam,Medium
+GWATCH_FTR_136,Feature 136,Standard feature behavior,Sensor Team,ISSUE_0136,Resolved,28/01/24 0:00,jordan,Low
+GWATCH_FTR_137,Feature 137,Standard feature behavior,UI/UX Team,ISSUE_0137,Review,21/01/24 0:00,sam,Low
+GWATCH_FTR_138,Feature 138,Standard feature behavior,ML Team,ISSUE_0138,Open,21/01/24 0:00,sam,Low
+GWATCH_FTR_139,Feature 139,Standard feature behavior,ML Team,ISSUE_0139,Review,14/01/24 0:00,sam,Medium
+GWATCH_FTR_140,Feature 140,Standard feature behavior,ML Team,ISSUE_0140,Review,17/01/24 0:00,sam,High
+GWATCH_FTR_141,Feature 141,Standard feature behavior,ML Team,ISSUE_0141,Resolved,11/01/24 0:00,jordan,High
+GWATCH_FTR_142,Feature 142,Standard feature behavior,Sensor Team,ISSUE_0142,Open,6/01/24 0:00,sam,Medium
+GWATCH_FTR_143,Feature 143,Standard feature behavior,Sensor Team,ISSUE_0143,Resolved,10/01/24 0:00,lee,Medium
+GWATCH_FTR_144,Feature 144,Standard feature behavior,ML Team,ISSUE_0144,In Progress,2/01/24 0:00,jordan,Medium
+GWATCH_FTR_145,Feature 145,Standard feature behavior,Sensor Team,ISSUE_0145,Resolved,7/01/24 0:00,mira,High
+GWATCH_FTR_146,Feature 146,Standard feature behavior,UI/UX Team,ISSUE_0146,In Progress,28/01/24 0:00,mira,Low
+GWATCH_FTR_147,Feature 147,Standard feature behavior,UI/UX Team,ISSUE_0147,In Progress,23/01/24 0:00,lee,Low
+GWATCH_FTR_148,Feature 148,Standard feature behavior,UI/UX Team,ISSUE_0148,Open,28/01/24 0:00,jordan,High
+GWATCH_FTR_149,Feature 149,Standard feature behavior,UI/UX Team,ISSUE_0149,Review,3/01/24 0:00,mira,Low
+GWATCH_FTR_150,Feature 150,Standard feature behavior,ML Team,ISSUE_0150,Resolved,27/01/24 0:00,lee,Low
+GWATCH_FTR_151,Feature 151,Standard feature behavior,ML Team,ISSUE_0151,Review,6/01/24 0:00,sam,Low
+GWATCH_FTR_152,Feature 152,Standard feature behavior,ML Team,ISSUE_0152,Review,20/01/24 0:00,mira,High
+GWATCH_FTR_153,Feature 153,Standard feature behavior,Sensor Team,ISSUE_0153,Resolved,8/01/24 0:00,mira,Low
+GWATCH_FTR_154,Feature 154,Standard feature behavior,ML Team,ISSUE_0154,Review,3/01/24 0:00,mira,Low
+GWATCH_FTR_155,Feature 155,Standard feature behavior,Sensor Team,ISSUE_0155,Resolved,27/01/24 0:00,lee,Low
+GWATCH_FTR_156,Feature 156,Standard feature behavior,ML Team,ISSUE_0156,Open,13/01/24 0:00,lee,High
+GWATCH_FTR_157,Feature 157,Standard feature behavior,Sensor Team,ISSUE_0157,Review,8/01/24 0:00,sam,Low
+GWATCH_FTR_158,Feature 158,Standard feature behavior,UI/UX Team,ISSUE_0158,Review,12/01/24 0:00,sam,High
+GWATCH_FTR_159,Feature 159,Standard feature behavior,UI/UX Team,ISSUE_0159,Review,14/01/24 0:00,lee,Medium
+GWATCH_FTR_160,Feature 160,Standard feature behavior,ML Team,ISSUE_0160,Resolved,19/01/24 0:00,lee,Medium
+GWATCH_FTR_161,Feature 161,Standard feature behavior,UI/UX Team,ISSUE_0161,In Progress,19/01/24 0:00,mira,Medium
+GWATCH_FTR_162,Feature 162,Standard feature behavior,ML Team,ISSUE_0162,Review,2/01/24 0:00,lee,Low
+GWATCH_FTR_163,Feature 163,Standard feature behavior,UI/UX Team,ISSUE_0163,Resolved,16/01/24 0:00,sam,High
+GWATCH_FTR_164,Feature 164,Standard feature behavior,ML Team,ISSUE_0164,In Progress,18/01/24 0:00,mira,High
+GWATCH_FTR_165,Feature 165,Standard feature behavior,Sensor Team,ISSUE_0165,Resolved,3/01/24 0:00,jordan,High
+GWATCH_FTR_166,Feature 166,Standard feature behavior,UI/UX Team,ISSUE_0166,Review,17/01/24 0:00,lee,Medium
+GWATCH_FTR_167,Feature 167,Standard feature behavior,Sensor Team,ISSUE_0167,Open,26/01/24 0:00,lee,Medium
+GWATCH_FTR_168,Feature 168,Standard feature behavior,ML Team,ISSUE_0168,Review,12/01/24 0:00,jordan,Low
+GWATCH_FTR_169,Feature 169,Standard feature behavior,Sensor Team,ISSUE_0169,In Progress,19/01/24 0:00,jordan,Low
+GWATCH_FTR_170,Feature 170,Standard feature behavior,UI/UX Team,ISSUE_0170,Review,14/01/24 0:00,lee,High
+GWATCH_FTR_171,Feature 171,Standard feature behavior,ML Team,ISSUE_0171,Review,12/01/24 0:00,jordan,Medium
+GWATCH_FTR_172,Feature 172,Standard feature behavior,UI/UX Team,ISSUE_0172,Open,27/01/24 0:00,mira,Low
+GWATCH_FTR_173,Feature 173,Standard feature behavior,Sensor Team,ISSUE_0173,In Progress,25/01/24 0:00,jordan,High
+GWATCH_FTR_174,Feature 174,Standard feature behavior,UI/UX Team,ISSUE_0174,In Progress,9/01/24 0:00,sam,Low
+GWATCH_FTR_175,Feature 175,Standard feature behavior,Sensor Team,ISSUE_0175,In Progress,27/01/24 0:00,lee,Medium
+GWATCH_FTR_176,Feature 176,Standard feature behavior,UI/UX Team,ISSUE_0176,Resolved,24/01/24 0:00,lee,Low
+GWATCH_FTR_177,Feature 177,Standard feature behavior,UI/UX Team,ISSUE_0177,Review,24/01/24 0:00,mira,Low
+GWATCH_FTR_178,Feature 178,Standard feature behavior,ML Team,ISSUE_0178,In Progress,5/01/24 0:00,mira,Low
+GWATCH_FTR_179,Feature 179,Standard feature behavior,Sensor Team,ISSUE_0179,Review,8/01/24 0:00,lee,High
+GWATCH_FTR_180,Feature 180,Standard feature behavior,Sensor Team,ISSUE_0180,Resolved,1/01/24 0:00,lee,High
+GWATCH_FTR_181,Feature 181,Standard feature behavior,UI/UX Team,ISSUE_0181,In Progress,28/01/24 0:00,mira,Medium
+GWATCH_FTR_182,Feature 182,Standard feature behavior,UI/UX Team,ISSUE_0182,Review,2/01/24 0:00,mira,Medium
+GWATCH_FTR_183,Feature 183,Standard feature behavior,ML Team,ISSUE_0183,Review,16/01/24 0:00,sam,Low
+GWATCH_FTR_184,Feature 184,Standard feature behavior,Sensor Team,ISSUE_0184,Open,7/01/24 0:00,lee,Medium
+GWATCH_FTR_185,Feature 185,Standard feature behavior,UI/UX Team,ISSUE_0185,In Progress,4/01/24 0:00,lee,Medium
+GWATCH_FTR_186,Feature 186,Standard feature behavior,UI/UX Team,ISSUE_0186,Resolved,22/01/24 0:00,sam,Low
+GWATCH_FTR_187,Feature 187,Standard feature behavior,Sensor Team,ISSUE_0187,In Progress,17/01/24 0:00,lee,High
+GWATCH_FTR_188,Feature 188,Standard feature behavior,ML Team,ISSUE_0188,Review,20/01/24 0:00,sam,Medium
+GWATCH_FTR_189,Feature 189,Standard feature behavior,UI/UX Team,ISSUE_0189,Review,4/01/24 0:00,sam,Low
+GWATCH_FTR_190,Feature 190,Standard feature behavior,Sensor Team,ISSUE_0190,Review,5/01/24 0:00,lee,Medium
+GWATCH_FTR_191,Feature 191,Standard feature behavior,Sensor Team,ISSUE_0191,Review,25/01/24 0:00,mira,High
+GWATCH_FTR_192,Feature 192,Standard feature behavior,UI/UX Team,ISSUE_0192,In Progress,4/01/24 0:00,jordan,Low
+GWATCH_FTR_193,Feature 193,Standard feature behavior,UI/UX Team,ISSUE_0193,Resolved,19/01/24 0:00,lee,High
+GWATCH_FTR_194,Feature 194,Standard feature behavior,Sensor Team,ISSUE_0194,In Progress,7/01/24 0:00,jordan,High
+GWATCH_FTR_195,Feature 195,Standard feature behavior,Sensor Team,ISSUE_0195,Resolved,14/01/24 0:00,sam,Low
+GWATCH_FTR_196,Feature 196,Standard feature behavior,UI/UX Team,ISSUE_0196,Review,2/01/24 0:00,jordan,High
+GWATCH_FTR_197,Feature 197,Standard feature behavior,ML Team,ISSUE_0197,Review,22/01/24 0:00,lee,Medium
+GWATCH_FTR_198,Feature 198,Standard feature behavior,Sensor Team,ISSUE_0198,In Progress,18/01/24 0:00,mira,Low
+GWATCH_FTR_199,Feature 199,Standard feature behavior,Sensor Team,ISSUE_0199,Review,28/01/24 0:00,sam,High
+GWATCH_FTR_200,Feature 200,Standard feature behavior,ML Team,ISSUE_0200,Resolved,4/01/24 0:00,jordan,Medium
+GWATCH_FTR_201,Feature 201,Standard feature behavior,ML Team,ISSUE_0201,In Progress,19/01/24 0:00,lee,Medium
+GWATCH_FTR_202,Feature 202,Standard feature behavior,Sensor Team,ISSUE_0202,In Progress,28/01/24 0:00,lee,Medium
+GWATCH_FTR_203,Feature 203,Standard feature behavior,ML Team,ISSUE_0203,Resolved,3/01/24 0:00,sam,Low
+GWATCH_FTR_204,Feature 204,Standard feature behavior,ML Team,ISSUE_0204,Resolved,11/01/24 0:00,jordan,Low
+GWATCH_FTR_205,Feature 205,Standard feature behavior,ML Team,ISSUE_0205,In Progress,3/01/24 0:00,sam,Medium
+GWATCH_FTR_206,Feature 206,Standard feature behavior,UI/UX Team,ISSUE_0206,In Progress,23/01/24 0:00,lee,High
+GWATCH_FTR_207,Feature 207,Standard feature behavior,Sensor Team,ISSUE_0207,In Progress,16/01/24 0:00,jordan,Low
+GWATCH_FTR_208,Feature 208,Standard feature behavior,ML Team,ISSUE_0208,Review,11/01/24 0:00,mira,Low
+GWATCH_FTR_209,Feature 209,Standard feature behavior,Sensor Team,ISSUE_0209,In Progress,18/01/24 0:00,jordan,High
+GWATCH_FTR_210,Feature 210,Standard feature behavior,UI/UX Team,ISSUE_0210,Resolved,10/01/24 0:00,lee,High
+GWATCH_FTR_211,Feature 211,Standard feature behavior,UI/UX Team,ISSUE_0211,In Progress,3/01/24 0:00,lee,Low
+GWATCH_FTR_212,Feature 212,Standard feature behavior,Sensor Team,ISSUE_0212,Resolved,15/01/24 0:00,lee,High
+GWATCH_FTR_213,Feature 213,Standard feature behavior,Sensor Team,ISSUE_0213,Review,25/01/24 0:00,jordan,Low
+GWATCH_FTR_214,Feature 214,Standard feature behavior,ML Team,ISSUE_0214,Review,15/01/24 0:00,sam,Low
+GWATCH_FTR_215,Feature 215,Standard feature behavior,ML Team,ISSUE_0215,Open,12/01/24 0:00,lee,High
+GWATCH_FTR_216,Feature 216,Standard feature behavior,UI/UX Team,ISSUE_0216,In Progress,27/01/24 0:00,lee,Medium
+GWATCH_FTR_217,Feature 217,Standard feature behavior,Sensor Team,ISSUE_0217,Resolved,9/01/24 0:00,jordan,Medium
+GWATCH_FTR_218,Feature 218,Standard feature behavior,ML Team,ISSUE_0218,Resolved,7/01/24 0:00,sam,Low
+GWATCH_FTR_219,Feature 219,Standard feature behavior,UI/UX Team,ISSUE_0219,Open,27/01/24 0:00,mira,High
+GWATCH_FTR_220,Feature 220,Standard feature behavior,ML Team,ISSUE_0220,Resolved,6/01/24 0:00,lee,Low
+GWATCH_FTR_221,Feature 221,Standard feature behavior,Sensor Team,ISSUE_0221,Resolved,21/01/24 0:00,sam,Medium
+GWATCH_FTR_222,Feature 222,Standard feature behavior,UI/UX Team,ISSUE_0222,Resolved,6/01/24 0:00,sam,Low
+GWATCH_FTR_223,Feature 223,Standard feature behavior,ML Team,ISSUE_0223,Open,1/01/24 0:00,mira,Medium
+GWATCH_FTR_224,Feature 224,Standard feature behavior,Sensor Team,ISSUE_0224,Resolved,2/01/24 0:00,sam,Medium
+GWATCH_FTR_225,Feature 225,Standard feature behavior,UI/UX Team,ISSUE_0225,In Progress,11/01/24 0:00,sam,Medium
+GWATCH_FTR_226,Feature 226,Standard feature behavior,UI/UX Team,ISSUE_0226,In Progress,11/01/24 0:00,sam,Medium
+GWATCH_FTR_227,Feature 227,Standard feature behavior,UI/UX Team,ISSUE_0227,In Progress,22/01/24 0:00,mira,High
+GWATCH_FTR_228,Feature 228,Standard feature behavior,ML Team,ISSUE_0228,Resolved,10/01/24 0:00,lee,Low
+GWATCH_FTR_229,Feature 229,Standard feature behavior,Sensor Team,ISSUE_0229,Review,7/01/24 0:00,sam,Medium
+GWATCH_FTR_230,Feature 230,Standard feature behavior,Sensor Team,ISSUE_0230,Open,6/01/24 0:00,jordan,Medium
+GWATCH_FTR_231,Feature 231,Standard feature behavior,ML Team,ISSUE_0231,In Progress,6/01/24 0:00,jordan,High
+GWATCH_FTR_232,Feature 232,Standard feature behavior,UI/UX Team,ISSUE_0232,Review,22/01/24 0:00,sam,Low
+GWATCH_FTR_233,Feature 233,Standard feature behavior,ML Team,ISSUE_0233,In Progress,1/01/24 0:00,jordan,Low
+GWATCH_FTR_234,Feature 234,Standard feature behavior,ML Team,ISSUE_0234,Open,2/01/24 0:00,mira,High
+GWATCH_FTR_235,Feature 235,Standard feature behavior,UI/UX Team,ISSUE_0235,Resolved,2/01/24 0:00,lee,High
+GWATCH_FTR_236,Feature 236,Standard feature behavior,ML Team,ISSUE_0236,Open,4/01/24 0:00,lee,Low
+GWATCH_FTR_237,Feature 237,Standard feature behavior,Sensor Team,ISSUE_0237,Review,3/01/24 0:00,jordan,High
+GWATCH_FTR_238,Feature 238,Standard feature behavior,ML Team,ISSUE_0238,Review,16/01/24 0:00,lee,Low
+GWATCH_FTR_239,Feature 239,Standard feature behavior,ML Team,ISSUE_0239,Resolved,8/01/24 0:00,mira,High
+GWATCH_FTR_240,Feature 240,Standard feature behavior,ML Team,ISSUE_0240,In Progress,19/01/24 0:00,jordan,Medium
+GWATCH_FTR_241,Feature 241,Standard feature behavior,UI/UX Team,ISSUE_0241,Review,21/01/24 0:00,sam,Medium
+GWATCH_FTR_242,Feature 242,Standard feature behavior,ML Team,ISSUE_0242,Resolved,2/01/24 0:00,lee,Medium
+GWATCH_FTR_243,Feature 243,Standard feature behavior,UI/UX Team,ISSUE_0243,Review,14/01/24 0:00,sam,Low
+GWATCH_FTR_244,Feature 244,Standard feature behavior,UI/UX Team,ISSUE_0244,Resolved,27/01/24 0:00,mira,Low
+GWATCH_FTR_245,Feature 245,Standard feature behavior,UI/UX Team,ISSUE_0245,Review,15/01/24 0:00,lee,Medium
+GWATCH_FTR_246,Feature 246,Standard feature behavior,UI/UX Team,ISSUE_0246,In Progress,10/01/24 0:00,mira,High
+GWATCH_FTR_247,Feature 247,Standard feature behavior,ML Team,ISSUE_0247,In Progress,19/01/24 0:00,lee,High
+GWATCH_FTR_248,Feature 248,Standard feature behavior,ML Team,ISSUE_0248,Review,24/01/24 0:00,jordan,Low
+GWATCH_FTR_249,Feature 249,Standard feature behavior,ML Team,ISSUE_0249,Review,15/01/24 0:00,lee,Medium
+GWATCH_FTR_250,Feature 250,Standard feature behavior,Sensor Team,ISSUE_0250,In Progress,25/01/24 0:00,sam,Low
+GWATCH_FTR_251,Feature 251,Standard feature behavior,UI/UX Team,ISSUE_0251,Review,11/01/24 0:00,mira,High
+GWATCH_FTR_252,Feature 252,Standard feature behavior,UI/UX Team,ISSUE_0252,Open,9/01/24 0:00,mira,High
+GWATCH_FTR_253,Feature 253,Standard feature behavior,ML Team,ISSUE_0253,Open,10/01/24 0:00,lee,Low
+GWATCH_FTR_254,Feature 254,Standard feature behavior,ML Team,ISSUE_0254,In Progress,19/01/24 0:00,jordan,Medium
+GWATCH_FTR_255,Feature 255,Standard feature behavior,Sensor Team,ISSUE_0255,Resolved,3/01/24 0:00,mira,Low
+GWATCH_FTR_256,Feature 256,Standard feature behavior,ML Team,ISSUE_0256,Open,5/01/24 0:00,sam,High
+GWATCH_FTR_257,Feature 257,Standard feature behavior,Sensor Team,ISSUE_0257,Resolved,7/01/24 0:00,lee,Low
+GWATCH_FTR_258,Feature 258,Standard feature behavior,Sensor Team,ISSUE_0258,Open,4/01/24 0:00,sam,Low
+GWATCH_FTR_259,Feature 259,Standard feature behavior,Sensor Team,ISSUE_0259,Open,27/01/24 0:00,lee,High
+GWATCH_FTR_260,Feature 260,Standard feature behavior,ML Team,ISSUE_0260,Open,7/01/24 0:00,lee,High
+GWATCH_FTR_261,Feature 261,Standard feature behavior,Sensor Team,ISSUE_0261,In Progress,10/01/24 0:00,lee,Low
+GWATCH_FTR_262,Feature 262,Standard feature behavior,UI/UX Team,ISSUE_0262,Open,21/01/24 0:00,lee,High
+GWATCH_FTR_263,Feature 263,Standard feature behavior,Sensor Team,ISSUE_0263,Resolved,19/01/24 0:00,sam,Medium
+GWATCH_FTR_264,Feature 264,Standard feature behavior,UI/UX Team,ISSUE_0264,Resolved,13/01/24 0:00,sam,High
+GWATCH_FTR_265,Feature 265,Standard feature behavior,UI/UX Team,ISSUE_0265,Resolved,24/01/24 0:00,mira,High
+GWATCH_FTR_266,Feature 266,Standard feature behavior,Sensor Team,ISSUE_0266,Resolved,4/01/24 0:00,jordan,High
+GWATCH_FTR_267,Feature 267,Standard feature behavior,UI/UX Team,ISSUE_0267,Review,26/01/24 0:00,mira,Medium
+GWATCH_FTR_268,Feature 268,Standard feature behavior,Sensor Team,ISSUE_0268,Resolved,17/01/24 0:00,jordan,Low
+GWATCH_FTR_269,Feature 269,Standard feature behavior,Sensor Team,ISSUE_0269,Open,24/01/24 0:00,lee,High
+GWATCH_FTR_270,Feature 270,Standard feature behavior,Sensor Team,ISSUE_0270,In Progress,22/01/24 0:00,jordan,High
+GWATCH_FTR_271,Feature 271,Standard feature behavior,ML Team,ISSUE_0271,Resolved,5/01/24 0:00,sam,High
+GWATCH_FTR_272,Feature 272,Standard feature behavior,UI/UX Team,ISSUE_0272,In Progress,26/01/24 0:00,lee,Medium
+GWATCH_FTR_273,Feature 273,Standard feature behavior,ML Team,ISSUE_0273,Review,26/01/24 0:00,jordan,High
+GWATCH_FTR_274,Feature 274,Standard feature behavior,UI/UX Team,ISSUE_0274,Resolved,19/01/24 0:00,sam,Low
+GWATCH_FTR_275,Feature 275,Standard feature behavior,UI/UX Team,ISSUE_0275,Review,20/01/24 0:00,jordan,Medium
+GWATCH_FTR_276,Feature 276,Standard feature behavior,ML Team,ISSUE_0276,In Progress,4/01/24 0:00,jordan,Low
+GWATCH_FTR_277,Feature 277,Standard feature behavior,UI/UX Team,ISSUE_0277,Review,13/01/24 0:00,lee,High
+GWATCH_FTR_278,Feature 278,Standard feature behavior,Sensor Team,ISSUE_0278,In Progress,27/01/24 0:00,lee,Medium
+GWATCH_FTR_279,Feature 279,Standard feature behavior,UI/UX Team,ISSUE_0279,In Progress,13/01/24 0:00,jordan,Medium
+GWATCH_FTR_280,Feature 280,Standard feature behavior,Sensor Team,ISSUE_0280,Open,10/01/24 0:00,lee,Medium
+GWATCH_FTR_281,Feature 281,Standard feature behavior,ML Team,ISSUE_0281,In Progress,13/01/24 0:00,jordan,High
+GWATCH_FTR_282,Feature 282,Standard feature behavior,UI/UX Team,ISSUE_0282,Review,15/01/24 0:00,sam,Low
+GWATCH_FTR_283,Feature 283,Standard feature behavior,ML Team,ISSUE_0283,Resolved,26/01/24 0:00,mira,High
+GWATCH_FTR_284,Feature 284,Standard feature behavior,ML Team,ISSUE_0284,Open,6/01/24 0:00,mira,High
+GWATCH_FTR_285,Feature 285,Standard feature behavior,ML Team,ISSUE_0285,Resolved,14/01/24 0:00,mira,Medium
+GWATCH_FTR_286,Feature 286,Standard feature behavior,UI/UX Team,ISSUE_0286,In Progress,6/01/24 0:00,mira,Medium
+GWATCH_FTR_287,Feature 287,Standard feature behavior,UI/UX Team,ISSUE_0287,In Progress,2/01/24 0:00,mira,Low
+GWATCH_FTR_288,Feature 288,Standard feature behavior,Sensor Team,ISSUE_0288,Resolved,19/01/24 0:00,mira,Medium
+GWATCH_FTR_289,Feature 289,Standard feature behavior,UI/UX Team,ISSUE_0289,Open,26/01/24 0:00,lee,Medium
+GWATCH_FTR_290,Feature 290,Standard feature behavior,Sensor Team,ISSUE_0290,Open,8/01/24 0:00,sam,High
+GWATCH_FTR_291,Feature 291,Standard feature behavior,UI/UX Team,ISSUE_0291,Resolved,26/01/24 0:00,lee,High
+GWATCH_FTR_292,Feature 292,Standard feature behavior,UI/UX Team,ISSUE_0292,Review,6/01/24 0:00,jordan,Medium
+GWATCH_FTR_293,Feature 293,Standard feature behavior,Sensor Team,ISSUE_0293,In Progress,23/01/24 0:00,jordan,High
+GWATCH_FTR_294,Feature 294,Standard feature behavior,ML Team,ISSUE_0294,Review,10/01/24 0:00,mira,Medium
+GWATCH_FTR_295,Feature 295,Standard feature behavior,Sensor Team,ISSUE_0295,In Progress,9/01/24 0:00,sam,Medium
+GWATCH_FTR_296,Feature 296,Standard feature behavior,UI/UX Team,ISSUE_0296,Review,8/01/24 0:00,jordan,Medium
+GWATCH_FTR_297,Feature 297,Standard feature behavior,Sensor Team,ISSUE_0297,Review,22/01/24 0:00,lee,High
+GWATCH_FTR_298,Feature 298,Standard feature behavior,UI/UX Team,ISSUE_0298,Review,27/01/24 0:00,mira,High
+GWATCH_FTR_299,Feature 299,Standard feature behavior,Sensor Team,ISSUE_0299,In Progress,19/01/24 0:00,sam,Medium
+GWATCH_FTR_300,Feature 300,Standard feature behavior,UI/UX Team,ISSUE_0300,Open,20/01/24 0:00,mira,Low
+GWATCH_FTR_301,Feature 301,Standard feature behavior,ML Team,ISSUE_0301,In Progress,14/01/24 0:00,jordan,Medium
+GWATCH_FTR_302,Feature 302,Standard feature behavior,Sensor Team,ISSUE_0302,Review,23/01/24 0:00,mira,Low
+GWATCH_FTR_303,Feature 303,Standard feature behavior,UI/UX Team,ISSUE_0303,Open,6/01/24 0:00,sam,Low
+GWATCH_FTR_304,Feature 304,Standard feature behavior,ML Team,ISSUE_0304,Open,9/01/24 0:00,jordan,High
+GWATCH_FTR_305,Feature 305,Standard feature behavior,Sensor Team,ISSUE_0305,Resolved,18/01/24 0:00,jordan,Medium
+GWATCH_FTR_306,Feature 306,Standard feature behavior,Sensor Team,ISSUE_0306,Resolved,28/01/24 0:00,lee,Low
+GWATCH_FTR_307,Feature 307,Standard feature behavior,Sensor Team,ISSUE_0307,Resolved,11/01/24 0:00,sam,High
+GWATCH_FTR_308,Feature 308,Standard feature behavior,ML Team,ISSUE_0308,In Progress,12/01/24 0:00,sam,Low
+GWATCH_FTR_309,Feature 309,Standard feature behavior,Sensor Team,ISSUE_0309,Resolved,18/01/24 0:00,mira,High
+GWATCH_FTR_310,Feature 310,Standard feature behavior,Sensor Team,ISSUE_0310,In Progress,28/01/24 0:00,mira,Low
+GWATCH_FTR_311,Feature 311,Standard feature behavior,UI/UX Team,ISSUE_0311,In Progress,20/01/24 0:00,mira,Low
+GWATCH_FTR_312,Feature 312,Standard feature behavior,ML Team,ISSUE_0312,Open,26/01/24 0:00,jordan,Medium
+GWATCH_FTR_313,Feature 313,Standard feature behavior,UI/UX Team,ISSUE_0313,In Progress,19/01/24 0:00,lee,Medium
+GWATCH_FTR_314,Feature 314,Standard feature behavior,Sensor Team,ISSUE_0314,In Progress,10/01/24 0:00,jordan,Low
+GWATCH_FTR_315,Feature 315,Standard feature behavior,UI/UX Team,ISSUE_0315,Review,28/01/24 0:00,mira,Low
+GWATCH_FTR_316,Feature 316,Standard feature behavior,Sensor Team,ISSUE_0316,Resolved,8/01/24 0:00,mira,Low
+GWATCH_FTR_317,Feature 317,Standard feature behavior,Sensor Team,ISSUE_0317,Resolved,27/01/24 0:00,lee,Low
+GWATCH_FTR_318,Feature 318,Standard feature behavior,UI/UX Team,ISSUE_0318,In Progress,17/01/24 0:00,sam,Low
+GWATCH_FTR_319,Feature 319,Standard feature behavior,ML Team,ISSUE_0319,Resolved,23/01/24 0:00,sam,Medium
+GWATCH_FTR_320,Feature 320,Standard feature behavior,UI/UX Team,ISSUE_0320,In Progress,21/01/24 0:00,sam,High
+GWATCH_FTR_321,Feature 321,Standard feature behavior,Sensor Team,ISSUE_0321,In Progress,8/01/24 0:00,lee,Low
+GWATCH_FTR_322,Feature 322,Standard feature behavior,UI/UX Team,ISSUE_0322,Resolved,25/01/24 0:00,lee,Low
+GWATCH_FTR_323,Feature 323,Standard feature behavior,Sensor Team,ISSUE_0323,Review,23/01/24 0:00,lee,Medium
+GWATCH_FTR_324,Feature 324,Standard feature behavior,UI/UX Team,ISSUE_0324,In Progress,19/01/24 0:00,lee,Low
+GWATCH_FTR_325,Feature 325,Standard feature behavior,ML Team,ISSUE_0325,Review,15/01/24 0:00,jordan,Medium
+GWATCH_FTR_326,Feature 326,Standard feature behavior,UI/UX Team,ISSUE_0326,Open,18/01/24 0:00,sam,Medium
+GWATCH_FTR_327,Feature 327,Standard feature behavior,Sensor Team,ISSUE_0327,In Progress,21/01/24 0:00,sam,High
+GWATCH_FTR_328,Feature 328,Standard feature behavior,UI/UX Team,ISSUE_0328,In Progress,10/01/24 0:00,lee,Medium
+GWATCH_FTR_329,Feature 329,Standard feature behavior,UI/UX Team,ISSUE_0329,In Progress,9/01/24 0:00,sam,Medium
+GWATCH_FTR_330,Feature 330,Standard feature behavior,Sensor Team,ISSUE_0330,Open,4/01/24 0:00,lee,Low
+GWATCH_FTR_331,Feature 331,Standard feature behavior,ML Team,ISSUE_0331,Review,6/01/24 0:00,jordan,Medium
+GWATCH_FTR_332,Feature 332,Standard feature behavior,ML Team,ISSUE_0332,Review,25/01/24 0:00,lee,Low
+GWATCH_FTR_333,Feature 333,Standard feature behavior,ML Team,ISSUE_0333,Open,14/01/24 0:00,sam,Medium
+GWATCH_FTR_334,Feature 334,Standard feature behavior,UI/UX Team,ISSUE_0334,In Progress,22/01/24 0:00,sam,High
+GWATCH_FTR_335,Feature 335,Standard feature behavior,Sensor Team,ISSUE_0335,In Progress,9/01/24 0:00,lee,Low
+GWATCH_FTR_336,Feature 336,Standard feature behavior,Sensor Team,ISSUE_0336,Open,20/01/24 0:00,mira,High
+GWATCH_FTR_337,Feature 337,Standard feature behavior,UI/UX Team,ISSUE_0337,Review,15/01/24 0:00,sam,Medium
+GWATCH_FTR_338,Feature 338,Standard feature behavior,UI/UX Team,ISSUE_0338,In Progress,5/01/24 0:00,jordan,Low
+GWATCH_FTR_339,Feature 339,Standard feature behavior,ML Team,ISSUE_0339,Open,4/01/24 0:00,lee,Medium
+GWATCH_FTR_340,Feature 340,Standard feature behavior,Sensor Team,ISSUE_0340,In Progress,14/01/24 0:00,sam,High
+GWATCH_FTR_341,Feature 341,Standard feature behavior,Sensor Team,ISSUE_0341,Resolved,9/01/24 0:00,jordan,Medium
+GWATCH_FTR_342,Feature 342,Standard feature behavior,Sensor Team,ISSUE_0342,Open,26/01/24 0:00,lee,Medium
+GWATCH_FTR_343,Feature 343,Standard feature behavior,ML Team,ISSUE_0343,Open,10/01/24 0:00,sam,High
+GWATCH_FTR_344,Feature 344,Standard feature behavior,ML Team,ISSUE_0344,Open,14/01/24 0:00,jordan,Low
+GWATCH_FTR_345,Feature 345,Standard feature behavior,UI/UX Team,ISSUE_0345,Resolved,28/01/24 0:00,lee,Medium
+GWATCH_FTR_346,Feature 346,Standard feature behavior,Sensor Team,ISSUE_0346,Open,3/01/24 0:00,lee,Low
+GWATCH_FTR_347,Feature 347,Standard feature behavior,UI/UX Team,ISSUE_0347,In Progress,23/01/24 0:00,lee,Medium
+GWATCH_FTR_348,Feature 348,Standard feature behavior,UI/UX Team,ISSUE_0348,Review,9/01/24 0:00,sam,Low
+GWATCH_FTR_349,Feature 349,Standard feature behavior,UI/UX Team,ISSUE_0349,Review,20/01/24 0:00,lee,High
+GWATCH_FTR_350,Feature 350,Standard feature behavior,UI/UX Team,ISSUE_0350,Review,9/01/24 0:00,sam,High
+GWATCH_FTR_351,Feature 351,Standard feature behavior,ML Team,ISSUE_0351,Resolved,22/01/24 0:00,jordan,High
+GWATCH_FTR_352,Feature 352,Standard feature behavior,ML Team,ISSUE_0352,In Progress,26/01/24 0:00,jordan,High
+GWATCH_FTR_353,Feature 353,Standard feature behavior,UI/UX Team,ISSUE_0353,Resolved,27/01/24 0:00,sam,High
+GWATCH_FTR_354,Feature 354,Standard feature behavior,ML Team,ISSUE_0354,Open,1/01/24 0:00,jordan,Low
+GWATCH_FTR_355,Feature 355,Standard feature behavior,Sensor Team,ISSUE_0355,In Progress,23/01/24 0:00,mira,Low
+GWATCH_FTR_356,Feature 356,Standard feature behavior,ML Team,ISSUE_0356,Review,12/01/24 0:00,mira,Medium
+GWATCH_FTR_357,Feature 357,Standard feature behavior,ML Team,ISSUE_0357,Resolved,2/01/24 0:00,jordan,Low
+GWATCH_FTR_358,Feature 358,Standard feature behavior,UI/UX Team,ISSUE_0358,Review,25/01/24 0:00,sam,Medium
+GWATCH_FTR_359,Feature 359,Standard feature behavior,Sensor Team,ISSUE_0359,Review,26/01/24 0:00,lee,High
+GWATCH_FTR_360,Feature 360,Standard feature behavior,Sensor Team,ISSUE_0360,Review,24/01/24 0:00,sam,Low
+GWATCH_FTR_361,Feature 361,Standard feature behavior,UI/UX Team,ISSUE_0361,Review,12/01/24 0:00,lee,Low
+GWATCH_FTR_362,Feature 362,Standard feature behavior,Sensor Team,ISSUE_0362,Review,4/01/24 0:00,mira,Low
+GWATCH_FTR_363,Feature 363,Standard feature behavior,UI/UX Team,ISSUE_0363,Resolved,5/01/24 0:00,lee,Medium
+GWATCH_FTR_364,Feature 364,Standard feature behavior,Sensor Team,ISSUE_0364,Open,1/01/24 0:00,lee,Low
+GWATCH_FTR_365,Feature 365,Standard feature behavior,Sensor Team,ISSUE_0365,In Progress,26/01/24 0:00,jordan,High
+GWATCH_FTR_366,Feature 366,Standard feature behavior,Sensor Team,ISSUE_0366,Open,4/01/24 0:00,mira,Medium
+GWATCH_FTR_367,Feature 367,Standard feature behavior,Sensor Team,ISSUE_0367,Review,23/01/24 0:00,jordan,High
+GWATCH_FTR_368,Feature 368,Standard feature behavior,UI/UX Team,ISSUE_0368,In Progress,12/01/24 0:00,lee,High
+GWATCH_FTR_369,Feature 369,Standard feature behavior,Sensor Team,ISSUE_0369,Open,6/01/24 0:00,sam,Low
+GWATCH_FTR_370,Feature 370,Standard feature behavior,ML Team,ISSUE_0370,Review,22/01/24 0:00,jordan,Medium
+GWATCH_FTR_371,Feature 371,Standard feature behavior,Sensor Team,ISSUE_0371,Resolved,19/01/24 0:00,lee,Low
+GWATCH_FTR_372,Feature 372,Standard feature behavior,ML Team,ISSUE_0372,Resolved,17/01/24 0:00,sam,Low
+GWATCH_FTR_373,Feature 373,Standard feature behavior,UI/UX Team,ISSUE_0373,Review,15/01/24 0:00,jordan,Low
+GWATCH_FTR_374,Feature 374,Standard feature behavior,UI/UX Team,ISSUE_0374,Open,23/01/24 0:00,mira,Low
+GWATCH_FTR_375,Feature 375,Standard feature behavior,ML Team,ISSUE_0375,In Progress,13/01/24 0:00,mira,Low
+GWATCH_FTR_376,Feature 376,Standard feature behavior,ML Team,ISSUE_0376,Review,9/01/24 0:00,jordan,High
+GWATCH_FTR_377,Feature 377,Standard feature behavior,Sensor Team,ISSUE_0377,Resolved,17/01/24 0:00,lee,Low
+GWATCH_FTR_378,Feature 378,Standard feature behavior,Sensor Team,ISSUE_0378,In Progress,17/01/24 0:00,mira,Low
+GWATCH_FTR_379,Feature 379,Standard feature behavior,Sensor Team,ISSUE_0379,Resolved,19/01/24 0:00,lee,Low
+GWATCH_FTR_380,Feature 380,Standard feature behavior,ML Team,ISSUE_0380,In Progress,18/01/24 0:00,jordan,High
+GWATCH_FTR_381,Feature 381,Standard feature behavior,Sensor Team,ISSUE_0381,In Progress,22/01/24 0:00,lee,Medium
+GWATCH_FTR_382,Feature 382,Standard feature behavior,ML Team,ISSUE_0382,Open,10/01/24 0:00,mira,High
+GWATCH_FTR_383,Feature 383,Standard feature behavior,Sensor Team,ISSUE_0383,Resolved,9/01/24 0:00,lee,High
+GWATCH_FTR_384,Feature 384,Standard feature behavior,ML Team,ISSUE_0384,Resolved,16/01/24 0:00,sam,High
+GWATCH_FTR_385,Feature 385,Standard feature behavior,Sensor Team,ISSUE_0385,Open,28/01/24 0:00,jordan,Medium
+GWATCH_FTR_386,Feature 386,Standard feature behavior,ML Team,ISSUE_0386,Review,24/01/24 0:00,jordan,Low
+GWATCH_FTR_387,Feature 387,Standard feature behavior,Sensor Team,ISSUE_0387,Open,5/01/24 0:00,sam,High
+GWATCH_FTR_388,Feature 388,Standard feature behavior,Sensor Team,ISSUE_0388,Resolved,5/01/24 0:00,lee,Medium
+GWATCH_FTR_389,Feature 389,Standard feature behavior,Sensor Team,ISSUE_0389,Resolved,25/01/24 0:00,mira,Low
+GWATCH_FTR_390,Feature 390,Standard feature behavior,UI/UX Team,ISSUE_0390,In Progress,13/01/24 0:00,mira,Medium
+GWATCH_FTR_391,Feature 391,Standard feature behavior,ML Team,ISSUE_0391,Open,13/01/24 0:00,mira,High
+GWATCH_FTR_392,Feature 392,Standard feature behavior,Sensor Team,ISSUE_0392,Resolved,6/01/24 0:00,lee,Low
+GWATCH_FTR_393,Feature 393,Standard feature behavior,Sensor Team,ISSUE_0393,In Progress,9/01/24 0:00,jordan,Medium
+GWATCH_FTR_394,Feature 394,Standard feature behavior,ML Team,ISSUE_0394,Review,17/01/24 0:00,jordan,High
+GWATCH_FTR_395,Feature 395,Standard feature behavior,ML Team,ISSUE_0395,Review,18/01/24 0:00,lee,High
+GWATCH_FTR_396,Feature 396,Standard feature behavior,ML Team,ISSUE_0396,Resolved,27/01/24 0:00,jordan,Medium
+GWATCH_FTR_397,Feature 397,Standard feature behavior,UI/UX Team,ISSUE_0397,Review,8/01/24 0:00,jordan,Low
+GWATCH_FTR_398,Feature 398,Standard feature behavior,UI/UX Team,ISSUE_0398,Open,16/01/24 0:00,sam,Low
+GWATCH_FTR_399,Feature 399,Standard feature behavior,Sensor Team,ISSUE_0399,In Progress,4/01/24 0:00,mira,Medium
+GWATCH_FTR_400,Feature 400,Standard feature behavior,UI/UX Team,ISSUE_0400,Review,27/01/24 0:00,lee,Medium
+GWATCH_FTR_401,Feature 401,Standard feature behavior,ML Team,ISSUE_0401,Open,9/01/24 0:00,sam,High
+GWATCH_FTR_402,Feature 402,Standard feature behavior,ML Team,ISSUE_0402,Resolved,8/01/24 0:00,sam,High
+GWATCH_FTR_403,Feature 403,Standard feature behavior,ML Team,ISSUE_0403,Resolved,6/01/24 0:00,sam,Medium
+GWATCH_FTR_404,Feature 404,Standard feature behavior,ML Team,ISSUE_0404,Open,2/01/24 0:00,mira,High
+GWATCH_FTR_405,Feature 405,Standard feature behavior,Sensor Team,ISSUE_0405,Resolved,15/01/24 0:00,mira,High
+GWATCH_FTR_406,Feature 406,Standard feature behavior,ML Team,ISSUE_0406,Review,5/01/24 0:00,jordan,Low
+GWATCH_FTR_407,Feature 407,Standard feature behavior,ML Team,ISSUE_0407,In Progress,28/01/24 0:00,jordan,Medium
+GWATCH_FTR_408,Feature 408,Standard feature behavior,Sensor Team,ISSUE_0408,Review,27/01/24 0:00,mira,High
+GWATCH_FTR_409,Feature 409,Standard feature behavior,Sensor Team,ISSUE_0409,Open,11/01/24 0:00,lee,Low
+GWATCH_FTR_410,Feature 410,Standard feature behavior,UI/UX Team,ISSUE_0410,In Progress,4/01/24 0:00,sam,Low
+GWATCH_FTR_411,Feature 411,Standard feature behavior,UI/UX Team,ISSUE_0411,Review,12/01/24 0:00,lee,Medium
+GWATCH_FTR_412,Feature 412,Standard feature behavior,UI/UX Team,ISSUE_0412,Review,18/01/24 0:00,sam,Low
+GWATCH_FTR_413,Feature 413,Standard feature behavior,UI/UX Team,ISSUE_0413,In Progress,22/01/24 0:00,mira,High
+GWATCH_FTR_414,Feature 414,Standard feature behavior,Sensor Team,ISSUE_0414,In Progress,10/01/24 0:00,lee,High
+GWATCH_FTR_415,Feature 415,Standard feature behavior,Sensor Team,ISSUE_0415,Open,13/01/24 0:00,mira,Low
+GWATCH_FTR_416,Feature 416,Standard feature behavior,UI/UX Team,ISSUE_0416,In Progress,17/01/24 0:00,jordan,High
+GWATCH_FTR_417,Feature 417,Standard feature behavior,Sensor Team,ISSUE_0417,Resolved,14/01/24 0:00,lee,High
+GWATCH_FTR_418,Feature 418,Standard feature behavior,Sensor Team,ISSUE_0418,Review,18/01/24 0:00,sam,Medium
+GWATCH_FTR_419,Feature 419,Standard feature behavior,ML Team,ISSUE_0419,In Progress,23/01/24 0:00,lee,Medium
+GWATCH_FTR_420,Feature 420,Standard feature behavior,ML Team,ISSUE_0420,Open,16/01/24 0:00,mira,High
+GWATCH_FTR_421,Feature 421,Standard feature behavior,ML Team,ISSUE_0421,In Progress,17/01/24 0:00,sam,Medium
+GWATCH_FTR_422,Feature 422,Standard feature behavior,UI/UX Team,ISSUE_0422,Resolved,4/01/24 0:00,mira,Low
+GWATCH_FTR_423,Feature 423,Standard feature behavior,Sensor Team,ISSUE_0423,In Progress,11/01/24 0:00,jordan,High
+GWATCH_FTR_424,Feature 424,Standard feature behavior,ML Team,ISSUE_0424,Review,3/01/24 0:00,lee,Medium
+GWATCH_FTR_425,Feature 425,Standard feature behavior,Sensor Team,ISSUE_0425,Resolved,14/01/24 0:00,mira,Medium
+GWATCH_FTR_426,Feature 426,Standard feature behavior,Sensor Team,ISSUE_0426,In Progress,22/01/24 0:00,mira,Low
+GWATCH_FTR_427,Feature 427,Standard feature behavior,ML Team,ISSUE_0427,Resolved,6/01/24 0:00,jordan,Low
+GWATCH_FTR_428,Feature 428,Standard feature behavior,ML Team,ISSUE_0428,Resolved,23/01/24 0:00,sam,Medium
+GWATCH_FTR_429,Feature 429,Standard feature behavior,UI/UX Team,ISSUE_0429,Open,18/01/24 0:00,sam,Low
+GWATCH_FTR_430,Feature 430,Standard feature behavior,Sensor Team,ISSUE_0430,In Progress,26/01/24 0:00,mira,Medium
+GWATCH_FTR_431,Feature 431,Standard feature behavior,UI/UX Team,ISSUE_0431,In Progress,10/01/24 0:00,mira,Low
+GWATCH_FTR_432,Feature 432,Standard feature behavior,ML Team,ISSUE_0432,Review,10/01/24 0:00,jordan,Low
+GWATCH_FTR_433,Feature 433,Standard feature behavior,ML Team,ISSUE_0433,Resolved,23/01/24 0:00,jordan,High
+GWATCH_FTR_434,Feature 434,Standard feature behavior,ML Team,ISSUE_0434,Open,26/01/24 0:00,sam,Low
+GWATCH_FTR_435,Feature 435,Standard feature behavior,ML Team,ISSUE_0435,Open,4/01/24 0:00,jordan,Medium
+GWATCH_FTR_436,Feature 436,Standard feature behavior,Sensor Team,ISSUE_0436,In Progress,23/01/24 0:00,lee,High
+GWATCH_FTR_437,Feature 437,Standard feature behavior,UI/UX Team,ISSUE_0437,Resolved,17/01/24 0:00,jordan,Medium
+GWATCH_FTR_438,Feature 438,Standard feature behavior,Sensor Team,ISSUE_0438,In Progress,22/01/24 0:00,lee,High
+GWATCH_FTR_439,Feature 439,Standard feature behavior,UI/UX Team,ISSUE_0439,Resolved,20/01/24 0:00,jordan,High
+GWATCH_FTR_440,Feature 440,Standard feature behavior,UI/UX Team,ISSUE_0440,Review,3/01/24 0:00,sam,Low
+GWATCH_FTR_441,Feature 441,Standard feature behavior,UI/UX Team,ISSUE_0441,In Progress,13/01/24 0:00,sam,Low
+GWATCH_FTR_442,Feature 442,Standard feature behavior,ML Team,ISSUE_0442,Resolved,27/01/24 0:00,mira,Medium
+GWATCH_FTR_443,Feature 443,Standard feature behavior,ML Team,ISSUE_0443,Resolved,28/01/24 0:00,sam,High
+GWATCH_FTR_444,Feature 444,Standard feature behavior,Sensor Team,ISSUE_0444,Open,3/01/24 0:00,sam,Medium
+GWATCH_FTR_445,Feature 445,Standard feature behavior,UI/UX Team,ISSUE_0445,Resolved,2/01/24 0:00,mira,Medium
+GWATCH_FTR_446,Feature 446,Standard feature behavior,ML Team,ISSUE_0446,Open,11/01/24 0:00,mira,High
+GWATCH_FTR_447,Feature 447,Standard feature behavior,ML Team,ISSUE_0447,Resolved,9/01/24 0:00,sam,High
+GWATCH_FTR_448,Feature 448,Standard feature behavior,ML Team,ISSUE_0448,Open,13/01/24 0:00,lee,Low
+GWATCH_FTR_449,Feature 449,Standard feature behavior,Sensor Team,ISSUE_0449,In Progress,3/01/24 0:00,mira,Low
+GWATCH_FTR_450,Feature 450,Standard feature behavior,ML Team,ISSUE_0450,Review,12/01/24 0:00,mira,Low
+GWATCH_FTR_451,Feature 451,Standard feature behavior,Sensor Team,ISSUE_0451,Review,22/01/24 0:00,sam,Medium
+GWATCH_FTR_452,Feature 452,Standard feature behavior,UI/UX Team,ISSUE_0452,Resolved,1/01/24 0:00,mira,Low
+GWATCH_FTR_453,Feature 453,Standard feature behavior,ML Team,ISSUE_0453,Resolved,17/01/24 0:00,sam,Low
+GWATCH_FTR_454,Feature 454,Standard feature behavior,UI/UX Team,ISSUE_0454,Open,12/01/24 0:00,sam,Medium
+GWATCH_FTR_455,Feature 455,Standard feature behavior,UI/UX Team,ISSUE_0455,In Progress,22/01/24 0:00,lee,Low
+GWATCH_FTR_456,Feature 456,Standard feature behavior,ML Team,ISSUE_0456,Review,6/01/24 0:00,jordan,Low
+GWATCH_FTR_457,Feature 457,Standard feature behavior,Sensor Team,ISSUE_0457,Review,24/01/24 0:00,lee,Low
+GWATCH_FTR_458,Feature 458,Standard feature behavior,Sensor Team,ISSUE_0458,Resolved,21/01/24 0:00,lee,Medium
+GWATCH_FTR_459,Feature 459,Standard feature behavior,Sensor Team,ISSUE_0459,In Progress,13/01/24 0:00,jordan,Medium
+GWATCH_FTR_460,Feature 460,Standard feature behavior,ML Team,ISSUE_0460,Open,6/01/24 0:00,jordan,High
+GWATCH_FTR_461,Feature 461,Standard feature behavior,UI/UX Team,ISSUE_0461,Resolved,19/01/24 0:00,mira,High
+GWATCH_FTR_462,Feature 462,Standard feature behavior,UI/UX Team,ISSUE_0462,Resolved,5/01/24 0:00,jordan,High
+GWATCH_FTR_463,Feature 463,Standard feature behavior,UI/UX Team,ISSUE_0463,Resolved,1/01/24 0:00,mira,High
+GWATCH_FTR_464,Feature 464,Standard feature behavior,ML Team,ISSUE_0464,Resolved,14/01/24 0:00,jordan,Low
+GWATCH_FTR_465,Feature 465,Standard feature behavior,ML Team,ISSUE_0465,In Progress,2/01/24 0:00,mira,Low
+GWATCH_FTR_466,Feature 466,Standard feature behavior,UI/UX Team,ISSUE_0466,Review,21/01/24 0:00,jordan,Medium
+GWATCH_FTR_467,Feature 467,Standard feature behavior,UI/UX Team,ISSUE_0467,Review,26/01/24 0:00,mira,Medium
+GWATCH_FTR_468,Feature 468,Standard feature behavior,Sensor Team,ISSUE_0468,Resolved,4/01/24 0:00,sam,Low
+GWATCH_FTR_469,Feature 469,Standard feature behavior,ML Team,ISSUE_0469,In Progress,12/01/24 0:00,sam,High
+GWATCH_FTR_470,Feature 470,Standard feature behavior,Sensor Team,ISSUE_0470,Review,26/01/24 0:00,sam,High
+GWATCH_FTR_471,Feature 471,Standard feature behavior,Sensor Team,ISSUE_0471,Review,17/01/24 0:00,jordan,Low
+GWATCH_FTR_472,Feature 472,Standard feature behavior,ML Team,ISSUE_0472,In Progress,4/01/24 0:00,mira,Low
+GWATCH_FTR_473,Feature 473,Standard feature behavior,ML Team,ISSUE_0473,In Progress,6/01/24 0:00,sam,Medium
+GWATCH_FTR_474,Feature 474,Standard feature behavior,ML Team,ISSUE_0474,In Progress,26/01/24 0:00,sam,High
+GWATCH_FTR_475,Feature 475,Standard feature behavior,UI/UX Team,ISSUE_0475,Review,17/01/24 0:00,mira,High
+GWATCH_FTR_476,Feature 476,Standard feature behavior,Sensor Team,ISSUE_0476,In Progress,2/01/24 0:00,sam,High
+GWATCH_FTR_477,Feature 477,Standard feature behavior,ML Team,ISSUE_0477,Open,17/01/24 0:00,mira,Low
+GWATCH_FTR_478,Feature 478,Standard feature behavior,Sensor Team,ISSUE_0478,Review,22/01/24 0:00,mira,Low
+GWATCH_FTR_479,Feature 479,Standard feature behavior,ML Team,ISSUE_0479,Open,22/01/24 0:00,lee,Medium
+GWATCH_FTR_480,Feature 480,Standard feature behavior,UI/UX Team,ISSUE_0480,Review,12/01/24 0:00,lee,High
+GWATCH_FTR_481,Feature 481,Standard feature behavior,UI/UX Team,ISSUE_0481,Review,10/01/24 0:00,mira,Medium
+GWATCH_FTR_482,Feature 482,Standard feature behavior,Sensor Team,ISSUE_0482,In Progress,10/01/24 0:00,mira,Medium
+GWATCH_FTR_483,Feature 483,Standard feature behavior,Sensor Team,ISSUE_0483,In Progress,3/01/24 0:00,lee,Medium
+GWATCH_FTR_484,Feature 484,Standard feature behavior,Sensor Team,ISSUE_0484,Review,25/01/24 0:00,jordan,Medium
+GWATCH_FTR_485,Feature 485,Standard feature behavior,Sensor Team,ISSUE_0485,In Progress,3/01/24 0:00,mira,Medium
+GWATCH_FTR_486,Feature 486,Standard feature behavior,UI/UX Team,ISSUE_0486,In Progress,27/01/24 0:00,lee,High
+GWATCH_FTR_487,Feature 487,Standard feature behavior,ML Team,ISSUE_0487,Open,6/01/24 0:00,lee,High
+GWATCH_FTR_488,Feature 488,Standard feature behavior,ML Team,ISSUE_0488,Review,15/01/24 0:00,lee,Medium
+GWATCH_FTR_489,Feature 489,Standard feature behavior,UI/UX Team,ISSUE_0489,Review,24/01/24 0:00,sam,Medium
+GWATCH_FTR_490,Feature 490,Standard feature behavior,ML Team,ISSUE_0490,Resolved,15/01/24 0:00,lee,Low
+GWATCH_FTR_491,Feature 491,Standard feature behavior,ML Team,ISSUE_0491,Resolved,17/01/24 0:00,sam,High
+GWATCH_FTR_492,Feature 492,Standard feature behavior,ML Team,ISSUE_0492,Open,25/01/24 0:00,mira,Medium
+GWATCH_FTR_493,Feature 493,Standard feature behavior,ML Team,ISSUE_0493,Resolved,10/01/24 0:00,jordan,Low
+GWATCH_FTR_494,Feature 494,Standard feature behavior,ML Team,ISSUE_0494,Open,17/01/24 0:00,lee,High
+GWATCH_FTR_495,Feature 495,Standard feature behavior,ML Team,ISSUE_0495,Review,25/01/24 0:00,jordan,High
+GWATCH_FTR_496,Feature 496,Standard feature behavior,Sensor Team,ISSUE_0496,Resolved,16/01/24 0:00,lee,Medium
+GWATCH_FTR_497,Feature 497,Standard feature behavior,UI/UX Team,ISSUE_0497,Open,26/01/24 0:00,jordan,Medium
+GWATCH_FTR_498,Feature 498,Standard feature behavior,UI/UX Team,ISSUE_0498,Resolved,25/01/24 0:00,sam,High
+GWATCH_FTR_499,Feature 499,Standard feature behavior,Sensor Team,ISSUE_0499,Resolved,23/01/24 0:00,sam,High
+GWATCH_FTR_500,Feature 500,Standard feature behavior,ML Team,ISSUE_0500,Resolved,21/01/24 0:00,sam,Low

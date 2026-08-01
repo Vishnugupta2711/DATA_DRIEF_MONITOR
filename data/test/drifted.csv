@@ -1,0 +1,501 @@
+FeatureID,FeatureName,FeatureDescription,Team,IssueID,Status,ChangedAt,Priority,Region
+GWATCH_FTR_001,Feature 1,AI-enhanced adaptive behavior model,Health Analytics,ISSUE_0001,In Progress,7/02/24 0:00,High,EMEA
+GWATCH_FTR_002,Feature 2,AI-enhanced adaptive behavior model,Health Analytics,ISSUE_0002,Review,12/02/24 0:00,Critical,APAC
+GWATCH_FTR_003,Feature 3,AI-enhanced adaptive behavior model,Health Analytics,ISSUE_0003,Open,12/02/24 0:00,High,APAC
+GWATCH_FTR_004,Feature 4,AI-enhanced adaptive behavior model,Health Analytics,ISSUE_0004,Review,5/02/24 0:00,High,APAC
+GWATCH_FTR_005,Feature 5,AI-enhanced adaptive behavior model,ML Research,ISSUE_0005,Open,25/02/24 0:00,High,APAC
+GWATCH_FTR_006,Feature 6,AI-enhanced adaptive behavior model,ML Research,ISSUE_0006,Open,5/02/24 0:00,High,NA
+GWATCH_FTR_007,Feature 7,AI-enhanced adaptive behavior model,Navigation Team,ISSUE_0007,In Progress,19/02/24 0:00,Critical,EMEA
+GWATCH_FTR_008,Feature 8,AI-enhanced adaptive behavior model,ML Research,ISSUE_0008,In Progress,9/02/24 0:00,Critical,EMEA
+GWATCH_FTR_009,Feature 9,AI-enhanced adaptive behavior model,ML Research,ISSUE_0009,Review,12/02/24 0:00,Critical,EMEA
+GWATCH_FTR_010,Feature 10,AI-enhanced adaptive behavior model,Health Analytics,ISSUE_0010,Open,18/02/24 0:00,Critical,APAC
+GWATCH_FTR_011,Feature 11,AI-enhanced adaptive behavior model,Health Analytics,ISSUE_0011,Review,16/02/24 0:00,Critical,EMEA
+GWATCH_FTR_012,Feature 12,AI-enhanced adaptive behavior model,Navigation Team,ISSUE_0012,In Progress,19/02/24 0:00,High,EMEA
+GWATCH_FTR_013,Feature 13,AI-enhanced adaptive behavior model,Navigation Team,ISSUE_0013,Review,11/02/24 0:00,High,NA
+GWATCH_FTR_014,Feature 14,AI-enhanced adaptive behavior model,Health Analytics,ISSUE_0014,Open,7/02/24 0:00,Critical,NA
+GWATCH_FTR_015,Feature 15,AI-enhanced adaptive behavior model,ML Research,ISSUE_0015,Review,4/02/24 0:00,Critical,APAC
+GWATCH_FTR_016,Feature 16,AI-enhanced adaptive behavior model,Health Analytics,ISSUE_0016,In Progress,14/02/24 0:00,High,APAC
+GWATCH_FTR_017,Feature 17,AI-enhanced adaptive behavior model,ML Research,ISSUE_0017,Review,3/02/24 0:00,Critical,NA
+GWATCH_FTR_018,Feature 18,AI-enhanced adaptive behavior model,Navigation Team,ISSUE_0018,Review,4/02/24 0:00,High,APAC
+GWATCH_FTR_019,Feature 19,AI-enhanced adaptive behavior model,Health Analytics,ISSUE_0019,In Progress,9/02/24 0:00,High,NA
+GWATCH_FTR_020,Feature 20,AI-enhanced adaptive behavior model,ML Research,ISSUE_0020,Review,20/02/24 0:00,Critical,APAC
+GWATCH_FTR_021,Feature 21,AI-enhanced adaptive behavior model,ML Research,ISSUE_0021,In Progress,22/02/24 0:00,High,EMEA
+GWATCH_FTR_022,Feature 22,AI-enhanced adaptive behavior model,Health Analytics,ISSUE_0022,Review,21/02/24 0:00,Critical,NA
+GWATCH_FTR_023,Feature 23,AI-enhanced adaptive behavior model,ML Research,ISSUE_0023,Review,19/02/24 0:00,Critical,APAC
+GWATCH_FTR_024,Feature 24,AI-enhanced adaptive behavior model,Health Analytics,ISSUE_0024,Review,10/02/24 0:00,Critical,APAC
+GWATCH_FTR_025,Feature 25,AI-enhanced adaptive behavior model,Navigation Team,ISSUE_0025,Review,15/02/24 0:00,Critical,APAC
+GWATCH_FTR_026,Feature 26,AI-enhanced adaptive behavior model,Navigation Team,ISSUE_0026,Open,5/02/24 0:00,High,EMEA
+GWATCH_FTR_027,Feature 27,AI-enhanced adaptive behavior model,Navigation Team,ISSUE_0027,Open,12/02/24 0:00,Critical,NA
+GWATCH_FTR_028,Feature 28,AI-enhanced adaptive behavior model,Navigation Team,ISSUE_0028,In Progress,26/02/24 0:00,Critical,NA
+GWATCH_FTR_029,Feature 29,AI-enhanced adaptive behavior model,ML Research,ISSUE_0029,Open,9/02/24 0:00,High,APAC
+GWATCH_FTR_030,Feature 30,AI-enhanced adaptive behavior model,Health Analytics,ISSUE_0030,Review,10/02/24 0:00,Critical,APAC
+GWATCH_FTR_031,Feature 31,AI-enhanced adaptive behavior model,Navigation Team,ISSUE_0031,In Progress,3/02/24 0:00,Critical,APAC
+GWATCH_FTR_032,Feature 32,AI-enhanced adaptive behavior model,Health Analytics,ISSUE_0032,Open,7/02/24 0:00,Critical,NA
+GWATCH_FTR_033,Feature 33,AI-enhanced adaptive behavior model,ML Research,ISSUE_0033,Review,2/02/24 0:00,High,EMEA
+GWATCH_FTR_034,Feature 34,AI-enhanced adaptive behavior model,Navigation Team,ISSUE_0034,Review,18/02/24 0:00,Critical,NA
+GWATCH_FTR_035,Feature 35,AI-enhanced adaptive behavior model,Navigation Team,ISSUE_0035,Open,25/02/24 0:00,Critical,APAC
+GWATCH_FTR_036,Feature 36,AI-enhanced adaptive behavior model,ML Research,ISSUE_0036,Open,12/02/24 0:00,High,EMEA
+GWATCH_FTR_037,Feature 37,AI-enhanced adaptive behavior model,ML Research,ISSUE_0037,Open,16/02/24 0:00,High,NA
+GWATCH_FTR_038,Feature 38,AI-enhanced adaptive behavior model,Health Analytics,ISSUE_0038,Review,23/02/24 0:00,High,APAC
+GWATCH_FTR_039,Feature 39,AI-enhanced adaptive behavior model,ML Research,ISSUE_0039,In Progress,2/02/24 0:00,High,APAC
+GWATCH_FTR_040,Feature 40,AI-enhanced adaptive behavior model,Health Analytics,ISSUE_0040,Review,25/02/24 0:00,High,EMEA
+GWATCH_FTR_041,Feature 41,AI-enhanced adaptive behavior model,ML Research,ISSUE_0041,Review,23/02/24 0:00,Critical,APAC
+GWATCH_FTR_042,Feature 42,AI-enhanced adaptive behavior model,Health Analytics,ISSUE_0042,In Progress,25/02/24 0:00,High,EMEA
+GWATCH_FTR_043,Feature 43,AI-enhanced adaptive behavior model,Health Analytics,ISSUE_0043,Open,4/02/24 0:00,High,NA
+GWATCH_FTR_044,Feature 44,AI-enhanced adaptive behavior model,Health Analytics,ISSUE_0044,Review,22/02/24 0:00,High,NA
+GWATCH_FTR_045,Feature 45,AI-enhanced adaptive behavior model,Navigation Team,ISSUE_0045,In Progress,6/02/24 0:00,High,APAC
+GWATCH_FTR_046,Feature 46,AI-enhanced adaptive behavior model,Navigation Team,ISSUE_0046,Open,10/02/24 0:00,Critical,EMEA
+GWATCH_FTR_047,Feature 47,AI-enhanced adaptive behavior model,ML Research,ISSUE_0047,Review,11/02/24 0:00,High,EMEA
+GWATCH_FTR_048,Feature 48,AI-enhanced adaptive behavior model,Navigation Team,ISSUE_0048,Open,24/02/24 0:00,Critical,NA
+GWATCH_FTR_049,Feature 49,AI-enhanced adaptive behavior model,Health Analytics,ISSUE_0049,In Progress,28/02/24 0:00,Critical,NA
+GWATCH_FTR_050,Feature 50,AI-enhanced adaptive behavior model,ML Research,ISSUE_0050,Review,21/02/24 0:00,High,NA
+GWATCH_FTR_051,Feature 51,AI-enhanced adaptive behavior model,Health Analytics,ISSUE_0051,Review,14/02/24 0:00,High,APAC
+GWATCH_FTR_052,Feature 52,AI-enhanced adaptive behavior model,Health Analytics,ISSUE_0052,In Progress,22/02/24 0:00,Critical,NA
+GWATCH_FTR_053,Feature 53,AI-enhanced adaptive behavior model,ML Research,ISSUE_0053,Open,17/02/24 0:00,High,EMEA
+GWATCH_FTR_054,Feature 54,AI-enhanced adaptive behavior model,ML Research,ISSUE_0054,Open,10/02/24 0:00,High,EMEA
+GWATCH_FTR_055,Feature 55,AI-enhanced adaptive behavior model,Navigation Team,ISSUE_0055,Open,27/02/24 0:00,Critical,APAC
+GWATCH_FTR_056,Feature 56,AI-enhanced adaptive behavior model,Navigation Team,ISSUE_0056,Review,28/02/24 0:00,Critical,EMEA
+GWATCH_FTR_057,Feature 57,AI-enhanced adaptive behavior model,Navigation Team,ISSUE_0057,Review,22/02/24 0:00,Critical,APAC
+GWATCH_FTR_058,Feature 58,AI-enhanced adaptive behavior model,Health Analytics,ISSUE_0058,In Progress,15/02/24 0:00,Critical,NA
+GWATCH_FTR_059,Feature 59,AI-enhanced adaptive behavior model,ML Research,ISSUE_0059,Review,1/02/24 0:00,Critical,EMEA
+GWATCH_FTR_060,Feature 60,AI-enhanced adaptive behavior model,Health Analytics,ISSUE_0060,Open,14/02/24 0:00,High,APAC
+GWATCH_FTR_061,Feature 61,AI-enhanced adaptive behavior model,Navigation Team,ISSUE_0061,Review,23/02/24 0:00,High,APAC
+GWATCH_FTR_062,Feature 62,AI-enhanced adaptive behavior model,Health Analytics,ISSUE_0062,Review,28/02/24 0:00,Critical,APAC
+GWATCH_FTR_063,Feature 63,AI-enhanced adaptive behavior model,Health Analytics,ISSUE_0063,Open,26/02/24 0:00,Critical,APAC
+GWATCH_FTR_064,Feature 64,AI-enhanced adaptive behavior model,Health Analytics,ISSUE_0064,Open,27/02/24 0:00,High,EMEA
+GWATCH_FTR_065,Feature 65,AI-enhanced adaptive behavior model,Navigation Team,ISSUE_0065,Review,16/02/24 0:00,Critical,APAC
+GWATCH_FTR_066,Feature 66,AI-enhanced adaptive behavior model,Health Analytics,ISSUE_0066,In Progress,8/02/24 0:00,Critical,APAC
+GWATCH_FTR_067,Feature 67,AI-enhanced adaptive behavior model,Health Analytics,ISSUE_0067,In Progress,6/02/24 0:00,Critical,APAC
+GWATCH_FTR_068,Feature 68,AI-enhanced adaptive behavior model,Navigation Team,ISSUE_0068,Review,6/02/24 0:00,High,NA
+GWATCH_FTR_069,Feature 69,AI-enhanced adaptive behavior model,ML Research,ISSUE_0069,Open,10/02/24 0:00,Critical,EMEA
+GWATCH_FTR_070,Feature 70,AI-enhanced adaptive behavior model,ML Research,ISSUE_0070,Review,7/02/24 0:00,High,NA
+GWATCH_FTR_071,Feature 71,AI-enhanced adaptive behavior model,Navigation Team,ISSUE_0071,Open,4/02/24 0:00,High,APAC
+GWATCH_FTR_072,Feature 72,AI-enhanced adaptive behavior model,Health Analytics,ISSUE_0072,Review,19/02/24 0:00,High,APAC
+GWATCH_FTR_073,Feature 73,AI-enhanced adaptive behavior model,Navigation Team,ISSUE_0073,Open,7/02/24 0:00,High,APAC
+GWATCH_FTR_074,Feature 74,AI-enhanced adaptive behavior model,Navigation Team,ISSUE_0074,Open,1/02/24 0:00,Critical,EMEA
+GWATCH_FTR_075,Feature 75,AI-enhanced adaptive behavior model,ML Research,ISSUE_0075,In Progress,2/02/24 0:00,Critical,NA
+GWATCH_FTR_076,Feature 76,AI-enhanced adaptive behavior model,ML Research,ISSUE_0076,In Progress,14/02/24 0:00,Critical,APAC
+GWATCH_FTR_077,Feature 77,AI-enhanced adaptive behavior model,ML Research,ISSUE_0077,In Progress,16/02/24 0:00,Critical,EMEA
+GWATCH_FTR_078,Feature 78,AI-enhanced adaptive behavior model,ML Research,ISSUE_0078,Open,26/02/24 0:00,Critical,NA
+GWATCH_FTR_079,Feature 79,AI-enhanced adaptive behavior model,Navigation Team,ISSUE_0079,Open,27/02/24 0:00,High,APAC
+GWATCH_FTR_080,Feature 80,AI-enhanced adaptive behavior model,Navigation Team,ISSUE_0080,Review,15/02/24 0:00,Critical,NA
+GWATCH_FTR_081,Feature 81,AI-enhanced adaptive behavior model,Navigation Team,ISSUE_0081,In Progress,9/02/24 0:00,High,APAC
+GWATCH_FTR_082,Feature 82,AI-enhanced adaptive behavior model,Health Analytics,ISSUE_0082,Open,24/02/24 0:00,Critical,NA
+GWATCH_FTR_083,Feature 83,AI-enhanced adaptive behavior model,Health Analytics,ISSUE_0083,In Progress,27/02/24 0:00,High,EMEA
+GWATCH_FTR_084,Feature 84,AI-enhanced adaptive behavior model,Health Analytics,ISSUE_0084,In Progress,22/02/24 0:00,Critical,NA
+GWATCH_FTR_085,Feature 85,AI-enhanced adaptive behavior model,Health Analytics,ISSUE_0085,Review,27/02/24 0:00,High,EMEA
+GWATCH_FTR_086,Feature 86,AI-enhanced adaptive behavior model,Navigation Team,ISSUE_0086,Review,25/02/24 0:00,High,NA
+GWATCH_FTR_087,Feature 87,AI-enhanced adaptive behavior model,Health Analytics,ISSUE_0087,In Progress,15/02/24 0:00,Critical,NA
+GWATCH_FTR_088,Feature 88,AI-enhanced adaptive behavior model,ML Research,ISSUE_0088,Review,3/02/24 0:00,Critical,APAC
+GWATCH_FTR_089,Feature 89,AI-enhanced adaptive behavior model,ML Research,ISSUE_0089,Open,2/02/24 0:00,Critical,NA
+GWATCH_FTR_090,Feature 90,AI-enhanced adaptive behavior model,ML Research,ISSUE_0090,In Progress,14/02/24 0:00,High,EMEA
+GWATCH_FTR_091,Feature 91,AI-enhanced adaptive behavior model,Navigation Team,ISSUE_0091,In Progress,7/02/24 0:00,High,APAC
+GWATCH_FTR_092,Feature 92,AI-enhanced adaptive behavior model,Health Analytics,ISSUE_0092,Open,2/02/24 0:00,High,EMEA
+GWATCH_FTR_093,Feature 93,AI-enhanced adaptive behavior model,ML Research,ISSUE_0093,Review,23/02/24 0:00,High,EMEA
+GWATCH_FTR_094,Feature 94,AI-enhanced adaptive behavior model,ML Research,ISSUE_0094,Open,23/02/24 0:00,High,NA
+GWATCH_FTR_095,Feature 95,AI-enhanced adaptive behavior model,Health Analytics,ISSUE_0095,In Progress,27/02/24 0:00,Critical,APAC
+GWATCH_FTR_096,Feature 96,AI-enhanced adaptive behavior model,Navigation Team,ISSUE_0096,Review,12/02/24 0:00,High,EMEA
+GWATCH_FTR_097,Feature 97,AI-enhanced adaptive behavior model,ML Research,ISSUE_0097,Review,1/02/24 0:00,High,NA
+GWATCH_FTR_098,Feature 98,AI-enhanced adaptive behavior model,ML Research,ISSUE_0098,Open,5/02/24 0:00,High,EMEA
+GWATCH_FTR_099,Feature 99,AI-enhanced adaptive behavior model,Health Analytics,ISSUE_0099,Review,7/02/24 0:00,Critical,NA
+GWATCH_FTR_100,Feature 100,AI-enhanced adaptive behavior model,Navigation Team,ISSUE_0100,Open,5/02/24 0:00,High,APAC
+GWATCH_FTR_101,Feature 101,AI-enhanced adaptive behavior model,Navigation Team,ISSUE_0101,Open,11/02/24 0:00,High,EMEA
+GWATCH_FTR_102,Feature 102,AI-enhanced adaptive behavior model,ML Research,ISSUE_0102,Review,17/02/24 0:00,Critical,EMEA
+GWATCH_FTR_103,Feature 103,AI-enhanced adaptive behavior model,ML Research,ISSUE_0103,Open,8/02/24 0:00,High,EMEA
+GWATCH_FTR_104,Feature 104,AI-enhanced adaptive behavior model,Navigation Team,ISSUE_0104,In Progress,24/02/24 0:00,Critical,NA
+GWATCH_FTR_105,Feature 105,AI-enhanced adaptive behavior model,Navigation Team,ISSUE_0105,Review,28/02/24 0:00,High,APAC
+GWATCH_FTR_106,Feature 106,AI-enhanced adaptive behavior model,Health Analytics,ISSUE_0106,In Progress,13/02/24 0:00,Critical,APAC
+GWATCH_FTR_107,Feature 107,AI-enhanced adaptive behavior model,Navigation Team,ISSUE_0107,Open,7/02/24 0:00,Critical,APAC
+GWATCH_FTR_108,Feature 108,AI-enhanced adaptive behavior model,Health Analytics,ISSUE_0108,In Progress,18/02/24 0:00,High,EMEA
+GWATCH_FTR_109,Feature 109,AI-enhanced adaptive behavior model,Navigation Team,ISSUE_0109,Review,27/02/24 0:00,Critical,EMEA
+GWATCH_FTR_110,Feature 110,AI-enhanced adaptive behavior model,Navigation Team,ISSUE_0110,Review,20/02/24 0:00,High,APAC
+GWATCH_FTR_111,Feature 111,AI-enhanced adaptive behavior model,ML Research,ISSUE_0111,Review,13/02/24 0:00,Critical,EMEA
+GWATCH_FTR_112,Feature 112,AI-enhanced adaptive behavior model,ML Research,ISSUE_0112,In Progress,13/02/24 0:00,Critical,NA
+GWATCH_FTR_113,Feature 113,AI-enhanced adaptive behavior model,ML Research,ISSUE_0113,In Progress,12/02/24 0:00,Critical,EMEA
+GWATCH_FTR_114,Feature 114,AI-enhanced adaptive behavior model,Navigation Team,ISSUE_0114,In Progress,13/02/24 0:00,High,NA
+GWATCH_FTR_115,Feature 115,AI-enhanced adaptive behavior model,Health Analytics,ISSUE_0115,Open,9/02/24 0:00,Critical,NA
+GWATCH_FTR_116,Feature 116,AI-enhanced adaptive behavior model,ML Research,ISSUE_0116,Review,12/02/24 0:00,Critical,APAC
+GWATCH_FTR_117,Feature 117,AI-enhanced adaptive behavior model,ML Research,ISSUE_0117,Open,16/02/24 0:00,Critical,NA
+GWATCH_FTR_118,Feature 118,AI-enhanced adaptive behavior model,ML Research,ISSUE_0118,Open,27/02/24 0:00,High,APAC
+GWATCH_FTR_119,Feature 119,AI-enhanced adaptive behavior model,ML Research,ISSUE_0119,Review,19/02/24 0:00,Critical,EMEA
+GWATCH_FTR_120,Feature 120,AI-enhanced adaptive behavior model,Health Analytics,ISSUE_0120,Open,20/02/24 0:00,Critical,EMEA
+GWATCH_FTR_121,Feature 121,AI-enhanced adaptive behavior model,Health Analytics,ISSUE_0121,In Progress,7/02/24 0:00,High,EMEA
+GWATCH_FTR_122,Feature 122,AI-enhanced adaptive behavior model,Health Analytics,ISSUE_0122,In Progress,15/02/24 0:00,High,APAC
+GWATCH_FTR_123,Feature 123,AI-enhanced adaptive behavior model,Health Analytics,ISSUE_0123,Open,1/02/24 0:00,Critical,APAC
+GWATCH_FTR_124,Feature 124,AI-enhanced adaptive behavior model,ML Research,ISSUE_0124,In Progress,1/02/24 0:00,Critical,EMEA
+GWATCH_FTR_125,Feature 125,AI-enhanced adaptive behavior model,ML Research,ISSUE_0125,Open,21/02/24 0:00,Critical,APAC
+GWATCH_FTR_126,Feature 126,AI-enhanced adaptive behavior model,ML Research,ISSUE_0126,Review,11/02/24 0:00,High,EMEA
+GWATCH_FTR_127,Feature 127,AI-enhanced adaptive behavior model,ML Research,ISSUE_0127,Open,8/02/24 0:00,High,APAC
+GWATCH_FTR_128,Feature 128,AI-enhanced adaptive behavior model,ML Research,ISSUE_0128,In Progress,1/02/24 0:00,High,EMEA
+GWATCH_FTR_129,Feature 129,AI-enhanced adaptive behavior model,Health Analytics,ISSUE_0129,Review,15/02/24 0:00,High,EMEA
+GWATCH_FTR_130,Feature 130,AI-enhanced adaptive behavior model,Health Analytics,ISSUE_0130,Review,1/02/24 0:00,High,APAC
+GWATCH_FTR_131,Feature 131,AI-enhanced adaptive behavior model,Navigation Team,ISSUE_0131,Review,25/02/24 0:00,Critical,APAC
+GWATCH_FTR_132,Feature 132,AI-enhanced adaptive behavior model,Navigation Team,ISSUE_0132,In Progress,8/02/24 0:00,High,NA
+GWATCH_FTR_133,Feature 133,AI-enhanced adaptive behavior model,Navigation Team,ISSUE_0133,In Progress,27/02/24 0:00,High,EMEA
+GWATCH_FTR_134,Feature 134,AI-enhanced adaptive behavior model,Navigation Team,ISSUE_0134,In Progress,6/02/24 0:00,Critical,EMEA
+GWATCH_FTR_135,Feature 135,AI-enhanced adaptive behavior model,ML Research,ISSUE_0135,Open,5/02/24 0:00,Critical,APAC
+GWATCH_FTR_136,Feature 136,AI-enhanced adaptive behavior model,Navigation Team,ISSUE_0136,Open,12/02/24 0:00,Critical,EMEA
+GWATCH_FTR_137,Feature 137,AI-enhanced adaptive behavior model,Navigation Team,ISSUE_0137,In Progress,2/02/24 0:00,Critical,APAC
+GWATCH_FTR_138,Feature 138,AI-enhanced adaptive behavior model,ML Research,ISSUE_0138,In Progress,4/02/24 0:00,High,APAC
+GWATCH_FTR_139,Feature 139,AI-enhanced adaptive behavior model,Navigation Team,ISSUE_0139,Open,23/02/24 0:00,High,EMEA
+GWATCH_FTR_140,Feature 140,AI-enhanced adaptive behavior model,ML Research,ISSUE_0140,Open,14/02/24 0:00,High,APAC
+GWATCH_FTR_141,Feature 141,AI-enhanced adaptive behavior model,Health Analytics,ISSUE_0141,Open,27/02/24 0:00,Critical,EMEA
+GWATCH_FTR_142,Feature 142,AI-enhanced adaptive behavior model,Navigation Team,ISSUE_0142,In Progress,26/02/24 0:00,High,EMEA
+GWATCH_FTR_143,Feature 143,AI-enhanced adaptive behavior model,Navigation Team,ISSUE_0143,Open,12/02/24 0:00,High,APAC
+GWATCH_FTR_144,Feature 144,AI-enhanced adaptive behavior model,ML Research,ISSUE_0144,Review,26/02/24 0:00,High,APAC
+GWATCH_FTR_145,Feature 145,AI-enhanced adaptive behavior model,ML Research,ISSUE_0145,Review,6/02/24 0:00,Critical,EMEA
+GWATCH_FTR_146,Feature 146,AI-enhanced adaptive behavior model,Navigation Team,ISSUE_0146,Open,26/02/24 0:00,High,NA
+GWATCH_FTR_147,Feature 147,AI-enhanced adaptive behavior model,Navigation Team,ISSUE_0147,Review,17/02/24 0:00,High,NA
+GWATCH_FTR_148,Feature 148,AI-enhanced adaptive behavior model,Health Analytics,ISSUE_0148,Open,12/02/24 0:00,High,EMEA
+GWATCH_FTR_149,Feature 149,AI-enhanced adaptive behavior model,ML Research,ISSUE_0149,In Progress,28/02/24 0:00,High,APAC
+GWATCH_FTR_150,Feature 150,AI-enhanced adaptive behavior model,Navigation Team,ISSUE_0150,Review,2/02/24 0:00,Critical,APAC
+GWATCH_FTR_151,Feature 151,AI-enhanced adaptive behavior model,ML Research,ISSUE_0151,Review,3/02/24 0:00,Critical,EMEA
+GWATCH_FTR_152,Feature 152,AI-enhanced adaptive behavior model,Navigation Team,ISSUE_0152,In Progress,20/02/24 0:00,Critical,EMEA
+GWATCH_FTR_153,Feature 153,AI-enhanced adaptive behavior model,Health Analytics,ISSUE_0153,In Progress,24/02/24 0:00,Critical,APAC
+GWATCH_FTR_154,Feature 154,AI-enhanced adaptive behavior model,ML Research,ISSUE_0154,Open,14/02/24 0:00,Critical,NA
+GWATCH_FTR_155,Feature 155,AI-enhanced adaptive behavior model,Health Analytics,ISSUE_0155,Review,4/02/24 0:00,Critical,APAC
+GWATCH_FTR_156,Feature 156,AI-enhanced adaptive behavior model,Navigation Team,ISSUE_0156,In Progress,15/02/24 0:00,Critical,EMEA
+GWATCH_FTR_157,Feature 157,AI-enhanced adaptive behavior model,Navigation Team,ISSUE_0157,Open,13/02/24 0:00,Critical,EMEA
+GWATCH_FTR_158,Feature 158,AI-enhanced adaptive behavior model,ML Research,ISSUE_0158,In Progress,10/02/24 0:00,High,NA
+GWATCH_FTR_159,Feature 159,AI-enhanced adaptive behavior model,ML Research,ISSUE_0159,In Progress,27/02/24 0:00,High,EMEA
+GWATCH_FTR_160,Feature 160,AI-enhanced adaptive behavior model,Health Analytics,ISSUE_0160,Open,17/02/24 0:00,Critical,APAC
+GWATCH_FTR_161,Feature 161,AI-enhanced adaptive behavior model,Navigation Team,ISSUE_0161,Review,11/02/24 0:00,High,EMEA
+GWATCH_FTR_162,Feature 162,AI-enhanced adaptive behavior model,ML Research,ISSUE_0162,In Progress,6/02/24 0:00,Critical,EMEA
+GWATCH_FTR_163,Feature 163,AI-enhanced adaptive behavior model,Navigation Team,ISSUE_0163,Open,17/02/24 0:00,High,NA
+GWATCH_FTR_164,Feature 164,AI-enhanced adaptive behavior model,ML Research,ISSUE_0164,In Progress,13/02/24 0:00,High,NA
+GWATCH_FTR_165,Feature 165,AI-enhanced adaptive behavior model,ML Research,ISSUE_0165,Open,13/02/24 0:00,Critical,APAC
+GWATCH_FTR_166,Feature 166,AI-enhanced adaptive behavior model,Navigation Team,ISSUE_0166,Review,24/02/24 0:00,Critical,NA
+GWATCH_FTR_167,Feature 167,AI-enhanced adaptive behavior model,ML Research,ISSUE_0167,In Progress,22/02/24 0:00,High,NA
+GWATCH_FTR_168,Feature 168,AI-enhanced adaptive behavior model,Health Analytics,ISSUE_0168,Open,16/02/24 0:00,High,NA
+GWATCH_FTR_169,Feature 169,AI-enhanced adaptive behavior model,Health Analytics,ISSUE_0169,Open,17/02/24 0:00,High,NA
+GWATCH_FTR_170,Feature 170,AI-enhanced adaptive behavior model,Health Analytics,ISSUE_0170,In Progress,16/02/24 0:00,Critical,APAC
+GWATCH_FTR_171,Feature 171,AI-enhanced adaptive behavior model,Health Analytics,ISSUE_0171,In Progress,19/02/24 0:00,High,APAC
+GWATCH_FTR_172,Feature 172,AI-enhanced adaptive behavior model,ML Research,ISSUE_0172,In Progress,13/02/24 0:00,Critical,EMEA
+GWATCH_FTR_173,Feature 173,AI-enhanced adaptive behavior model,ML Research,ISSUE_0173,In Progress,23/02/24 0:00,Critical,EMEA
+GWATCH_FTR_174,Feature 174,AI-enhanced adaptive behavior model,ML Research,ISSUE_0174,Review,11/02/24 0:00,Critical,APAC
+GWATCH_FTR_175,Feature 175,AI-enhanced adaptive behavior model,ML Research,ISSUE_0175,Open,5/02/24 0:00,High,EMEA
+GWATCH_FTR_176,Feature 176,AI-enhanced adaptive behavior model,Navigation Team,ISSUE_0176,In Progress,18/02/24 0:00,Critical,NA
+GWATCH_FTR_177,Feature 177,AI-enhanced adaptive behavior model,ML Research,ISSUE_0177,Review,13/02/24 0:00,Critical,EMEA
+GWATCH_FTR_178,Feature 178,AI-enhanced adaptive behavior model,Navigation Team,ISSUE_0178,Review,18/02/24 0:00,High,EMEA
+GWATCH_FTR_179,Feature 179,AI-enhanced adaptive behavior model,ML Research,ISSUE_0179,In Progress,7/02/24 0:00,Critical,NA
+GWATCH_FTR_180,Feature 180,AI-enhanced adaptive behavior model,Health Analytics,ISSUE_0180,Open,21/02/24 0:00,Critical,NA
+GWATCH_FTR_181,Feature 181,AI-enhanced adaptive behavior model,ML Research,ISSUE_0181,Open,21/02/24 0:00,High,NA
+GWATCH_FTR_182,Feature 182,AI-enhanced adaptive behavior model,Health Analytics,ISSUE_0182,In Progress,5/02/24 0:00,High,APAC
+GWATCH_FTR_183,Feature 183,AI-enhanced adaptive behavior model,Navigation Team,ISSUE_0183,In Progress,21/02/24 0:00,High,EMEA
+GWATCH_FTR_184,Feature 184,AI-enhanced adaptive behavior model,Health Analytics,ISSUE_0184,Open,5/02/24 0:00,High,APAC
+GWATCH_FTR_185,Feature 185,AI-enhanced adaptive behavior model,Health Analytics,ISSUE_0185,In Progress,7/02/24 0:00,Critical,NA
+GWATCH_FTR_186,Feature 186,AI-enhanced adaptive behavior model,Health Analytics,ISSUE_0186,Review,17/02/24 0:00,High,NA
+GWATCH_FTR_187,Feature 187,AI-enhanced adaptive behavior model,Navigation Team,ISSUE_0187,Review,14/02/24 0:00,Critical,NA
+GWATCH_FTR_188,Feature 188,AI-enhanced adaptive behavior model,Health Analytics,ISSUE_0188,Open,23/02/24 0:00,Critical,EMEA
+GWATCH_FTR_189,Feature 189,AI-enhanced adaptive behavior model,ML Research,ISSUE_0189,Review,25/02/24 0:00,High,EMEA
+GWATCH_FTR_190,Feature 190,AI-enhanced adaptive behavior model,ML Research,ISSUE_0190,Open,5/02/24 0:00,Critical,EMEA
+GWATCH_FTR_191,Feature 191,AI-enhanced adaptive behavior model,ML Research,ISSUE_0191,Open,24/02/24 0:00,High,APAC
+GWATCH_FTR_192,Feature 192,AI-enhanced adaptive behavior model,ML Research,ISSUE_0192,Review,28/02/24 0:00,High,EMEA
+GWATCH_FTR_193,Feature 193,AI-enhanced adaptive behavior model,Health Analytics,ISSUE_0193,Review,23/02/24 0:00,Critical,NA
+GWATCH_FTR_194,Feature 194,AI-enhanced adaptive behavior model,ML Research,ISSUE_0194,In Progress,23/02/24 0:00,Critical,NA
+GWATCH_FTR_195,Feature 195,AI-enhanced adaptive behavior model,ML Research,ISSUE_0195,Review,5/02/24 0:00,High,NA
+GWATCH_FTR_196,Feature 196,AI-enhanced adaptive behavior model,Health Analytics,ISSUE_0196,In Progress,20/02/24 0:00,Critical,APAC
+GWATCH_FTR_197,Feature 197,AI-enhanced adaptive behavior model,Health Analytics,ISSUE_0197,Open,1/02/24 0:00,High,NA
+GWATCH_FTR_198,Feature 198,AI-enhanced adaptive behavior model,Health Analytics,ISSUE_0198,In Progress,16/02/24 0:00,High,EMEA
+GWATCH_FTR_199,Feature 199,AI-enhanced adaptive behavior model,Health Analytics,ISSUE_0199,In Progress,4/02/24 0:00,Critical,NA
+GWATCH_FTR_200,Feature 200,AI-enhanced adaptive behavior model,Navigation Team,ISSUE_0200,Open,2/02/24 0:00,High,EMEA
+GWATCH_FTR_201,Feature 201,AI-enhanced adaptive behavior model,ML Research,ISSUE_0201,Open,9/02/24 0:00,High,NA
+GWATCH_FTR_202,Feature 202,AI-enhanced adaptive behavior model,ML Research,ISSUE_0202,Review,17/02/24 0:00,Critical,EMEA
+GWATCH_FTR_203,Feature 203,AI-enhanced adaptive behavior model,Navigation Team,ISSUE_0203,Open,7/02/24 0:00,Critical,EMEA
+GWATCH_FTR_204,Feature 204,AI-enhanced adaptive behavior model,Health Analytics,ISSUE_0204,In Progress,5/02/24 0:00,High,NA
+GWATCH_FTR_205,Feature 205,AI-enhanced adaptive behavior model,Health Analytics,ISSUE_0205,In Progress,11/02/24 0:00,High,APAC
+GWATCH_FTR_206,Feature 206,AI-enhanced adaptive behavior model,Navigation Team,ISSUE_0206,In Progress,15/02/24 0:00,Critical,APAC
+GWATCH_FTR_207,Feature 207,AI-enhanced adaptive behavior model,Navigation Team,ISSUE_0207,In Progress,13/02/24 0:00,High,NA
+GWATCH_FTR_208,Feature 208,AI-enhanced adaptive behavior model,Health Analytics,ISSUE_0208,In Progress,25/02/24 0:00,High,APAC
+GWATCH_FTR_209,Feature 209,AI-enhanced adaptive behavior model,ML Research,ISSUE_0209,Open,8/02/24 0:00,High,NA
+GWATCH_FTR_210,Feature 210,AI-enhanced adaptive behavior model,Navigation Team,ISSUE_0210,Open,25/02/24 0:00,High,APAC
+GWATCH_FTR_211,Feature 211,AI-enhanced adaptive behavior model,Health Analytics,ISSUE_0211,Review,10/02/24 0:00,Critical,APAC
+GWATCH_FTR_212,Feature 212,AI-enhanced adaptive behavior model,ML Research,ISSUE_0212,In Progress,20/02/24 0:00,Critical,NA
+GWATCH_FTR_213,Feature 213,AI-enhanced adaptive behavior model,Health Analytics,ISSUE_0213,Review,14/02/24 0:00,High,EMEA
+GWATCH_FTR_214,Feature 214,AI-enhanced adaptive behavior model,Health Analytics,ISSUE_0214,Open,19/02/24 0:00,High,APAC
+GWATCH_FTR_215,Feature 215,AI-enhanced adaptive behavior model,Navigation Team,ISSUE_0215,Open,5/02/24 0:00,Critical,EMEA
+GWATCH_FTR_216,Feature 216,AI-enhanced adaptive behavior model,Health Analytics,ISSUE_0216,Open,26/02/24 0:00,High,APAC
+GWATCH_FTR_217,Feature 217,AI-enhanced adaptive behavior model,Health Analytics,ISSUE_0217,In Progress,23/02/24 0:00,Critical,APAC
+GWATCH_FTR_218,Feature 218,AI-enhanced adaptive behavior model,Health Analytics,ISSUE_0218,Review,18/02/24 0:00,Critical,APAC
+GWATCH_FTR_219,Feature 219,AI-enhanced adaptive behavior model,ML Research,ISSUE_0219,Open,12/02/24 0:00,Critical,NA
+GWATCH_FTR_220,Feature 220,AI-enhanced adaptive behavior model,Navigation Team,ISSUE_0220,In Progress,19/02/24 0:00,High,EMEA
+GWATCH_FTR_221,Feature 221,AI-enhanced adaptive behavior model,Navigation Team,ISSUE_0221,In Progress,1/02/24 0:00,Critical,NA
+GWATCH_FTR_222,Feature 222,AI-enhanced adaptive behavior model,Navigation Team,ISSUE_0222,Open,21/02/24 0:00,Critical,EMEA
+GWATCH_FTR_223,Feature 223,AI-enhanced adaptive behavior model,Navigation Team,ISSUE_0223,In Progress,12/02/24 0:00,High,NA
+GWATCH_FTR_224,Feature 224,AI-enhanced adaptive behavior model,Health Analytics,ISSUE_0224,Review,17/02/24 0:00,High,EMEA
+GWATCH_FTR_225,Feature 225,AI-enhanced adaptive behavior model,Navigation Team,ISSUE_0225,In Progress,21/02/24 0:00,Critical,NA
+GWATCH_FTR_226,Feature 226,AI-enhanced adaptive behavior model,ML Research,ISSUE_0226,Open,28/02/24 0:00,Critical,EMEA
+GWATCH_FTR_227,Feature 227,AI-enhanced adaptive behavior model,Navigation Team,ISSUE_0227,Open,10/02/24 0:00,Critical,APAC
+GWATCH_FTR_228,Feature 228,AI-enhanced adaptive behavior model,Health Analytics,ISSUE_0228,Open,4/02/24 0:00,High,EMEA
+GWATCH_FTR_229,Feature 229,AI-enhanced adaptive behavior model,ML Research,ISSUE_0229,Review,16/02/24 0:00,High,NA
+GWATCH_FTR_230,Feature 230,AI-enhanced adaptive behavior model,Navigation Team,ISSUE_0230,In Progress,10/02/24 0:00,Critical,APAC
+GWATCH_FTR_231,Feature 231,AI-enhanced adaptive behavior model,Navigation Team,ISSUE_0231,In Progress,14/02/24 0:00,High,NA
+GWATCH_FTR_232,Feature 232,AI-enhanced adaptive behavior model,Navigation Team,ISSUE_0232,In Progress,26/02/24 0:00,High,NA
+GWATCH_FTR_233,Feature 233,AI-enhanced adaptive behavior model,Health Analytics,ISSUE_0233,In Progress,28/02/24 0:00,Critical,EMEA
+GWATCH_FTR_234,Feature 234,AI-enhanced adaptive behavior model,Health Analytics,ISSUE_0234,Open,1/02/24 0:00,Critical,APAC
+GWATCH_FTR_235,Feature 235,AI-enhanced adaptive behavior model,Navigation Team,ISSUE_0235,Open,14/02/24 0:00,High,NA
+GWATCH_FTR_236,Feature 236,AI-enhanced adaptive behavior model,ML Research,ISSUE_0236,Open,13/02/24 0:00,Critical,APAC
+GWATCH_FTR_237,Feature 237,AI-enhanced adaptive behavior model,ML Research,ISSUE_0237,In Progress,17/02/24 0:00,Critical,EMEA
+GWATCH_FTR_238,Feature 238,AI-enhanced adaptive behavior model,Navigation Team,ISSUE_0238,In Progress,26/02/24 0:00,Critical,EMEA
+GWATCH_FTR_239,Feature 239,AI-enhanced adaptive behavior model,Navigation Team,ISSUE_0239,Open,20/02/24 0:00,Critical,EMEA
+GWATCH_FTR_240,Feature 240,AI-enhanced adaptive behavior model,Navigation Team,ISSUE_0240,Open,6/02/24 0:00,Critical,APAC
+GWATCH_FTR_241,Feature 241,AI-enhanced adaptive behavior model,ML Research,ISSUE_0241,Review,15/02/24 0:00,High,NA
+GWATCH_FTR_242,Feature 242,AI-enhanced adaptive behavior model,Health Analytics,ISSUE_0242,Open,28/02/24 0:00,Critical,EMEA
+GWATCH_FTR_243,Feature 243,AI-enhanced adaptive behavior model,Navigation Team,ISSUE_0243,In Progress,7/02/24 0:00,High,NA
+GWATCH_FTR_244,Feature 244,AI-enhanced adaptive behavior model,Health Analytics,ISSUE_0244,Review,3/02/24 0:00,High,APAC
+GWATCH_FTR_245,Feature 245,AI-enhanced adaptive behavior model,Health Analytics,ISSUE_0245,Review,16/02/24 0:00,High,EMEA
+GWATCH_FTR_246,Feature 246,AI-enhanced adaptive behavior model,Navigation Team,ISSUE_0246,In Progress,3/02/24 0:00,High,APAC
+GWATCH_FTR_247,Feature 247,AI-enhanced adaptive behavior model,ML Research,ISSUE_0247,Review,13/02/24 0:00,Critical,EMEA
+GWATCH_FTR_248,Feature 248,AI-enhanced adaptive behavior model,Navigation Team,ISSUE_0248,Review,22/02/24 0:00,Critical,APAC
+GWATCH_FTR_249,Feature 249,AI-enhanced adaptive behavior model,Navigation Team,ISSUE_0249,In Progress,6/02/24 0:00,Critical,EMEA
+GWATCH_FTR_250,Feature 250,AI-enhanced adaptive behavior model,Navigation Team,ISSUE_0250,In Progress,4/02/24 0:00,High,APAC
+GWATCH_FTR_251,Feature 251,AI-enhanced adaptive behavior model,Navigation Team,ISSUE_0251,Review,13/02/24 0:00,Critical,EMEA
+GWATCH_FTR_252,Feature 252,AI-enhanced adaptive behavior model,Navigation Team,ISSUE_0252,Review,21/02/24 0:00,High,NA
+GWATCH_FTR_253,Feature 253,AI-enhanced adaptive behavior model,Health Analytics,ISSUE_0253,Review,5/02/24 0:00,Critical,NA
+GWATCH_FTR_254,Feature 254,AI-enhanced adaptive behavior model,Navigation Team,ISSUE_0254,In Progress,14/02/24 0:00,High,EMEA
+GWATCH_FTR_255,Feature 255,AI-enhanced adaptive behavior model,ML Research,ISSUE_0255,In Progress,12/02/24 0:00,Critical,EMEA
+GWATCH_FTR_256,Feature 256,AI-enhanced adaptive behavior model,Health Analytics,ISSUE_0256,Review,26/02/24 0:00,High,EMEA
+GWATCH_FTR_257,Feature 257,AI-enhanced adaptive behavior model,ML Research,ISSUE_0257,Open,21/02/24 0:00,High,APAC
+GWATCH_FTR_258,Feature 258,AI-enhanced adaptive behavior model,ML Research,ISSUE_0258,In Progress,17/02/24 0:00,Critical,EMEA
+GWATCH_FTR_259,Feature 259,AI-enhanced adaptive behavior model,ML Research,ISSUE_0259,Review,7/02/24 0:00,High,EMEA
+GWATCH_FTR_260,Feature 260,AI-enhanced adaptive behavior model,ML Research,ISSUE_0260,Review,22/02/24 0:00,High,NA
+GWATCH_FTR_261,Feature 261,AI-enhanced adaptive behavior model,Navigation Team,ISSUE_0261,In Progress,14/02/24 0:00,High,EMEA
+GWATCH_FTR_262,Feature 262,AI-enhanced adaptive behavior model,Health Analytics,ISSUE_0262,In Progress,16/02/24 0:00,High,NA
+GWATCH_FTR_263,Feature 263,AI-enhanced adaptive behavior model,Health Analytics,ISSUE_0263,In Progress,12/02/24 0:00,High,EMEA
+GWATCH_FTR_264,Feature 264,AI-enhanced adaptive behavior model,Health Analytics,ISSUE_0264,Review,7/02/24 0:00,High,NA
+GWATCH_FTR_265,Feature 265,AI-enhanced adaptive behavior model,Health Analytics,ISSUE_0265,In Progress,17/02/24 0:00,Critical,NA
+GWATCH_FTR_266,Feature 266,AI-enhanced adaptive behavior model,ML Research,ISSUE_0266,In Progress,20/02/24 0:00,Critical,NA
+GWATCH_FTR_267,Feature 267,AI-enhanced adaptive behavior model,ML Research,ISSUE_0267,Open,20/02/24 0:00,High,EMEA
+GWATCH_FTR_268,Feature 268,AI-enhanced adaptive behavior model,Health Analytics,ISSUE_0268,Open,27/02/24 0:00,Critical,EMEA
+GWATCH_FTR_269,Feature 269,AI-enhanced adaptive behavior model,Navigation Team,ISSUE_0269,Open,21/02/24 0:00,High,NA
+GWATCH_FTR_270,Feature 270,AI-enhanced adaptive behavior model,Health Analytics,ISSUE_0270,In Progress,4/02/24 0:00,Critical,APAC
+GWATCH_FTR_271,Feature 271,AI-enhanced adaptive behavior model,ML Research,ISSUE_0271,Review,3/02/24 0:00,High,EMEA
+GWATCH_FTR_272,Feature 272,AI-enhanced adaptive behavior model,Health Analytics,ISSUE_0272,Open,27/02/24 0:00,Critical,APAC
+GWATCH_FTR_273,Feature 273,AI-enhanced adaptive behavior model,Navigation Team,ISSUE_0273,Open,18/02/24 0:00,High,APAC
+GWATCH_FTR_274,Feature 274,AI-enhanced adaptive behavior model,Health Analytics,ISSUE_0274,Review,22/02/24 0:00,High,EMEA
+GWATCH_FTR_275,Feature 275,AI-enhanced adaptive behavior model,ML Research,ISSUE_0275,Review,11/02/24 0:00,Critical,NA
+GWATCH_FTR_276,Feature 276,AI-enhanced adaptive behavior model,Health Analytics,ISSUE_0276,Review,12/02/24 0:00,Critical,APAC
+GWATCH_FTR_277,Feature 277,AI-enhanced adaptive behavior model,Health Analytics,ISSUE_0277,Open,5/02/24 0:00,Critical,NA
+GWATCH_FTR_278,Feature 278,AI-enhanced adaptive behavior model,ML Research,ISSUE_0278,In Progress,14/02/24 0:00,High,APAC
+GWATCH_FTR_279,Feature 279,AI-enhanced adaptive behavior model,ML Research,ISSUE_0279,Review,1/02/24 0:00,Critical,EMEA
+GWATCH_FTR_280,Feature 280,AI-enhanced adaptive behavior model,Health Analytics,ISSUE_0280,Open,8/02/24 0:00,Critical,NA
+GWATCH_FTR_281,Feature 281,AI-enhanced adaptive behavior model,ML Research,ISSUE_0281,Open,11/02/24 0:00,High,NA
+GWATCH_FTR_282,Feature 282,AI-enhanced adaptive behavior model,Health Analytics,ISSUE_0282,In Progress,15/02/24 0:00,High,NA
+GWATCH_FTR_283,Feature 283,AI-enhanced adaptive behavior model,Health Analytics,ISSUE_0283,Review,27/02/24 0:00,Critical,APAC
+GWATCH_FTR_284,Feature 284,AI-enhanced adaptive behavior model,ML Research,ISSUE_0284,In Progress,12/02/24 0:00,Critical,EMEA
+GWATCH_FTR_285,Feature 285,AI-enhanced adaptive behavior model,ML Research,ISSUE_0285,Review,13/02/24 0:00,High,NA
+GWATCH_FTR_286,Feature 286,AI-enhanced adaptive behavior model,Health Analytics,ISSUE_0286,Review,11/02/24 0:00,High,NA
+GWATCH_FTR_287,Feature 287,AI-enhanced adaptive behavior model,Health Analytics,ISSUE_0287,In Progress,16/02/24 0:00,High,EMEA
+GWATCH_FTR_288,Feature 288,AI-enhanced adaptive behavior model,Health Analytics,ISSUE_0288,Open,8/02/24 0:00,Critical,NA
+GWATCH_FTR_289,Feature 289,AI-enhanced adaptive behavior model,Health Analytics,ISSUE_0289,Open,20/02/24 0:00,High,APAC
+GWATCH_FTR_290,Feature 290,AI-enhanced adaptive behavior model,Health Analytics,ISSUE_0290,In Progress,16/02/24 0:00,Critical,EMEA
+GWATCH_FTR_291,Feature 291,AI-enhanced adaptive behavior model,Navigation Team,ISSUE_0291,Review,24/02/24 0:00,High,NA
+GWATCH_FTR_292,Feature 292,AI-enhanced adaptive behavior model,ML Research,ISSUE_0292,In Progress,10/02/24 0:00,Critical,EMEA
+GWATCH_FTR_293,Feature 293,AI-enhanced adaptive behavior model,Navigation Team,ISSUE_0293,Open,8/02/24 0:00,High,APAC
+GWATCH_FTR_294,Feature 294,AI-enhanced adaptive behavior model,Health Analytics,ISSUE_0294,Open,15/02/24 0:00,Critical,NA
+GWATCH_FTR_295,Feature 295,AI-enhanced adaptive behavior model,ML Research,ISSUE_0295,In Progress,11/02/24 0:00,High,APAC
+GWATCH_FTR_296,Feature 296,AI-enhanced adaptive behavior model,ML Research,ISSUE_0296,Open,9/02/24 0:00,High,APAC
+GWATCH_FTR_297,Feature 297,AI-enhanced adaptive behavior model,Health Analytics,ISSUE_0297,In Progress,14/02/24 0:00,Critical,NA
+GWATCH_FTR_298,Feature 298,AI-enhanced adaptive behavior model,ML Research,ISSUE_0298,Open,28/02/24 0:00,Critical,APAC
+GWATCH_FTR_299,Feature 299,AI-enhanced adaptive behavior model,ML Research,ISSUE_0299,Review,21/02/24 0:00,High,APAC
+GWATCH_FTR_300,Feature 300,AI-enhanced adaptive behavior model,Navigation Team,ISSUE_0300,Open,11/02/24 0:00,Critical,APAC
+GWATCH_FTR_301,Feature 301,AI-enhanced adaptive behavior model,ML Research,ISSUE_0301,In Progress,2/02/24 0:00,High,NA
+GWATCH_FTR_302,Feature 302,AI-enhanced adaptive behavior model,ML Research,ISSUE_0302,Open,16/02/24 0:00,High,APAC
+GWATCH_FTR_303,Feature 303,AI-enhanced adaptive behavior model,Navigation Team,ISSUE_0303,In Progress,19/02/24 0:00,Critical,APAC
+GWATCH_FTR_304,Feature 304,AI-enhanced adaptive behavior model,ML Research,ISSUE_0304,Open,14/02/24 0:00,High,EMEA
+GWATCH_FTR_305,Feature 305,AI-enhanced adaptive behavior model,ML Research,ISSUE_0305,Review,19/02/24 0:00,High,EMEA
+GWATCH_FTR_306,Feature 306,AI-enhanced adaptive behavior model,Health Analytics,ISSUE_0306,Review,28/02/24 0:00,Critical,NA
+GWATCH_FTR_307,Feature 307,AI-enhanced adaptive behavior model,Navigation Team,ISSUE_0307,Review,22/02/24 0:00,Critical,EMEA
+GWATCH_FTR_308,Feature 308,AI-enhanced adaptive behavior model,ML Research,ISSUE_0308,In Progress,16/02/24 0:00,Critical,APAC
+GWATCH_FTR_309,Feature 309,AI-enhanced adaptive behavior model,Health Analytics,ISSUE_0309,Open,24/02/24 0:00,Critical,NA
+GWATCH_FTR_310,Feature 310,AI-enhanced adaptive behavior model,Health Analytics,ISSUE_0310,Review,20/02/24 0:00,Critical,EMEA
+GWATCH_FTR_311,Feature 311,AI-enhanced adaptive behavior model,Health Analytics,ISSUE_0311,In Progress,3/02/24 0:00,High,EMEA
+GWATCH_FTR_312,Feature 312,AI-enhanced adaptive behavior model,Health Analytics,ISSUE_0312,Open,21/02/24 0:00,High,EMEA
+GWATCH_FTR_313,Feature 313,AI-enhanced adaptive behavior model,Navigation Team,ISSUE_0313,In Progress,14/02/24 0:00,Critical,NA
+GWATCH_FTR_314,Feature 314,AI-enhanced adaptive behavior model,Navigation Team,ISSUE_0314,In Progress,8/02/24 0:00,Critical,APAC
+GWATCH_FTR_315,Feature 315,AI-enhanced adaptive behavior model,ML Research,ISSUE_0315,Open,3/02/24 0:00,Critical,NA
+GWATCH_FTR_316,Feature 316,AI-enhanced adaptive behavior model,Navigation Team,ISSUE_0316,In Progress,7/02/24 0:00,Critical,NA
+GWATCH_FTR_317,Feature 317,AI-enhanced adaptive behavior model,ML Research,ISSUE_0317,In Progress,15/02/24 0:00,Critical,APAC
+GWATCH_FTR_318,Feature 318,AI-enhanced adaptive behavior model,Health Analytics,ISSUE_0318,In Progress,19/02/24 0:00,High,EMEA
+GWATCH_FTR_319,Feature 319,AI-enhanced adaptive behavior model,Health Analytics,ISSUE_0319,In Progress,24/02/24 0:00,High,NA
+GWATCH_FTR_320,Feature 320,AI-enhanced adaptive behavior model,Health Analytics,ISSUE_0320,In Progress,14/02/24 0:00,High,NA
+GWATCH_FTR_321,Feature 321,AI-enhanced adaptive behavior model,ML Research,ISSUE_0321,Open,16/02/24 0:00,High,EMEA
+GWATCH_FTR_322,Feature 322,AI-enhanced adaptive behavior model,Navigation Team,ISSUE_0322,Open,15/02/24 0:00,Critical,EMEA
+GWATCH_FTR_323,Feature 323,AI-enhanced adaptive behavior model,Navigation Team,ISSUE_0323,In Progress,19/02/24 0:00,Critical,EMEA
+GWATCH_FTR_324,Feature 324,AI-enhanced adaptive behavior model,ML Research,ISSUE_0324,In Progress,24/02/24 0:00,Critical,APAC
+GWATCH_FTR_325,Feature 325,AI-enhanced adaptive behavior model,ML Research,ISSUE_0325,Review,13/02/24 0:00,Critical,EMEA
+GWATCH_FTR_326,Feature 326,AI-enhanced adaptive behavior model,Navigation Team,ISSUE_0326,In Progress,6/02/24 0:00,Critical,APAC
+GWATCH_FTR_327,Feature 327,AI-enhanced adaptive behavior model,ML Research,ISSUE_0327,Open,18/02/24 0:00,High,EMEA
+GWATCH_FTR_328,Feature 328,AI-enhanced adaptive behavior model,Navigation Team,ISSUE_0328,Open,21/02/24 0:00,Critical,EMEA
+GWATCH_FTR_329,Feature 329,AI-enhanced adaptive behavior model,Navigation Team,ISSUE_0329,In Progress,2/02/24 0:00,Critical,NA
+GWATCH_FTR_330,Feature 330,AI-enhanced adaptive behavior model,Navigation Team,ISSUE_0330,Open,27/02/24 0:00,Critical,APAC
+GWATCH_FTR_331,Feature 331,AI-enhanced adaptive behavior model,ML Research,ISSUE_0331,Review,21/02/24 0:00,High,EMEA
+GWATCH_FTR_332,Feature 332,AI-enhanced adaptive behavior model,ML Research,ISSUE_0332,In Progress,2/02/24 0:00,Critical,APAC
+GWATCH_FTR_333,Feature 333,AI-enhanced adaptive behavior model,Navigation Team,ISSUE_0333,In Progress,20/02/24 0:00,Critical,NA
+GWATCH_FTR_334,Feature 334,AI-enhanced adaptive behavior model,ML Research,ISSUE_0334,Open,17/02/24 0:00,High,EMEA
+GWATCH_FTR_335,Feature 335,AI-enhanced adaptive behavior model,Navigation Team,ISSUE_0335,In Progress,14/02/24 0:00,Critical,EMEA
+GWATCH_FTR_336,Feature 336,AI-enhanced adaptive behavior model,Health Analytics,ISSUE_0336,Review,13/02/24 0:00,Critical,EMEA
+GWATCH_FTR_337,Feature 337,AI-enhanced adaptive behavior model,Health Analytics,ISSUE_0337,In Progress,11/02/24 0:00,Critical,APAC
+GWATCH_FTR_338,Feature 338,AI-enhanced adaptive behavior model,Health Analytics,ISSUE_0338,Open,6/02/24 0:00,Critical,EMEA
+GWATCH_FTR_339,Feature 339,AI-enhanced adaptive behavior model,ML Research,ISSUE_0339,Review,3/02/24 0:00,Critical,EMEA
+GWATCH_FTR_340,Feature 340,AI-enhanced adaptive behavior model,ML Research,ISSUE_0340,Open,16/02/24 0:00,High,NA
+GWATCH_FTR_341,Feature 341,AI-enhanced adaptive behavior model,ML Research,ISSUE_0341,Open,15/02/24 0:00,Critical,EMEA
+GWATCH_FTR_342,Feature 342,AI-enhanced adaptive behavior model,Navigation Team,ISSUE_0342,Review,24/02/24 0:00,High,EMEA
+GWATCH_FTR_343,Feature 343,AI-enhanced adaptive behavior model,ML Research,ISSUE_0343,In Progress,5/02/24 0:00,Critical,EMEA
+GWATCH_FTR_344,Feature 344,AI-enhanced adaptive behavior model,Health Analytics,ISSUE_0344,In Progress,8/02/24 0:00,High,APAC
+GWATCH_FTR_345,Feature 345,AI-enhanced adaptive behavior model,Health Analytics,ISSUE_0345,Open,15/02/24 0:00,Critical,NA
+GWATCH_FTR_346,Feature 346,AI-enhanced adaptive behavior model,ML Research,ISSUE_0346,In Progress,11/02/24 0:00,High,EMEA
+GWATCH_FTR_347,Feature 347,AI-enhanced adaptive behavior model,Health Analytics,ISSUE_0347,Open,19/02/24 0:00,Critical,NA
+GWATCH_FTR_348,Feature 348,AI-enhanced adaptive behavior model,Health Analytics,ISSUE_0348,Review,13/02/24 0:00,Critical,APAC
+GWATCH_FTR_349,Feature 349,AI-enhanced adaptive behavior model,Health Analytics,ISSUE_0349,In Progress,5/02/24 0:00,High,NA
+GWATCH_FTR_350,Feature 350,AI-enhanced adaptive behavior model,ML Research,ISSUE_0350,Review,11/02/24 0:00,Critical,NA
+GWATCH_FTR_351,Feature 351,AI-enhanced adaptive behavior model,Navigation Team,ISSUE_0351,In Progress,8/02/24 0:00,Critical,NA
+GWATCH_FTR_352,Feature 352,AI-enhanced adaptive behavior model,ML Research,ISSUE_0352,Review,16/02/24 0:00,High,EMEA
+GWATCH_FTR_353,Feature 353,AI-enhanced adaptive behavior model,Health Analytics,ISSUE_0353,In Progress,24/02/24 0:00,Critical,NA
+GWATCH_FTR_354,Feature 354,AI-enhanced adaptive behavior model,Navigation Team,ISSUE_0354,Open,27/02/24 0:00,High,NA
+GWATCH_FTR_355,Feature 355,AI-enhanced adaptive behavior model,Navigation Team,ISSUE_0355,Review,11/02/24 0:00,Critical,NA
+GWATCH_FTR_356,Feature 356,AI-enhanced adaptive behavior model,ML Research,ISSUE_0356,In Progress,26/02/24 0:00,High,EMEA
+GWATCH_FTR_357,Feature 357,AI-enhanced adaptive behavior model,Health Analytics,ISSUE_0357,Open,27/02/24 0:00,High,EMEA
+GWATCH_FTR_358,Feature 358,AI-enhanced adaptive behavior model,Health Analytics,ISSUE_0358,Review,22/02/24 0:00,Critical,APAC
+GWATCH_FTR_359,Feature 359,AI-enhanced adaptive behavior model,ML Research,ISSUE_0359,In Progress,15/02/24 0:00,High,NA
+GWATCH_FTR_360,Feature 360,AI-enhanced adaptive behavior model,Navigation Team,ISSUE_0360,In Progress,1/02/24 0:00,Critical,APAC
+GWATCH_FTR_361,Feature 361,AI-enhanced adaptive behavior model,Navigation Team,ISSUE_0361,Review,11/02/24 0:00,Critical,NA
+GWATCH_FTR_362,Feature 362,AI-enhanced adaptive behavior model,ML Research,ISSUE_0362,Open,4/02/24 0:00,High,NA
+GWATCH_FTR_363,Feature 363,AI-enhanced adaptive behavior model,Navigation Team,ISSUE_0363,In Progress,1/02/24 0:00,Critical,EMEA
+GWATCH_FTR_364,Feature 364,AI-enhanced adaptive behavior model,ML Research,ISSUE_0364,In Progress,9/02/24 0:00,High,EMEA
+GWATCH_FTR_365,Feature 365,AI-enhanced adaptive behavior model,ML Research,ISSUE_0365,Review,18/02/24 0:00,Critical,EMEA
+GWATCH_FTR_366,Feature 366,AI-enhanced adaptive behavior model,Health Analytics,ISSUE_0366,Open,20/02/24 0:00,Critical,APAC
+GWATCH_FTR_367,Feature 367,AI-enhanced adaptive behavior model,Navigation Team,ISSUE_0367,Review,11/02/24 0:00,High,APAC
+GWATCH_FTR_368,Feature 368,AI-enhanced adaptive behavior model,Health Analytics,ISSUE_0368,Review,22/02/24 0:00,Critical,APAC
+GWATCH_FTR_369,Feature 369,AI-enhanced adaptive behavior model,Health Analytics,ISSUE_0369,In Progress,16/02/24 0:00,Critical,APAC
+GWATCH_FTR_370,Feature 370,AI-enhanced adaptive behavior model,Navigation Team,ISSUE_0370,Review,1/02/24 0:00,Critical,EMEA
+GWATCH_FTR_371,Feature 371,AI-enhanced adaptive behavior model,Health Analytics,ISSUE_0371,In Progress,3/02/24 0:00,Critical,EMEA
+GWATCH_FTR_372,Feature 372,AI-enhanced adaptive behavior model,Navigation Team,ISSUE_0372,Review,27/02/24 0:00,Critical,NA
+GWATCH_FTR_373,Feature 373,AI-enhanced adaptive behavior model,ML Research,ISSUE_0373,In Progress,17/02/24 0:00,High,APAC
+GWATCH_FTR_374,Feature 374,AI-enhanced adaptive behavior model,Navigation Team,ISSUE_0374,Open,3/02/24 0:00,High,APAC
+GWATCH_FTR_375,Feature 375,AI-enhanced adaptive behavior model,Health Analytics,ISSUE_0375,Review,26/02/24 0:00,Critical,APAC
+GWATCH_FTR_376,Feature 376,AI-enhanced adaptive behavior model,ML Research,ISSUE_0376,In Progress,4/02/24 0:00,High,APAC
+GWATCH_FTR_377,Feature 377,AI-enhanced adaptive behavior model,Health Analytics,ISSUE_0377,In Progress,25/02/24 0:00,High,EMEA
+GWATCH_FTR_378,Feature 378,AI-enhanced adaptive behavior model,Navigation Team,ISSUE_0378,In Progress,10/02/24 0:00,Critical,APAC
+GWATCH_FTR_379,Feature 379,AI-enhanced adaptive behavior model,Navigation Team,ISSUE_0379,Review,12/02/24 0:00,Critical,NA
+GWATCH_FTR_380,Feature 380,AI-enhanced adaptive behavior model,Health Analytics,ISSUE_0380,Review,27/02/24 0:00,Critical,APAC
+GWATCH_FTR_381,Feature 381,AI-enhanced adaptive behavior model,ML Research,ISSUE_0381,In Progress,25/02/24 0:00,High,NA
+GWATCH_FTR_382,Feature 382,AI-enhanced adaptive behavior model,Navigation Team,ISSUE_0382,In Progress,6/02/24 0:00,High,EMEA
+GWATCH_FTR_383,Feature 383,AI-enhanced adaptive behavior model,Health Analytics,ISSUE_0383,In Progress,16/02/24 0:00,High,EMEA
+GWATCH_FTR_384,Feature 384,AI-enhanced adaptive behavior model,Navigation Team,ISSUE_0384,Open,6/02/24 0:00,Critical,NA
+GWATCH_FTR_385,Feature 385,AI-enhanced adaptive behavior model,Navigation Team,ISSUE_0385,Review,24/02/24 0:00,High,EMEA
+GWATCH_FTR_386,Feature 386,AI-enhanced adaptive behavior model,Health Analytics,ISSUE_0386,Open,1/02/24 0:00,Critical,EMEA
+GWATCH_FTR_387,Feature 387,AI-enhanced adaptive behavior model,Health Analytics,ISSUE_0387,Open,14/02/24 0:00,High,EMEA
+GWATCH_FTR_388,Feature 388,AI-enhanced adaptive behavior model,Health Analytics,ISSUE_0388,Review,5/02/24 0:00,Critical,EMEA
+GWATCH_FTR_389,Feature 389,AI-enhanced adaptive behavior model,Navigation Team,ISSUE_0389,Open,28/02/24 0:00,Critical,NA
+GWATCH_FTR_390,Feature 390,AI-enhanced adaptive behavior model,Health Analytics,ISSUE_0390,Open,10/02/24 0:00,Critical,NA
+GWATCH_FTR_391,Feature 391,AI-enhanced adaptive behavior model,Health Analytics,ISSUE_0391,Open,5/02/24 0:00,Critical,APAC
+GWATCH_FTR_392,Feature 392,AI-enhanced adaptive behavior model,Navigation Team,ISSUE_0392,Open,5/02/24 0:00,Critical,APAC
+GWATCH_FTR_393,Feature 393,AI-enhanced adaptive behavior model,Navigation Team,ISSUE_0393,Open,18/02/24 0:00,Critical,APAC
+GWATCH_FTR_394,Feature 394,AI-enhanced adaptive behavior model,ML Research,ISSUE_0394,Review,17/02/24 0:00,High,APAC
+GWATCH_FTR_395,Feature 395,AI-enhanced adaptive behavior model,Navigation Team,ISSUE_0395,Review,2/02/24 0:00,Critical,APAC
+GWATCH_FTR_396,Feature 396,AI-enhanced adaptive behavior model,Navigation Team,ISSUE_0396,Review,20/02/24 0:00,High,APAC
+GWATCH_FTR_397,Feature 397,AI-enhanced adaptive behavior model,Navigation Team,ISSUE_0397,In Progress,26/02/24 0:00,High,NA
+GWATCH_FTR_398,Feature 398,AI-enhanced adaptive behavior model,Navigation Team,ISSUE_0398,Review,8/02/24 0:00,Critical,APAC
+GWATCH_FTR_399,Feature 399,AI-enhanced adaptive behavior model,ML Research,ISSUE_0399,In Progress,13/02/24 0:00,Critical,EMEA
+GWATCH_FTR_400,Feature 400,AI-enhanced adaptive behavior model,ML Research,ISSUE_0400,In Progress,7/02/24 0:00,High,APAC
+GWATCH_FTR_401,Feature 401,AI-enhanced adaptive behavior model,Health Analytics,ISSUE_0401,In Progress,20/02/24 0:00,Critical,APAC
+GWATCH_FTR_402,Feature 402,AI-enhanced adaptive behavior model,ML Research,ISSUE_0402,Review,10/02/24 0:00,High,EMEA
+GWATCH_FTR_403,Feature 403,AI-enhanced adaptive behavior model,Navigation Team,ISSUE_0403,Review,5/02/24 0:00,Critical,NA
+GWATCH_FTR_404,Feature 404,AI-enhanced adaptive behavior model,Health Analytics,ISSUE_0404,Review,13/02/24 0:00,High,EMEA
+GWATCH_FTR_405,Feature 405,AI-enhanced adaptive behavior model,ML Research,ISSUE_0405,Review,24/02/24 0:00,High,NA
+GWATCH_FTR_406,Feature 406,AI-enhanced adaptive behavior model,Navigation Team,ISSUE_0406,Open,17/02/24 0:00,High,NA
+GWATCH_FTR_407,Feature 407,AI-enhanced adaptive behavior model,ML Research,ISSUE_0407,Review,15/02/24 0:00,Critical,APAC
+GWATCH_FTR_408,Feature 408,AI-enhanced adaptive behavior model,Health Analytics,ISSUE_0408,In Progress,12/02/24 0:00,Critical,EMEA
+GWATCH_FTR_409,Feature 409,AI-enhanced adaptive behavior model,Navigation Team,ISSUE_0409,Open,22/02/24 0:00,High,APAC
+GWATCH_FTR_410,Feature 410,AI-enhanced adaptive behavior model,Health Analytics,ISSUE_0410,In Progress,6/02/24 0:00,High,APAC
+GWATCH_FTR_411,Feature 411,AI-enhanced adaptive behavior model,Navigation Team,ISSUE_0411,Review,17/02/24 0:00,Critical,APAC
+GWATCH_FTR_412,Feature 412,AI-enhanced adaptive behavior model,ML Research,ISSUE_0412,Review,12/02/24 0:00,High,NA
+GWATCH_FTR_413,Feature 413,AI-enhanced adaptive behavior model,Navigation Team,ISSUE_0413,Open,7/02/24 0:00,Critical,NA
+GWATCH_FTR_414,Feature 414,AI-enhanced adaptive behavior model,Health Analytics,ISSUE_0414,Review,3/02/24 0:00,Critical,EMEA
+GWATCH_FTR_415,Feature 415,AI-enhanced adaptive behavior model,Health Analytics,ISSUE_0415,Open,25/02/24 0:00,Critical,EMEA
+GWATCH_FTR_416,Feature 416,AI-enhanced adaptive behavior model,ML Research,ISSUE_0416,Open,11/02/24 0:00,Critical,APAC
+GWATCH_FTR_417,Feature 417,AI-enhanced adaptive behavior model,Health Analytics,ISSUE_0417,Review,9/02/24 0:00,High,NA
+GWATCH_FTR_418,Feature 418,AI-enhanced adaptive behavior model,Navigation Team,ISSUE_0418,Review,21/02/24 0:00,High,APAC
+GWATCH_FTR_419,Feature 419,AI-enhanced adaptive behavior model,ML Research,ISSUE_0419,Review,1/02/24 0:00,High,NA
+GWATCH_FTR_420,Feature 420,AI-enhanced adaptive behavior model,Health Analytics,ISSUE_0420,In Progress,25/02/24 0:00,Critical,APAC
+GWATCH_FTR_421,Feature 421,AI-enhanced adaptive behavior model,ML Research,ISSUE_0421,Review,15/02/24 0:00,Critical,APAC
+GWATCH_FTR_422,Feature 422,AI-enhanced adaptive behavior model,Navigation Team,ISSUE_0422,In Progress,7/02/24 0:00,Critical,EMEA
+GWATCH_FTR_423,Feature 423,AI-enhanced adaptive behavior model,ML Research,ISSUE_0423,In Progress,27/02/24 0:00,Critical,NA
+GWATCH_FTR_424,Feature 424,AI-enhanced adaptive behavior model,ML Research,ISSUE_0424,Review,22/02/24 0:00,Critical,APAC
+GWATCH_FTR_425,Feature 425,AI-enhanced adaptive behavior model,Navigation Team,ISSUE_0425,In Progress,6/02/24 0:00,High,EMEA
+GWATCH_FTR_426,Feature 426,AI-enhanced adaptive behavior model,Health Analytics,ISSUE_0426,Open,17/02/24 0:00,Critical,NA
+GWATCH_FTR_427,Feature 427,AI-enhanced adaptive behavior model,ML Research,ISSUE_0427,Review,21/02/24 0:00,Critical,NA
+GWATCH_FTR_428,Feature 428,AI-enhanced adaptive behavior model,Health Analytics,ISSUE_0428,Review,23/02/24 0:00,Critical,APAC
+GWATCH_FTR_429,Feature 429,AI-enhanced adaptive behavior model,ML Research,ISSUE_0429,In Progress,8/02/24 0:00,High,EMEA
+GWATCH_FTR_430,Feature 430,AI-enhanced adaptive behavior model,Health Analytics,ISSUE_0430,Open,27/02/24 0:00,Critical,NA
+GWATCH_FTR_431,Feature 431,AI-enhanced adaptive behavior model,Navigation Team,ISSUE_0431,Open,4/02/24 0:00,Critical,EMEA
+GWATCH_FTR_432,Feature 432,AI-enhanced adaptive behavior model,Navigation Team,ISSUE_0432,Review,10/02/24 0:00,Critical,APAC
+GWATCH_FTR_433,Feature 433,AI-enhanced adaptive behavior model,ML Research,ISSUE_0433,In Progress,25/02/24 0:00,High,EMEA
+GWATCH_FTR_434,Feature 434,AI-enhanced adaptive behavior model,Navigation Team,ISSUE_0434,Review,26/02/24 0:00,Critical,APAC
+GWATCH_FTR_435,Feature 435,AI-enhanced adaptive behavior model,Health Analytics,ISSUE_0435,In Progress,3/02/24 0:00,High,NA
+GWATCH_FTR_436,Feature 436,AI-enhanced adaptive behavior model,ML Research,ISSUE_0436,In Progress,28/02/24 0:00,Critical,APAC
+GWATCH_FTR_437,Feature 437,AI-enhanced adaptive behavior model,Health Analytics,ISSUE_0437,In Progress,25/02/24 0:00,Critical,APAC
+GWATCH_FTR_438,Feature 438,AI-enhanced adaptive behavior model,Health Analytics,ISSUE_0438,Open,2/02/24 0:00,Critical,APAC
+GWATCH_FTR_439,Feature 439,AI-enhanced adaptive behavior model,ML Research,ISSUE_0439,Open,27/02/24 0:00,High,EMEA
+GWATCH_FTR_440,Feature 440,AI-enhanced adaptive behavior model,Navigation Team,ISSUE_0440,Review,15/02/24 0:00,Critical,APAC
+GWATCH_FTR_441,Feature 441,AI-enhanced adaptive behavior model,Health Analytics,ISSUE_0441,In Progress,13/02/24 0:00,Critical,EMEA
+GWATCH_FTR_442,Feature 442,AI-enhanced adaptive behavior model,Health Analytics,ISSUE_0442,Open,28/02/24 0:00,High,NA
+GWATCH_FTR_443,Feature 443,AI-enhanced adaptive behavior model,Health Analytics,ISSUE_0443,In Progress,20/02/24 0:00,Critical,APAC
+GWATCH_FTR_444,Feature 444,AI-enhanced adaptive behavior model,Health Analytics,ISSUE_0444,In Progress,4/02/24 0:00,Critical,EMEA
+GWATCH_FTR_445,Feature 445,AI-enhanced adaptive behavior model,ML Research,ISSUE_0445,Open,20/02/24 0:00,Critical,EMEA
+GWATCH_FTR_446,Feature 446,AI-enhanced adaptive behavior model,Navigation Team,ISSUE_0446,Open,23/02/24 0:00,Critical,EMEA
+GWATCH_FTR_447,Feature 447,AI-enhanced adaptive behavior model,Navigation Team,ISSUE_0447,Open,17/02/24 0:00,High,APAC
+GWATCH_FTR_448,Feature 448,AI-enhanced adaptive behavior model,Health Analytics,ISSUE_0448,Open,8/02/24 0:00,High,APAC
+GWATCH_FTR_449,Feature 449,AI-enhanced adaptive behavior model,Navigation Team,ISSUE_0449,Review,6/02/24 0:00,Critical,NA
+GWATCH_FTR_450,Feature 450,AI-enhanced adaptive behavior model,Health Analytics,ISSUE_0450,In Progress,5/02/24 0:00,High,APAC
+GWATCH_FTR_451,Feature 451,AI-enhanced adaptive behavior model,Navigation Team,ISSUE_0451,In Progress,17/02/24 0:00,Critical,NA
+GWATCH_FTR_452,Feature 452,AI-enhanced adaptive behavior model,Navigation Team,ISSUE_0452,Open,24/02/24 0:00,Critical,NA
+GWATCH_FTR_453,Feature 453,AI-enhanced adaptive behavior model,Health Analytics,ISSUE_0453,Review,24/02/24 0:00,Critical,EMEA
+GWATCH_FTR_454,Feature 454,AI-enhanced adaptive behavior model,Health Analytics,ISSUE_0454,Open,17/02/24 0:00,High,NA
+GWATCH_FTR_455,Feature 455,AI-enhanced adaptive behavior model,Health Analytics,ISSUE_0455,Open,16/02/24 0:00,High,APAC
+GWATCH_FTR_456,Feature 456,AI-enhanced adaptive behavior model,Health Analytics,ISSUE_0456,In Progress,21/02/24 0:00,High,APAC
+GWATCH_FTR_457,Feature 457,AI-enhanced adaptive behavior model,ML Research,ISSUE_0457,Open,24/02/24 0:00,Critical,APAC
+GWATCH_FTR_458,Feature 458,AI-enhanced adaptive behavior model,ML Research,ISSUE_0458,Review,1/02/24 0:00,Critical,EMEA
+GWATCH_FTR_459,Feature 459,AI-enhanced adaptive behavior model,Navigation Team,ISSUE_0459,Open,4/02/24 0:00,High,APAC
+GWATCH_FTR_460,Feature 460,AI-enhanced adaptive behavior model,ML Research,ISSUE_0460,Open,24/02/24 0:00,High,NA
+GWATCH_FTR_461,Feature 461,AI-enhanced adaptive behavior model,Health Analytics,ISSUE_0461,In Progress,3/02/24 0:00,Critical,NA
+GWATCH_FTR_462,Feature 462,AI-enhanced adaptive behavior model,Health Analytics,ISSUE_0462,Open,20/02/24 0:00,High,EMEA
+GWATCH_FTR_463,Feature 463,AI-enhanced adaptive behavior model,Health Analytics,ISSUE_0463,Review,4/02/24 0:00,Critical,NA
+GWATCH_FTR_464,Feature 464,AI-enhanced adaptive behavior model,ML Research,ISSUE_0464,Open,25/02/24 0:00,High,APAC
+GWATCH_FTR_465,Feature 465,AI-enhanced adaptive behavior model,Health Analytics,ISSUE_0465,Open,18/02/24 0:00,High,NA
+GWATCH_FTR_466,Feature 466,AI-enhanced adaptive behavior model,ML Research,ISSUE_0466,Open,21/02/24 0:00,High,NA
+GWATCH_FTR_467,Feature 467,AI-enhanced adaptive behavior model,Navigation Team,ISSUE_0467,Open,8/02/24 0:00,Critical,APAC
+GWATCH_FTR_468,Feature 468,AI-enhanced adaptive behavior model,ML Research,ISSUE_0468,Open,23/02/24 0:00,Critical,APAC
+GWATCH_FTR_469,Feature 469,AI-enhanced adaptive behavior model,Health Analytics,ISSUE_0469,Review,14/02/24 0:00,High,APAC
+GWATCH_FTR_470,Feature 470,AI-enhanced adaptive behavior model,Navigation Team,ISSUE_0470,In Progress,8/02/24 0:00,Critical,NA
+GWATCH_FTR_471,Feature 471,AI-enhanced adaptive behavior model,Navigation Team,ISSUE_0471,In Progress,25/02/24 0:00,Critical,APAC
+GWATCH_FTR_472,Feature 472,AI-enhanced adaptive behavior model,Navigation Team,ISSUE_0472,Open,9/02/24 0:00,Critical,EMEA
+GWATCH_FTR_473,Feature 473,AI-enhanced adaptive behavior model,Navigation Team,ISSUE_0473,Open,8/02/24 0:00,High,APAC
+GWATCH_FTR_474,Feature 474,AI-enhanced adaptive behavior model,Navigation Team,ISSUE_0474,In Progress,20/02/24 0:00,Critical,NA
+GWATCH_FTR_475,Feature 475,AI-enhanced adaptive behavior model,Navigation Team,ISSUE_0475,Review,6/02/24 0:00,High,NA
+GWATCH_FTR_476,Feature 476,AI-enhanced adaptive behavior model,Navigation Team,ISSUE_0476,Open,5/02/24 0:00,Critical,EMEA
+GWATCH_FTR_477,Feature 477,AI-enhanced adaptive behavior model,ML Research,ISSUE_0477,Review,25/02/24 0:00,Critical,EMEA
+GWATCH_FTR_478,Feature 478,AI-enhanced adaptive behavior model,Health Analytics,ISSUE_0478,Review,8/02/24 0:00,Critical,EMEA
+GWATCH_FTR_479,Feature 479,AI-enhanced adaptive behavior model,ML Research,ISSUE_0479,Open,24/02/24 0:00,High,NA
+GWATCH_FTR_480,Feature 480,AI-enhanced adaptive behavior model,Health Analytics,ISSUE_0480,Open,6/02/24 0:00,High,EMEA
+GWATCH_FTR_481,Feature 481,AI-enhanced adaptive behavior model,Health Analytics,ISSUE_0481,Review,21/02/24 0:00,Critical,EMEA
+GWATCH_FTR_482,Feature 482,AI-enhanced adaptive behavior model,Health Analytics,ISSUE_0482,Open,17/02/24 0:00,Critical,EMEA
+GWATCH_FTR_483,Feature 483,AI-enhanced adaptive behavior model,Navigation Team,ISSUE_0483,Review,8/02/24 0:00,Critical,APAC
+GWATCH_FTR_484,Feature 484,AI-enhanced adaptive behavior model,Health Analytics,ISSUE_0484,Open,16/02/24 0:00,Critical,EMEA
+GWATCH_FTR_485,Feature 485,AI-enhanced adaptive behavior model,Navigation Team,ISSUE_0485,In Progress,17/02/24 0:00,Critical,NA
+GWATCH_FTR_486,Feature 486,AI-enhanced adaptive behavior model,Health Analytics,ISSUE_0486,In Progress,1/02/24 0:00,Critical,EMEA
+GWATCH_FTR_487,Feature 487,AI-enhanced adaptive behavior model,ML Research,ISSUE_0487,Open,21/02/24 0:00,High,NA
+GWATCH_FTR_488,Feature 488,AI-enhanced adaptive behavior model,Health Analytics,ISSUE_0488,In Progress,24/02/24 0:00,High,APAC
+GWATCH_FTR_489,Feature 489,AI-enhanced adaptive behavior model,Navigation Team,ISSUE_0489,In Progress,3/02/24 0:00,Critical,EMEA
+GWATCH_FTR_490,Feature 490,AI-enhanced adaptive behavior model,ML Research,ISSUE_0490,In Progress,24/02/24 0:00,High,NA
+GWATCH_FTR_491,Feature 491,AI-enhanced adaptive behavior model,Health Analytics,ISSUE_0491,Review,16/02/24 0:00,High,APAC
+GWATCH_FTR_492,Feature 492,AI-enhanced adaptive behavior model,ML Research,ISSUE_0492,In Progress,24/02/24 0:00,Critical,NA
+GWATCH_FTR_493,Feature 493,AI-enhanced adaptive behavior model,Health Analytics,ISSUE_0493,Review,25/02/24 0:00,Critical,NA
+GWATCH_FTR_494,Feature 494,AI-enhanced adaptive behavior model,Health Analytics,ISSUE_0494,In Progress,12/02/24 0:00,Critical,NA
+GWATCH_FTR_495,Feature 495,AI-enhanced adaptive behavior model,ML Research,ISSUE_0495,In Progress,26/02/24 0:00,Critical,EMEA
+GWATCH_FTR_496,Feature 496,AI-enhanced adaptive behavior model,Navigation Team,ISSUE_0496,Open,22/02/24 0:00,Critical,APAC
+GWATCH_FTR_497,Feature 497,AI-enhanced adaptive behavior model,ML Research,ISSUE_0497,Open,25/02/24 0:00,High,NA
+GWATCH_FTR_498,Feature 498,AI-enhanced adaptive behavior model,ML Research,ISSUE_0498,In Progress,5/02/24 0:00,Critical,EMEA
+GWATCH_FTR_499,Feature 499,AI-enhanced adaptive behavior model,Health Analytics,ISSUE_0499,Review,20/02/24 0:00,Critical,EMEA
+GWATCH_FTR_500,Feature 500,AI-enhanced adaptive behavior model,Health Analytics,ISSUE_0500,In Progress,27/02/24 0:00,Critical,EMEA

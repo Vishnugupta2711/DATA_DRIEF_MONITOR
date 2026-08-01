@@ -1,0 +1,441 @@
+FeatureID,FeatureName,FeatureDescription,Team,IssueID,Status,ChangedAt,AssignedTo,Priority
+GWATCH_FTR_02,Heart Rate Alerts,Real-time abnormal heart rate notification system,UI/UX Team,GWATCH_FTR_02_ISSUE_02,Open,2024-01-01 00:00:00,jordan_nguyen,Medium
+GWATCH_FTR_08,Battery Optimization,Power saver mode for extended workout tracking,ML Team,GWATCH_FTR_08_ISSUE_03,Open,2024-01-01 00:00:00,mira_kim,Medium
+GWATCH_FTR_02,Heart Rate Alerts,Real-time abnormal heart rate notification system,UI/UX Team,GWATCH_FTR_02_ISSUE_02,Review,2024-01-03 00:00:00,jordan_nguyen,Medium
+GWATCH_FTR_02,Heart Rate Alerts,Real-time abnormal heart rate notification system,UI/UX Team,GWATCH_FTR_02_ISSUE_02,In Progress,2024-01-03 00:00:00,jordan_nguyen,Medium
+GWATCH_FTR_12,Weather Complication,Hourly forecast widget for watch faces,UI/UX Team,GWATCH_FTR_12_ISSUE_02,Open,2024-01-04 00:00:00,lee_smith,Low
+GWATCH_FTR_02,Heart Rate Alerts,Real-time abnormal heart rate notification system,UI/UX Team,GWATCH_FTR_02_ISSUE_02,Resolved,2024-01-05 00:00:00,jordan_nguyen,Medium
+GWATCH_FTR_08,Battery Optimization,Power saver mode for extended workout tracking,ML Team,GWATCH_FTR_08_ISSUE_03,In Progress,2024-01-05 00:00:00,mira_kim,Medium
+GWATCH_FTR_08,Battery Optimization,Power saver mode for extended workout tracking,ML Team,GWATCH_FTR_08_ISSUE_03,Review,2024-01-05 00:00:00,mira_kim,Medium
+GWATCH_FTR_18,Sleep Animal Personas,Fun sleep type categorizations for engagement,Sensor Team,GWATCH_FTR_18_ISSUE_01,Open,2024-01-06 00:00:00,sam_patel,Critical
+GWATCH_FTR_08,Battery Optimization,Power saver mode for extended workout tracking,ML Team,GWATCH_FTR_08_ISSUE_03,Resolved,2024-01-06 00:00:00,mira_kim,Medium
+GWATCH_FTR_03,Offline Maps,Downloadable maps for outdoor navigation without internet,Sensor Team,GWATCH_FTR_03_ISSUE_05,Open,2024-01-07 00:00:00,jordan_kim,High
+GWATCH_FTR_12,Weather Complication,Hourly forecast widget for watch faces,UI/UX Team,GWATCH_FTR_12_ISSUE_02,In Progress,2024-01-07 00:00:00,lee_smith,Low
+GWATCH_FTR_15,Stress Graphs,Detailed stress tracking over days/weeks,Sensor Team,GWATCH_FTR_15_ISSUE_03,Open,2024-01-08 00:00:00,sam_patel,Critical
+GWATCH_FTR_03,Offline Maps,Downloadable maps for outdoor navigation without internet,Sensor Team,GWATCH_FTR_03_ISSUE_05,In Progress,2024-01-08 00:00:00,jordan_kim,High
+GWATCH_FTR_18,Sleep Animal Personas,Fun sleep type categorizations for engagement,Sensor Team,GWATCH_FTR_18_ISSUE_01,In Progress,2024-01-08 00:00:00,sam_patel,Critical
+GWATCH_FTR_03,Offline Maps,Downloadable maps for outdoor navigation without internet,Sensor Team,GWATCH_FTR_03_ISSUE_05,Review,2024-01-09 00:00:00,jordan_kim,High
+GWATCH_FTR_12,Weather Complication,Hourly forecast widget for watch faces,UI/UX Team,GWATCH_FTR_12_ISSUE_02,Review,2024-01-09 00:00:00,lee_smith,Low
+GWATCH_FTR_12,Weather Complication,Hourly forecast widget for watch faces,UI/UX Team,GWATCH_FTR_12_ISSUE_02,Resolved,2024-01-09 00:00:00,lee_smith,Low
+GWATCH_FTR_15,Stress Graphs,Detailed stress tracking over days/weeks,Sensor Team,GWATCH_FTR_15_ISSUE_03,In Progress,2024-01-09 00:00:00,sam_patel,Critical
+GWATCH_FTR_18,Sleep Animal Personas,Fun sleep type categorizations for engagement,Sensor Team,GWATCH_FTR_18_ISSUE_01,Review,2024-01-10 00:00:00,sam_patel,Critical
+GWATCH_FTR_07,ECG Report Sharing,Share ECG reports via email or Samsung Health,Sensor Team,GWATCH_FTR_07_ISSUE_05,Open,2024-01-10 00:00:00,mira_patel,High
+GWATCH_FTR_18,Sleep Animal Personas,Fun sleep type categorizations for engagement,Sensor Team,GWATCH_FTR_18_ISSUE_01,Resolved,2024-01-11 00:00:00,sam_patel,Critical
+GWATCH_FTR_03,Offline Maps,Downloadable maps for outdoor navigation without internet,Sensor Team,GWATCH_FTR_03_ISSUE_05,Resolved,2024-01-12 00:00:00,jordan_kim,High
+GWATCH_FTR_15,Stress Graphs,Detailed stress tracking over days/weeks,Sensor Team,GWATCH_FTR_15_ISSUE_03,Resolved,2024-01-13 00:00:00,sam_patel,Critical
+GWATCH_FTR_07,ECG Report Sharing,Share ECG reports via email or Samsung Health,Sensor Team,GWATCH_FTR_07_ISSUE_05,In Progress,2024-01-13 00:00:00,mira_patel,High
+GWATCH_FTR_15,Stress Graphs,Detailed stress tracking over days/weeks,Sensor Team,GWATCH_FTR_15_ISSUE_03,Review,2024-01-13 00:00:00,sam_patel,Critical
+GWATCH_FTR_07,ECG Report Sharing,Share ECG reports via email or Samsung Health,Sensor Team,GWATCH_FTR_07_ISSUE_05,Review,2024-01-14 00:00:00,mira_patel,High
+GWATCH_FTR_20,Cycle Tracking Enhancements,Add skin temp sensor data to cycle tracking,ML Team,GWATCH_FTR_20_ISSUE_04,Open,2024-01-14 00:00:00,jordan_nguyen,Low
+GWATCH_FTR_07,ECG Report Sharing,Share ECG reports via email or Samsung Health,Sensor Team,GWATCH_FTR_07_ISSUE_05,Resolved,2024-01-15 00:00:00,mira_patel,High
+GWATCH_FTR_20,Cycle Tracking Enhancements,Add skin temp sensor data to cycle tracking,ML Team,GWATCH_FTR_20_ISSUE_04,In Progress,2024-01-15 00:00:00,jordan_nguyen,Low
+GWATCH_FTR_20,Cycle Tracking Enhancements,Add skin temp sensor data to cycle tracking,ML Team,GWATCH_FTR_20_ISSUE_04,Review,2024-01-16 00:00:00,jordan_nguyen,Low
+GWATCH_FTR_20,Cycle Tracking Enhancements,Add skin temp sensor data to cycle tracking,ML Team,GWATCH_FTR_20_ISSUE_04,Resolved,2024-01-16 00:00:00,jordan_nguyen,Low
+GWATCH_FTR_19,Custom Vibration Patterns,Allow users to set custom haptic alerts,Sensor Team,GWATCH_FTR_19_ISSUE_01,Open,2024-01-18 00:00:00,mira_smith,High
+GWATCH_FTR_19,Custom Vibration Patterns,Allow users to set custom haptic alerts,Sensor Team,GWATCH_FTR_19_ISSUE_01,In Progress,2024-01-19 00:00:00,mira_smith,High
+GWATCH_FTR_19,Custom Vibration Patterns,Allow users to set custom haptic alerts,Sensor Team,GWATCH_FTR_19_ISSUE_01,Review,2024-01-20 00:00:00,mira_smith,High
+GWATCH_FTR_18,Sleep Animal Personas,Fun sleep type categorizations for engagement,Sensor Team,GWATCH_FTR_18_ISSUE_03,Open,2024-01-21 00:00:00,sam_kim,Critical
+GWATCH_FTR_21,Gesture Controls,Flick wrist to answer/reject calls,Performance Group,GWATCH_FTR_21_ISSUE_03,Open,2024-01-22 00:00:00,lee_nguyen,High
+GWATCH_FTR_24,Quick Launch Tiles,Add new tile UI for faster feature access,Performance Group,GWATCH_FTR_24_ISSUE_03,Open,2024-01-22 00:00:00,jordan_patel,Medium
+GWATCH_FTR_18,Sleep Animal Personas,Fun sleep type categorizations for engagement,Sensor Team,GWATCH_FTR_18_ISSUE_03,In Progress,2024-01-22 00:00:00,sam_kim,Critical
+GWATCH_FTR_05,Voice Assistant,Revamped Bixby with natural language enhancements,ML Team,GWATCH_FTR_05_ISSUE_06,Open,2024-01-23 00:00:00,alex_kim,High
+GWATCH_FTR_19,Custom Vibration Patterns,Allow users to set custom haptic alerts,Sensor Team,GWATCH_FTR_19_ISSUE_01,Resolved,2024-01-23 00:00:00,mira_smith,High
+GWATCH_FTR_18,Sleep Animal Personas,Fun sleep type categorizations for engagement,Sensor Team,GWATCH_FTR_18_ISSUE_03,Review,2024-01-23 00:00:00,sam_kim,Critical
+GWATCH_FTR_21,Gesture Controls,Flick wrist to answer/reject calls,Performance Group,GWATCH_FTR_21_ISSUE_03,In Progress,2024-01-24 00:00:00,lee_nguyen,High
+GWATCH_FTR_18,Sleep Animal Personas,Fun sleep type categorizations for engagement,Sensor Team,GWATCH_FTR_18_ISSUE_03,Resolved,2024-01-24 00:00:00,sam_kim,Critical
+GWATCH_FTR_05,Voice Assistant,Revamped Bixby with natural language enhancements,ML Team,GWATCH_FTR_05_ISSUE_02,Open,2024-01-24 00:00:00,alex_patel,Medium
+GWATCH_FTR_08,Battery Optimization,Power saver mode for extended workout tracking,ML Team,GWATCH_FTR_08_ISSUE_04,Open,2024-01-25 00:00:00,sam_kim,Critical
+GWATCH_FTR_08,Battery Optimization,Power saver mode for extended workout tracking,ML Team,GWATCH_FTR_08_ISSUE_04,Review,2024-01-26 00:00:00,sam_kim,Critical
+GWATCH_FTR_08,Battery Optimization,Power saver mode for extended workout tracking,ML Team,GWATCH_FTR_08_ISSUE_04,In Progress,2024-01-26 00:00:00,sam_kim,Critical
+GWATCH_FTR_24,Quick Launch Tiles,Add new tile UI for faster feature access,Performance Group,GWATCH_FTR_24_ISSUE_03,Review,2024-01-26 00:00:00,jordan_patel,Medium
+GWATCH_FTR_24,Quick Launch Tiles,Add new tile UI for faster feature access,Performance Group,GWATCH_FTR_24_ISSUE_03,In Progress,2024-01-26 00:00:00,jordan_patel,Medium
+GWATCH_FTR_21,Gesture Controls,Flick wrist to answer/reject calls,Performance Group,GWATCH_FTR_21_ISSUE_03,Review,2024-01-26 00:00:00,lee_nguyen,High
+GWATCH_FTR_05,Voice Assistant,Revamped Bixby with natural language enhancements,ML Team,GWATCH_FTR_05_ISSUE_06,In Progress,2024-01-26 00:00:00,alex_kim,High
+GWATCH_FTR_04,Custom Workouts,Create personalized workout plans and tracking,Sensor Team,GWATCH_FTR_04_ISSUE_04,Open,2024-01-27 00:00:00,sam_nguyen,Medium
+GWATCH_FTR_24,Quick Launch Tiles,Add new tile UI for faster feature access,Performance Group,GWATCH_FTR_24_ISSUE_03,Resolved,2024-01-27 00:00:00,jordan_patel,Medium
+GWATCH_FTR_06,SpO2 During Sleep,Blood oxygen monitoring during sleep sessions,UI/UX Team,GWATCH_FTR_06_ISSUE_01,Open,2024-01-27 00:00:00,sam_nguyen,Critical
+GWATCH_FTR_17,Voice Memos,Record and playback audio notes from the watch,Sensor Team,GWATCH_FTR_17_ISSUE_05,Open,2024-01-27 00:00:00,lee_nguyen,Critical
+GWATCH_FTR_05,Voice Assistant,Revamped Bixby with natural language enhancements,ML Team,GWATCH_FTR_05_ISSUE_06,Review,2024-01-27 00:00:00,alex_kim,High
+GWATCH_FTR_21,Gesture Controls,Flick wrist to answer/reject calls,Performance Group,GWATCH_FTR_21_ISSUE_03,Resolved,2024-01-27 00:00:00,lee_nguyen,High
+GWATCH_FTR_05,Voice Assistant,Revamped Bixby with natural language enhancements,ML Team,GWATCH_FTR_05_ISSUE_06,Resolved,2024-01-28 00:00:00,alex_kim,High
+GWATCH_FTR_05,Voice Assistant,Revamped Bixby with natural language enhancements,ML Team,GWATCH_FTR_05_ISSUE_02,In Progress,2024-01-28 00:00:00,alex_patel,Medium
+GWATCH_FTR_04,Custom Workouts,Create personalized workout plans and tracking,Sensor Team,GWATCH_FTR_04_ISSUE_04,In Progress,2024-01-28 00:00:00,sam_nguyen,Medium
+GWATCH_FTR_15,Stress Graphs,Detailed stress tracking over days/weeks,Sensor Team,GWATCH_FTR_15_ISSUE_02,Open,2024-01-28 00:00:00,lee_patel,Medium
+GWATCH_FTR_08,Battery Optimization,Power saver mode for extended workout tracking,ML Team,GWATCH_FTR_08_ISSUE_04,Resolved,2024-01-28 00:00:00,sam_kim,Critical
+GWATCH_FTR_05,Voice Assistant,Revamped Bixby with natural language enhancements,ML Team,GWATCH_FTR_05_ISSUE_02,Review,2024-01-29 00:00:00,alex_patel,Medium
+GWATCH_FTR_05,Voice Assistant,Revamped Bixby with natural language enhancements,ML Team,GWATCH_FTR_05_ISSUE_02,Resolved,2024-01-29 00:00:00,alex_patel,Medium
+GWATCH_FTR_04,Custom Workouts,Create personalized workout plans and tracking,Sensor Team,GWATCH_FTR_04_ISSUE_04,Resolved,2024-01-29 00:00:00,sam_nguyen,Medium
+GWATCH_FTR_15,Stress Graphs,Detailed stress tracking over days/weeks,Sensor Team,GWATCH_FTR_15_ISSUE_02,Resolved,2024-01-29 00:00:00,lee_patel,Medium
+GWATCH_FTR_15,Stress Graphs,Detailed stress tracking over days/weeks,Sensor Team,GWATCH_FTR_15_ISSUE_02,Review,2024-01-29 00:00:00,lee_patel,Medium
+GWATCH_FTR_15,Stress Graphs,Detailed stress tracking over days/weeks,Sensor Team,GWATCH_FTR_15_ISSUE_02,In Progress,2024-01-29 00:00:00,lee_patel,Medium
+GWATCH_FTR_06,SpO2 During Sleep,Blood oxygen monitoring during sleep sessions,UI/UX Team,GWATCH_FTR_06_ISSUE_01,In Progress,2024-01-29 00:00:00,sam_nguyen,Critical
+GWATCH_FTR_04,Custom Workouts,Create personalized workout plans and tracking,Sensor Team,GWATCH_FTR_04_ISSUE_04,Review,2024-01-29 00:00:00,sam_nguyen,Medium
+GWATCH_FTR_05,Voice Assistant,Revamped Bixby with natural language enhancements,ML Team,GWATCH_FTR_05_ISSUE_04,Open,2024-01-30 00:00:00,jordan_smith,Medium
+GWATCH_FTR_14,Watch-to-Watch Ping,Locate your watch using another Galaxy device,Sensor Team,GWATCH_FTR_14_ISSUE_04,Open,2024-01-30 00:00:00,sam_smith,High
+GWATCH_FTR_17,Voice Memos,Record and playback audio notes from the watch,Sensor Team,GWATCH_FTR_17_ISSUE_05,Review,2024-01-31 00:00:00,lee_nguyen,Critical
+GWATCH_FTR_06,SpO2 During Sleep,Blood oxygen monitoring during sleep sessions,UI/UX Team,GWATCH_FTR_06_ISSUE_01,Review,2024-01-31 00:00:00,sam_nguyen,Critical
+GWATCH_FTR_17,Voice Memos,Record and playback audio notes from the watch,Sensor Team,GWATCH_FTR_17_ISSUE_05,In Progress,2024-01-31 00:00:00,lee_nguyen,Critical
+GWATCH_FTR_17,Voice Memos,Record and playback audio notes from the watch,Sensor Team,GWATCH_FTR_17_ISSUE_05,Resolved,2024-01-31 00:00:00,lee_nguyen,Critical
+GWATCH_FTR_05,Voice Assistant,Revamped Bixby with natural language enhancements,ML Team,GWATCH_FTR_05_ISSUE_04,In Progress,2024-01-31 00:00:00,jordan_smith,Medium
+GWATCH_FTR_06,SpO2 During Sleep,Blood oxygen monitoring during sleep sessions,UI/UX Team,GWATCH_FTR_06_ISSUE_01,Resolved,2024-02-01 00:00:00,sam_nguyen,Critical
+GWATCH_FTR_14,Watch-to-Watch Ping,Locate your watch using another Galaxy device,Sensor Team,GWATCH_FTR_14_ISSUE_04,In Progress,2024-02-02 00:00:00,sam_smith,High
+GWATCH_FTR_14,Watch-to-Watch Ping,Locate your watch using another Galaxy device,Sensor Team,GWATCH_FTR_14_ISSUE_04,Review,2024-02-02 00:00:00,sam_smith,High
+GWATCH_FTR_14,Watch-to-Watch Ping,Locate your watch using another Galaxy device,Sensor Team,GWATCH_FTR_14_ISSUE_04,Resolved,2024-02-03 00:00:00,sam_smith,High
+GWATCH_FTR_05,Voice Assistant,Revamped Bixby with natural language enhancements,ML Team,GWATCH_FTR_05_ISSUE_04,Review,2024-02-03 00:00:00,jordan_smith,Medium
+GWATCH_FTR_22,Workout Auto-Pause,Auto-pause/resume during runs or walks,UI/UX Team,GWATCH_FTR_22_ISSUE_01,Open,2024-02-03 00:00:00,alex_kim,Low
+GWATCH_FTR_05,Voice Assistant,Revamped Bixby with natural language enhancements,ML Team,GWATCH_FTR_05_ISSUE_04,Resolved,2024-02-04 00:00:00,jordan_smith,Medium
+GWATCH_FTR_22,Workout Auto-Pause,Auto-pause/resume during runs or walks,UI/UX Team,GWATCH_FTR_22_ISSUE_01,In Progress,2024-02-05 00:00:00,alex_kim,Low
+GWATCH_FTR_22,Workout Auto-Pause,Auto-pause/resume during runs or walks,UI/UX Team,GWATCH_FTR_22_ISSUE_01,Review,2024-02-05 00:00:00,alex_kim,Low
+GWATCH_FTR_24,Quick Launch Tiles,Add new tile UI for faster feature access,Performance Group,GWATCH_FTR_24_ISSUE_01,Open,2024-02-06 00:00:00,jordan_nguyen,Critical
+GWATCH_FTR_02,Heart Rate Alerts,Real-time abnormal heart rate notification system,UI/UX Team,GWATCH_FTR_02_ISSUE_01,Open,2024-02-06 00:00:00,lee_kim,High
+GWATCH_FTR_24,Quick Launch Tiles,Add new tile UI for faster feature access,Performance Group,GWATCH_FTR_24_ISSUE_01,In Progress,2024-02-07 00:00:00,jordan_nguyen,Critical
+GWATCH_FTR_22,Workout Auto-Pause,Auto-pause/resume during runs or walks,UI/UX Team,GWATCH_FTR_22_ISSUE_01,Resolved,2024-02-07 00:00:00,alex_kim,Low
+GWATCH_FTR_15,Stress Graphs,Detailed stress tracking over days/weeks,Sensor Team,GWATCH_FTR_15_ISSUE_04,Open,2024-02-08 00:00:00,mira_kim,Critical
+GWATCH_FTR_15,Stress Graphs,Detailed stress tracking over days/weeks,Sensor Team,GWATCH_FTR_15_ISSUE_04,In Progress,2024-02-09 00:00:00,mira_kim,Critical
+GWATCH_FTR_24,Quick Launch Tiles,Add new tile UI for faster feature access,Performance Group,GWATCH_FTR_24_ISSUE_01,Review,2024-02-09 00:00:00,jordan_nguyen,Critical
+GWATCH_FTR_24,Quick Launch Tiles,Add new tile UI for faster feature access,Performance Group,GWATCH_FTR_24_ISSUE_01,Resolved,2024-02-10 00:00:00,jordan_nguyen,Critical
+GWATCH_FTR_02,Heart Rate Alerts,Real-time abnormal heart rate notification system,UI/UX Team,GWATCH_FTR_02_ISSUE_01,In Progress,2024-02-10 00:00:00,lee_kim,High
+GWATCH_FTR_02,Heart Rate Alerts,Real-time abnormal heart rate notification system,UI/UX Team,GWATCH_FTR_02_ISSUE_01,Resolved,2024-02-10 00:00:00,lee_kim,High
+GWATCH_FTR_02,Heart Rate Alerts,Real-time abnormal heart rate notification system,UI/UX Team,GWATCH_FTR_02_ISSUE_01,Review,2024-02-10 00:00:00,lee_kim,High
+GWATCH_FTR_15,Stress Graphs,Detailed stress tracking over days/weeks,Sensor Team,GWATCH_FTR_15_ISSUE_04,Review,2024-02-11 00:00:00,mira_kim,Critical
+GWATCH_FTR_23,Skin Temp Tracking,Track skin temp during sleep and workouts,Performance Group,GWATCH_FTR_23_ISSUE_01,Open,2024-02-11 00:00:00,jordan_nguyen,Low
+GWATCH_FTR_23,Skin Temp Tracking,Track skin temp during sleep and workouts,Performance Group,GWATCH_FTR_23_ISSUE_01,In Progress,2024-02-12 00:00:00,jordan_nguyen,Low
+GWATCH_FTR_06,SpO2 During Sleep,Blood oxygen monitoring during sleep sessions,UI/UX Team,GWATCH_FTR_06_ISSUE_03,Open,2024-02-12 00:00:00,jordan_patel,High
+GWATCH_FTR_23,Skin Temp Tracking,Track skin temp during sleep and workouts,Performance Group,GWATCH_FTR_23_ISSUE_04,Open,2024-02-13 00:00:00,mira_smith,Medium
+GWATCH_FTR_23,Skin Temp Tracking,Track skin temp during sleep and workouts,Performance Group,GWATCH_FTR_23_ISSUE_01,Review,2024-02-13 00:00:00,jordan_nguyen,Low
+GWATCH_FTR_15,Stress Graphs,Detailed stress tracking over days/weeks,Sensor Team,GWATCH_FTR_15_ISSUE_04,Resolved,2024-02-13 00:00:00,mira_kim,Critical
+GWATCH_FTR_23,Skin Temp Tracking,Track skin temp during sleep and workouts,Performance Group,GWATCH_FTR_23_ISSUE_04,In Progress,2024-02-14 00:00:00,mira_smith,Medium
+GWATCH_FTR_06,SpO2 During Sleep,Blood oxygen monitoring during sleep sessions,UI/UX Team,GWATCH_FTR_06_ISSUE_03,In Progress,2024-02-14 00:00:00,jordan_patel,High
+GWATCH_FTR_06,SpO2 During Sleep,Blood oxygen monitoring during sleep sessions,UI/UX Team,GWATCH_FTR_06_ISSUE_03,Review,2024-02-14 00:00:00,jordan_patel,High
+GWATCH_FTR_23,Skin Temp Tracking,Track skin temp during sleep and workouts,Performance Group,GWATCH_FTR_23_ISSUE_04,Review,2024-02-15 00:00:00,mira_smith,Medium
+GWATCH_FTR_06,SpO2 During Sleep,Blood oxygen monitoring during sleep sessions,UI/UX Team,GWATCH_FTR_06_ISSUE_03,Resolved,2024-02-16 00:00:00,jordan_patel,High
+GWATCH_FTR_23,Skin Temp Tracking,Track skin temp during sleep and workouts,Performance Group,GWATCH_FTR_23_ISSUE_04,Resolved,2024-02-16 00:00:00,mira_smith,Medium
+GWATCH_FTR_23,Skin Temp Tracking,Track skin temp during sleep and workouts,Performance Group,GWATCH_FTR_23_ISSUE_01,Resolved,2024-02-16 00:00:00,jordan_nguyen,Low
+GWATCH_FTR_06,SpO2 During Sleep,Blood oxygen monitoring during sleep sessions,UI/UX Team,GWATCH_FTR_06_ISSUE_02,Open,2024-02-17 00:00:00,mira_nguyen,Medium
+GWATCH_FTR_09,Third-Party App Sync,Support for syncing with Strava and MyFitnessPal,Cloud Sync,GWATCH_FTR_09_ISSUE_02,Open,2024-02-17 00:00:00,mira_nguyen,High
+GWATCH_FTR_10,Fall Detection,Automatic SOS on hard falls during exercise,UI/UX Team,GWATCH_FTR_10_ISSUE_05,Open,2024-02-18 00:00:00,lee_smith,High
+GWATCH_FTR_06,SpO2 During Sleep,Blood oxygen monitoring during sleep sessions,UI/UX Team,GWATCH_FTR_06_ISSUE_02,Review,2024-02-20 00:00:00,mira_nguyen,Medium
+GWATCH_FTR_06,SpO2 During Sleep,Blood oxygen monitoring during sleep sessions,UI/UX Team,GWATCH_FTR_06_ISSUE_02,In Progress,2024-02-20 00:00:00,mira_nguyen,Medium
+GWATCH_FTR_09,Third-Party App Sync,Support for syncing with Strava and MyFitnessPal,Cloud Sync,GWATCH_FTR_09_ISSUE_02,In Progress,2024-02-20 00:00:00,mira_nguyen,High
+GWATCH_FTR_10,Fall Detection,Automatic SOS on hard falls during exercise,UI/UX Team,GWATCH_FTR_10_ISSUE_05,In Progress,2024-02-20 00:00:00,lee_smith,High
+GWATCH_FTR_09,Third-Party App Sync,Support for syncing with Strava and MyFitnessPal,Cloud Sync,GWATCH_FTR_09_ISSUE_02,Review,2024-02-21 00:00:00,mira_nguyen,High
+GWATCH_FTR_06,SpO2 During Sleep,Blood oxygen monitoring during sleep sessions,UI/UX Team,GWATCH_FTR_06_ISSUE_02,Resolved,2024-02-21 00:00:00,mira_nguyen,Medium
+GWATCH_FTR_10,Fall Detection,Automatic SOS on hard falls during exercise,UI/UX Team,GWATCH_FTR_10_ISSUE_05,Review,2024-02-21 00:00:00,lee_smith,High
+GWATCH_FTR_12,Weather Complication,Hourly forecast widget for watch faces,UI/UX Team,GWATCH_FTR_12_ISSUE_04,Open,2024-02-21 00:00:00,sam_nguyen,High
+GWATCH_FTR_10,Fall Detection,Automatic SOS on hard falls during exercise,UI/UX Team,GWATCH_FTR_10_ISSUE_05,Resolved,2024-02-21 00:00:00,lee_smith,High
+GWATCH_FTR_09,Third-Party App Sync,Support for syncing with Strava and MyFitnessPal,Cloud Sync,GWATCH_FTR_09_ISSUE_02,Resolved,2024-02-22 00:00:00,mira_nguyen,High
+GWATCH_FTR_12,Weather Complication,Hourly forecast widget for watch faces,UI/UX Team,GWATCH_FTR_12_ISSUE_04,In Progress,2024-02-22 00:00:00,sam_nguyen,High
+GWATCH_FTR_12,Weather Complication,Hourly forecast widget for watch faces,UI/UX Team,GWATCH_FTR_12_ISSUE_04,Review,2024-02-23 00:00:00,sam_nguyen,High
+GWATCH_FTR_21,Gesture Controls,Flick wrist to answer/reject calls,Performance Group,GWATCH_FTR_21_ISSUE_01,Open,2024-02-23 00:00:00,alex_patel,Medium
+GWATCH_FTR_12,Weather Complication,Hourly forecast widget for watch faces,UI/UX Team,GWATCH_FTR_12_ISSUE_04,Resolved,2024-02-24 00:00:00,sam_nguyen,High
+GWATCH_FTR_21,Gesture Controls,Flick wrist to answer/reject calls,Performance Group,GWATCH_FTR_21_ISSUE_01,In Progress,2024-02-25 00:00:00,alex_patel,Medium
+GWATCH_FTR_21,Gesture Controls,Flick wrist to answer/reject calls,Performance Group,GWATCH_FTR_21_ISSUE_01,Review,2024-02-26 00:00:00,alex_patel,Medium
+GWATCH_FTR_09,Third-Party App Sync,Support for syncing with Strava and MyFitnessPal,Cloud Sync,GWATCH_FTR_09_ISSUE_04,Open,2024-02-27 00:00:00,mira_patel,Medium
+GWATCH_FTR_21,Gesture Controls,Flick wrist to answer/reject calls,Performance Group,GWATCH_FTR_21_ISSUE_01,Resolved,2024-02-27 00:00:00,alex_patel,Medium
+GWATCH_FTR_03,Offline Maps,Downloadable maps for outdoor navigation without internet,Sensor Team,GWATCH_FTR_03_ISSUE_01,Open,2024-02-29 00:00:00,jordan_kim,Low
+GWATCH_FTR_09,Third-Party App Sync,Support for syncing with Strava and MyFitnessPal,Cloud Sync,GWATCH_FTR_09_ISSUE_04,In Progress,2024-02-29 00:00:00,mira_patel,Medium
+GWATCH_FTR_07,ECG Report Sharing,Share ECG reports via email or Samsung Health,Sensor Team,GWATCH_FTR_07_ISSUE_02,Open,2024-03-01 00:00:00,mira_nguyen,Low
+GWATCH_FTR_03,Offline Maps,Downloadable maps for outdoor navigation without internet,Sensor Team,GWATCH_FTR_03_ISSUE_01,In Progress,2024-03-01 00:00:00,jordan_kim,Low
+GWATCH_FTR_09,Third-Party App Sync,Support for syncing with Strava and MyFitnessPal,Cloud Sync,GWATCH_FTR_09_ISSUE_04,Review,2024-03-01 00:00:00,mira_patel,Medium
+GWATCH_FTR_16,Hydration Reminders,Timed water intake notifications,Performance Group,GWATCH_FTR_16_ISSUE_03,Open,2024-03-02 00:00:00,alex_smith,Critical
+GWATCH_FTR_02,Heart Rate Alerts,Real-time abnormal heart rate notification system,UI/UX Team,GWATCH_FTR_02_ISSUE_04,Open,2024-03-02 00:00:00,alex_smith,High
+GWATCH_FTR_03,Offline Maps,Downloadable maps for outdoor navigation without internet,Sensor Team,GWATCH_FTR_03_ISSUE_01,Review,2024-03-02 00:00:00,jordan_kim,Low
+GWATCH_FTR_03,Offline Maps,Downloadable maps for outdoor navigation without internet,Sensor Team,GWATCH_FTR_03_ISSUE_01,Resolved,2024-03-02 00:00:00,jordan_kim,Low
+GWATCH_FTR_10,Fall Detection,Automatic SOS on hard falls during exercise,UI/UX Team,GWATCH_FTR_10_ISSUE_03,Open,2024-03-03 00:00:00,lee_patel,Low
+GWATCH_FTR_16,Hydration Reminders,Timed water intake notifications,Performance Group,GWATCH_FTR_16_ISSUE_03,In Progress,2024-03-03 00:00:00,alex_smith,Critical
+GWATCH_FTR_09,Third-Party App Sync,Support for syncing with Strava and MyFitnessPal,Cloud Sync,GWATCH_FTR_09_ISSUE_04,Resolved,2024-03-03 00:00:00,mira_patel,Medium
+GWATCH_FTR_07,ECG Report Sharing,Share ECG reports via email or Samsung Health,Sensor Team,GWATCH_FTR_07_ISSUE_02,In Progress,2024-03-03 00:00:00,mira_nguyen,Low
+GWATCH_FTR_02,Heart Rate Alerts,Real-time abnormal heart rate notification system,UI/UX Team,GWATCH_FTR_02_ISSUE_04,In Progress,2024-03-03 00:00:00,alex_smith,High
+GWATCH_FTR_04,Custom Workouts,Create personalized workout plans and tracking,Sensor Team,GWATCH_FTR_04_ISSUE_03,Open,2024-03-04 00:00:00,jordan_smith,Low
+GWATCH_FTR_07,ECG Report Sharing,Share ECG reports via email or Samsung Health,Sensor Team,GWATCH_FTR_07_ISSUE_02,Review,2024-03-04 00:00:00,mira_nguyen,Low
+GWATCH_FTR_22,Workout Auto-Pause,Auto-pause/resume during runs or walks,UI/UX Team,GWATCH_FTR_22_ISSUE_02,Open,2024-03-04 00:00:00,alex_smith,Low
+GWATCH_FTR_10,Fall Detection,Automatic SOS on hard falls during exercise,UI/UX Team,GWATCH_FTR_10_ISSUE_03,Review,2024-03-05 00:00:00,lee_patel,Low
+GWATCH_FTR_10,Fall Detection,Automatic SOS on hard falls during exercise,UI/UX Team,GWATCH_FTR_10_ISSUE_03,In Progress,2024-03-05 00:00:00,lee_patel,Low
+GWATCH_FTR_07,ECG Report Sharing,Share ECG reports via email or Samsung Health,Sensor Team,GWATCH_FTR_07_ISSUE_02,Resolved,2024-03-05 00:00:00,mira_nguyen,Low
+GWATCH_FTR_02,Heart Rate Alerts,Real-time abnormal heart rate notification system,UI/UX Team,GWATCH_FTR_02_ISSUE_04,Review,2024-03-06 00:00:00,alex_smith,High
+GWATCH_FTR_16,Hydration Reminders,Timed water intake notifications,Performance Group,GWATCH_FTR_16_ISSUE_03,Review,2024-03-06 00:00:00,alex_smith,Critical
+GWATCH_FTR_16,Hydration Reminders,Timed water intake notifications,Performance Group,GWATCH_FTR_16_ISSUE_03,Resolved,2024-03-06 00:00:00,alex_smith,Critical
+GWATCH_FTR_22,Workout Auto-Pause,Auto-pause/resume during runs or walks,UI/UX Team,GWATCH_FTR_22_ISSUE_02,In Progress,2024-03-07 00:00:00,alex_smith,Low
+GWATCH_FTR_02,Heart Rate Alerts,Real-time abnormal heart rate notification system,UI/UX Team,GWATCH_FTR_02_ISSUE_04,Resolved,2024-03-07 00:00:00,alex_smith,High
+GWATCH_FTR_04,Custom Workouts,Create personalized workout plans and tracking,Sensor Team,GWATCH_FTR_04_ISSUE_03,In Progress,2024-03-07 00:00:00,jordan_smith,Low
+GWATCH_FTR_17,Voice Memos,Record and playback audio notes from the watch,Sensor Team,GWATCH_FTR_17_ISSUE_01,Open,2024-03-07 00:00:00,jordan_nguyen,Critical
+GWATCH_FTR_22,Workout Auto-Pause,Auto-pause/resume during runs or walks,UI/UX Team,GWATCH_FTR_22_ISSUE_02,Resolved,2024-03-08 00:00:00,alex_smith,Low
+GWATCH_FTR_22,Workout Auto-Pause,Auto-pause/resume during runs or walks,UI/UX Team,GWATCH_FTR_22_ISSUE_02,Review,2024-03-08 00:00:00,alex_smith,Low
+GWATCH_FTR_10,Fall Detection,Automatic SOS on hard falls during exercise,UI/UX Team,GWATCH_FTR_10_ISSUE_03,Resolved,2024-03-08 00:00:00,lee_patel,Low
+GWATCH_FTR_11,Multilingual Input,Add multilingual support to on-watch keyboard,Performance Group,GWATCH_FTR_11_ISSUE_02,Open,2024-03-08 00:00:00,sam_kim,Critical
+GWATCH_FTR_25,Sleep Coaching Tips,Personalized coaching based on sleep trends,Sensor Team,GWATCH_FTR_25_ISSUE_02,Open,2024-03-08 00:00:00,sam_kim,Critical
+GWATCH_FTR_17,Voice Memos,Record and playback audio notes from the watch,Sensor Team,GWATCH_FTR_17_ISSUE_01,In Progress,2024-03-08 00:00:00,jordan_nguyen,Critical
+GWATCH_FTR_04,Custom Workouts,Create personalized workout plans and tracking,Sensor Team,GWATCH_FTR_04_ISSUE_03,Review,2024-03-09 00:00:00,jordan_smith,Low
+GWATCH_FTR_25,Sleep Coaching Tips,Personalized coaching based on sleep trends,Sensor Team,GWATCH_FTR_25_ISSUE_02,Review,2024-03-09 00:00:00,sam_kim,Critical
+GWATCH_FTR_25,Sleep Coaching Tips,Personalized coaching based on sleep trends,Sensor Team,GWATCH_FTR_25_ISSUE_02,In Progress,2024-03-09 00:00:00,sam_kim,Critical
+GWATCH_FTR_04,Custom Workouts,Create personalized workout plans and tracking,Sensor Team,GWATCH_FTR_04_ISSUE_03,Resolved,2024-03-09 00:00:00,jordan_smith,Low
+GWATCH_FTR_17,Voice Memos,Record and playback audio notes from the watch,Sensor Team,GWATCH_FTR_17_ISSUE_01,Review,2024-03-09 00:00:00,jordan_nguyen,Critical
+GWATCH_FTR_08,Battery Optimization,Power saver mode for extended workout tracking,ML Team,GWATCH_FTR_08_ISSUE_02,Open,2024-03-10 00:00:00,alex_patel,Critical
+GWATCH_FTR_11,Multilingual Input,Add multilingual support to on-watch keyboard,Performance Group,GWATCH_FTR_11_ISSUE_02,In Progress,2024-03-11 00:00:00,sam_kim,Critical
+GWATCH_FTR_08,Battery Optimization,Power saver mode for extended workout tracking,ML Team,GWATCH_FTR_08_ISSUE_02,In Progress,2024-03-11 00:00:00,alex_patel,Critical
+GWATCH_FTR_17,Voice Memos,Record and playback audio notes from the watch,Sensor Team,GWATCH_FTR_17_ISSUE_01,Resolved,2024-03-11 00:00:00,jordan_nguyen,Critical
+GWATCH_FTR_05,Voice Assistant,Revamped Bixby with natural language enhancements,ML Team,GWATCH_FTR_05_ISSUE_03,Open,2024-03-12 00:00:00,alex_smith,Low
+GWATCH_FTR_11,Multilingual Input,Add multilingual support to on-watch keyboard,Performance Group,GWATCH_FTR_11_ISSUE_02,Resolved,2024-03-12 00:00:00,sam_kim,Critical
+GWATCH_FTR_07,ECG Report Sharing,Share ECG reports via email or Samsung Health,Sensor Team,GWATCH_FTR_07_ISSUE_01,Open,2024-03-12 00:00:00,alex_patel,Critical
+GWATCH_FTR_11,Multilingual Input,Add multilingual support to on-watch keyboard,Performance Group,GWATCH_FTR_11_ISSUE_02,Review,2024-03-12 00:00:00,sam_kim,Critical
+GWATCH_FTR_10,Fall Detection,Automatic SOS on hard falls during exercise,UI/UX Team,GWATCH_FTR_10_ISSUE_04,Open,2024-03-12 00:00:00,lee_kim,Low
+GWATCH_FTR_10,Fall Detection,Automatic SOS on hard falls during exercise,UI/UX Team,GWATCH_FTR_10_ISSUE_04,In Progress,2024-03-13 00:00:00,lee_kim,Low
+GWATCH_FTR_25,Sleep Coaching Tips,Personalized coaching based on sleep trends,Sensor Team,GWATCH_FTR_25_ISSUE_02,Resolved,2024-03-13 00:00:00,sam_kim,Critical
+GWATCH_FTR_16,Hydration Reminders,Timed water intake notifications,Performance Group,GWATCH_FTR_16_ISSUE_01,Open,2024-03-13 00:00:00,lee_patel,Medium
+GWATCH_FTR_06,SpO2 During Sleep,Blood oxygen monitoring during sleep sessions,UI/UX Team,GWATCH_FTR_06_ISSUE_04,Open,2024-03-13 00:00:00,mira_nguyen,Critical
+GWATCH_FTR_06,SpO2 During Sleep,Blood oxygen monitoring during sleep sessions,UI/UX Team,GWATCH_FTR_06_ISSUE_04,In Progress,2024-03-14 00:00:00,mira_nguyen,Critical
+GWATCH_FTR_08,Battery Optimization,Power saver mode for extended workout tracking,ML Team,GWATCH_FTR_08_ISSUE_02,Review,2024-03-14 00:00:00,alex_patel,Critical
+GWATCH_FTR_08,Battery Optimization,Power saver mode for extended workout tracking,ML Team,GWATCH_FTR_08_ISSUE_02,Resolved,2024-03-14 00:00:00,alex_patel,Critical
+GWATCH_FTR_19,Custom Vibration Patterns,Allow users to set custom haptic alerts,Sensor Team,GWATCH_FTR_19_ISSUE_05,Open,2024-03-14 00:00:00,lee_smith,High
+GWATCH_FTR_17,Voice Memos,Record and playback audio notes from the watch,Sensor Team,GWATCH_FTR_17_ISSUE_02,Open,2024-03-14 00:00:00,sam_kim,Critical
+GWATCH_FTR_15,Stress Graphs,Detailed stress tracking over days/weeks,Sensor Team,GWATCH_FTR_15_ISSUE_01,Open,2024-03-15 00:00:00,lee_smith,Medium
+GWATCH_FTR_06,SpO2 During Sleep,Blood oxygen monitoring during sleep sessions,UI/UX Team,GWATCH_FTR_06_ISSUE_04,Review,2024-03-15 00:00:00,mira_nguyen,Critical
+GWATCH_FTR_05,Voice Assistant,Revamped Bixby with natural language enhancements,ML Team,GWATCH_FTR_05_ISSUE_03,In Progress,2024-03-15 00:00:00,alex_smith,Low
+GWATCH_FTR_07,ECG Report Sharing,Share ECG reports via email or Samsung Health,Sensor Team,GWATCH_FTR_07_ISSUE_01,In Progress,2024-03-15 00:00:00,alex_patel,Critical
+GWATCH_FTR_10,Fall Detection,Automatic SOS on hard falls during exercise,UI/UX Team,GWATCH_FTR_10_ISSUE_04,Resolved,2024-03-15 00:00:00,lee_kim,Low
+GWATCH_FTR_10,Fall Detection,Automatic SOS on hard falls during exercise,UI/UX Team,GWATCH_FTR_10_ISSUE_04,Review,2024-03-15 00:00:00,lee_kim,Low
+GWATCH_FTR_16,Hydration Reminders,Timed water intake notifications,Performance Group,GWATCH_FTR_16_ISSUE_01,In Progress,2024-03-15 00:00:00,lee_patel,Medium
+GWATCH_FTR_19,Custom Vibration Patterns,Allow users to set custom haptic alerts,Sensor Team,GWATCH_FTR_19_ISSUE_05,In Progress,2024-03-16 00:00:00,lee_smith,High
+GWATCH_FTR_19,Custom Vibration Patterns,Allow users to set custom haptic alerts,Sensor Team,GWATCH_FTR_19_ISSUE_05,Review,2024-03-16 00:00:00,lee_smith,High
+GWATCH_FTR_05,Voice Assistant,Revamped Bixby with natural language enhancements,ML Team,GWATCH_FTR_05_ISSUE_03,Resolved,2024-03-16 00:00:00,alex_smith,Low
+GWATCH_FTR_15,Stress Graphs,Detailed stress tracking over days/weeks,Sensor Team,GWATCH_FTR_15_ISSUE_01,In Progress,2024-03-16 00:00:00,lee_smith,Medium
+GWATCH_FTR_06,SpO2 During Sleep,Blood oxygen monitoring during sleep sessions,UI/UX Team,GWATCH_FTR_06_ISSUE_04,Resolved,2024-03-16 00:00:00,mira_nguyen,Critical
+GWATCH_FTR_16,Hydration Reminders,Timed water intake notifications,Performance Group,GWATCH_FTR_16_ISSUE_01,Review,2024-03-16 00:00:00,lee_patel,Medium
+GWATCH_FTR_05,Voice Assistant,Revamped Bixby with natural language enhancements,ML Team,GWATCH_FTR_05_ISSUE_03,Review,2024-03-16 00:00:00,alex_smith,Low
+GWATCH_FTR_15,Stress Graphs,Detailed stress tracking over days/weeks,Sensor Team,GWATCH_FTR_15_ISSUE_01,Review,2024-03-17 00:00:00,lee_smith,Medium
+GWATCH_FTR_07,ECG Report Sharing,Share ECG reports via email or Samsung Health,Sensor Team,GWATCH_FTR_07_ISSUE_01,Review,2024-03-17 00:00:00,alex_patel,Critical
+GWATCH_FTR_07,ECG Report Sharing,Share ECG reports via email or Samsung Health,Sensor Team,GWATCH_FTR_07_ISSUE_01,Resolved,2024-03-17 00:00:00,alex_patel,Critical
+GWATCH_FTR_17,Voice Memos,Record and playback audio notes from the watch,Sensor Team,GWATCH_FTR_17_ISSUE_02,In Progress,2024-03-17 00:00:00,sam_kim,Critical
+GWATCH_FTR_19,Custom Vibration Patterns,Allow users to set custom haptic alerts,Sensor Team,GWATCH_FTR_19_ISSUE_05,Resolved,2024-03-17 00:00:00,lee_smith,High
+GWATCH_FTR_17,Voice Memos,Record and playback audio notes from the watch,Sensor Team,GWATCH_FTR_17_ISSUE_02,Review,2024-03-18 00:00:00,sam_kim,Critical
+GWATCH_FTR_17,Voice Memos,Record and playback audio notes from the watch,Sensor Team,GWATCH_FTR_17_ISSUE_02,Resolved,2024-03-18 00:00:00,sam_kim,Critical
+GWATCH_FTR_16,Hydration Reminders,Timed water intake notifications,Performance Group,GWATCH_FTR_16_ISSUE_01,Resolved,2024-03-18 00:00:00,lee_patel,Medium
+GWATCH_FTR_25,Sleep Coaching Tips,Personalized coaching based on sleep trends,Sensor Team,GWATCH_FTR_25_ISSUE_03,Open,2024-03-19 00:00:00,jordan_kim,High
+GWATCH_FTR_15,Stress Graphs,Detailed stress tracking over days/weeks,Sensor Team,GWATCH_FTR_15_ISSUE_01,Resolved,2024-03-20 00:00:00,lee_smith,Medium
+GWATCH_FTR_25,Sleep Coaching Tips,Personalized coaching based on sleep trends,Sensor Team,GWATCH_FTR_25_ISSUE_03,In Progress,2024-03-21 00:00:00,jordan_kim,High
+GWATCH_FTR_25,Sleep Coaching Tips,Personalized coaching based on sleep trends,Sensor Team,GWATCH_FTR_25_ISSUE_03,Resolved,2024-03-24 00:00:00,jordan_kim,High
+GWATCH_FTR_25,Sleep Coaching Tips,Personalized coaching based on sleep trends,Sensor Team,GWATCH_FTR_25_ISSUE_03,Review,2024-03-24 00:00:00,jordan_kim,High
+GWATCH_FTR_25,Sleep Coaching Tips,Personalized coaching based on sleep trends,Sensor Team,GWATCH_FTR_25_ISSUE_04,Open,2024-03-27 00:00:00,jordan_kim,Critical
+GWATCH_FTR_25,Sleep Coaching Tips,Personalized coaching based on sleep trends,Sensor Team,GWATCH_FTR_25_ISSUE_04,In Progress,2024-03-28 00:00:00,jordan_kim,Critical
+GWATCH_FTR_25,Sleep Coaching Tips,Personalized coaching based on sleep trends,Sensor Team,GWATCH_FTR_25_ISSUE_04,Review,2024-03-29 00:00:00,jordan_kim,Critical
+GWATCH_FTR_11,Multilingual Input,Add multilingual support to on-watch keyboard,Performance Group,GWATCH_FTR_11_ISSUE_04,Open,2024-03-29 00:00:00,lee_patel,Critical
+GWATCH_FTR_04,Custom Workouts,Create personalized workout plans and tracking,Sensor Team,GWATCH_FTR_04_ISSUE_01,Open,2024-03-30 00:00:00,mira_patel,Low
+GWATCH_FTR_19,Custom Vibration Patterns,Allow users to set custom haptic alerts,Sensor Team,GWATCH_FTR_19_ISSUE_03,Open,2024-03-30 00:00:00,alex_nguyen,Medium
+GWATCH_FTR_19,Custom Vibration Patterns,Allow users to set custom haptic alerts,Sensor Team,GWATCH_FTR_19_ISSUE_03,In Progress,2024-03-31 00:00:00,alex_nguyen,Medium
+GWATCH_FTR_25,Sleep Coaching Tips,Personalized coaching based on sleep trends,Sensor Team,GWATCH_FTR_25_ISSUE_04,Resolved,2024-03-31 00:00:00,jordan_kim,Critical
+GWATCH_FTR_04,Custom Workouts,Create personalized workout plans and tracking,Sensor Team,GWATCH_FTR_04_ISSUE_01,In Progress,2024-03-31 00:00:00,mira_patel,Low
+GWATCH_FTR_11,Multilingual Input,Add multilingual support to on-watch keyboard,Performance Group,GWATCH_FTR_11_ISSUE_04,In Progress,2024-03-31 00:00:00,lee_patel,Critical
+GWATCH_FTR_04,Custom Workouts,Create personalized workout plans and tracking,Sensor Team,GWATCH_FTR_04_ISSUE_01,Review,2024-04-01 00:00:00,mira_patel,Low
+GWATCH_FTR_11,Multilingual Input,Add multilingual support to on-watch keyboard,Performance Group,GWATCH_FTR_11_ISSUE_04,Review,2024-04-01 00:00:00,lee_patel,Critical
+GWATCH_FTR_04,Custom Workouts,Create personalized workout plans and tracking,Sensor Team,GWATCH_FTR_04_ISSUE_01,Resolved,2024-04-02 00:00:00,mira_patel,Low
+GWATCH_FTR_19,Custom Vibration Patterns,Allow users to set custom haptic alerts,Sensor Team,GWATCH_FTR_19_ISSUE_03,Review,2024-04-02 00:00:00,alex_nguyen,Medium
+GWATCH_FTR_11,Multilingual Input,Add multilingual support to on-watch keyboard,Performance Group,GWATCH_FTR_11_ISSUE_04,Resolved,2024-04-03 00:00:00,lee_patel,Critical
+GWATCH_FTR_19,Custom Vibration Patterns,Allow users to set custom haptic alerts,Sensor Team,GWATCH_FTR_19_ISSUE_03,Resolved,2024-04-04 00:00:00,alex_nguyen,Medium
+GWATCH_FTR_17,Voice Memos,Record and playback audio notes from the watch,Sensor Team,GWATCH_FTR_17_ISSUE_06,Open,2024-04-05 00:00:00,alex_kim,High
+GWATCH_FTR_02,Heart Rate Alerts,Real-time abnormal heart rate notification system,UI/UX Team,GWATCH_FTR_02_ISSUE_03,Open,2024-04-06 00:00:00,mira_nguyen,Critical
+GWATCH_FTR_02,Heart Rate Alerts,Real-time abnormal heart rate notification system,UI/UX Team,GWATCH_FTR_02_ISSUE_03,In Progress,2024-04-07 00:00:00,mira_nguyen,Critical
+GWATCH_FTR_16,Hydration Reminders,Timed water intake notifications,Performance Group,GWATCH_FTR_16_ISSUE_04,Open,2024-04-09 00:00:00,alex_kim,Critical
+GWATCH_FTR_17,Voice Memos,Record and playback audio notes from the watch,Sensor Team,GWATCH_FTR_17_ISSUE_06,In Progress,2024-04-09 00:00:00,alex_kim,High
+GWATCH_FTR_17,Voice Memos,Record and playback audio notes from the watch,Sensor Team,GWATCH_FTR_17_ISSUE_06,Review,2024-04-09 00:00:00,alex_kim,High
+GWATCH_FTR_17,Voice Memos,Record and playback audio notes from the watch,Sensor Team,GWATCH_FTR_17_ISSUE_06,Resolved,2024-04-10 00:00:00,alex_kim,High
+GWATCH_FTR_16,Hydration Reminders,Timed water intake notifications,Performance Group,GWATCH_FTR_16_ISSUE_04,In Progress,2024-04-11 00:00:00,alex_kim,Critical
+GWATCH_FTR_02,Heart Rate Alerts,Real-time abnormal heart rate notification system,UI/UX Team,GWATCH_FTR_02_ISSUE_03,Resolved,2024-04-11 00:00:00,mira_nguyen,Critical
+GWATCH_FTR_02,Heart Rate Alerts,Real-time abnormal heart rate notification system,UI/UX Team,GWATCH_FTR_02_ISSUE_03,Review,2024-04-11 00:00:00,mira_nguyen,Critical
+GWATCH_FTR_14,Watch-to-Watch Ping,Locate your watch using another Galaxy device,Sensor Team,GWATCH_FTR_14_ISSUE_01,Open,2024-04-12 00:00:00,sam_kim,Medium
+GWATCH_FTR_18,Sleep Animal Personas,Fun sleep type categorizations for engagement,Sensor Team,GWATCH_FTR_18_ISSUE_02,Open,2024-04-12 00:00:00,mira_smith,High
+GWATCH_FTR_14,Watch-to-Watch Ping,Locate your watch using another Galaxy device,Sensor Team,GWATCH_FTR_14_ISSUE_03,Open,2024-04-12 00:00:00,alex_smith,Medium
+GWATCH_FTR_14,Watch-to-Watch Ping,Locate your watch using another Galaxy device,Sensor Team,GWATCH_FTR_14_ISSUE_03,In Progress,2024-04-13 00:00:00,alex_smith,Medium
+GWATCH_FTR_16,Hydration Reminders,Timed water intake notifications,Performance Group,GWATCH_FTR_16_ISSUE_04,Review,2024-04-13 00:00:00,alex_kim,Critical
+GWATCH_FTR_14,Watch-to-Watch Ping,Locate your watch using another Galaxy device,Sensor Team,GWATCH_FTR_14_ISSUE_03,Review,2024-04-13 00:00:00,alex_smith,Medium
+GWATCH_FTR_17,Voice Memos,Record and playback audio notes from the watch,Sensor Team,GWATCH_FTR_17_ISSUE_03,Open,2024-04-13 00:00:00,lee_smith,Low
+GWATCH_FTR_14,Watch-to-Watch Ping,Locate your watch using another Galaxy device,Sensor Team,GWATCH_FTR_14_ISSUE_01,In Progress,2024-04-13 00:00:00,sam_kim,Medium
+GWATCH_FTR_16,Hydration Reminders,Timed water intake notifications,Performance Group,GWATCH_FTR_16_ISSUE_04,Resolved,2024-04-14 00:00:00,alex_kim,Critical
+GWATCH_FTR_14,Watch-to-Watch Ping,Locate your watch using another Galaxy device,Sensor Team,GWATCH_FTR_14_ISSUE_01,Review,2024-04-14 00:00:00,sam_kim,Medium
+GWATCH_FTR_14,Watch-to-Watch Ping,Locate your watch using another Galaxy device,Sensor Team,GWATCH_FTR_14_ISSUE_03,Resolved,2024-04-14 00:00:00,alex_smith,Medium
+GWATCH_FTR_07,ECG Report Sharing,Share ECG reports via email or Samsung Health,Sensor Team,GWATCH_FTR_07_ISSUE_04,Open,2024-04-14 00:00:00,sam_patel,Medium
+GWATCH_FTR_07,ECG Report Sharing,Share ECG reports via email or Samsung Health,Sensor Team,GWATCH_FTR_07_ISSUE_04,In Progress,2024-04-15 00:00:00,sam_patel,Medium
+GWATCH_FTR_17,Voice Memos,Record and playback audio notes from the watch,Sensor Team,GWATCH_FTR_17_ISSUE_03,In Progress,2024-04-15 00:00:00,lee_smith,Low
+GWATCH_FTR_07,ECG Report Sharing,Share ECG reports via email or Samsung Health,Sensor Team,GWATCH_FTR_07_ISSUE_04,Review,2024-04-15 00:00:00,sam_patel,Medium
+GWATCH_FTR_18,Sleep Animal Personas,Fun sleep type categorizations for engagement,Sensor Team,GWATCH_FTR_18_ISSUE_02,In Progress,2024-04-15 00:00:00,mira_smith,High
+GWATCH_FTR_17,Voice Memos,Record and playback audio notes from the watch,Sensor Team,GWATCH_FTR_17_ISSUE_03,Resolved,2024-04-16 00:00:00,lee_smith,Low
+GWATCH_FTR_17,Voice Memos,Record and playback audio notes from the watch,Sensor Team,GWATCH_FTR_17_ISSUE_03,Review,2024-04-16 00:00:00,lee_smith,Low
+GWATCH_FTR_18,Sleep Animal Personas,Fun sleep type categorizations for engagement,Sensor Team,GWATCH_FTR_18_ISSUE_02,Review,2024-04-16 00:00:00,mira_smith,High
+GWATCH_FTR_18,Sleep Animal Personas,Fun sleep type categorizations for engagement,Sensor Team,GWATCH_FTR_18_ISSUE_02,Resolved,2024-04-17 00:00:00,mira_smith,High
+GWATCH_FTR_14,Watch-to-Watch Ping,Locate your watch using another Galaxy device,Sensor Team,GWATCH_FTR_14_ISSUE_01,Resolved,2024-04-17 00:00:00,sam_kim,Medium
+GWATCH_FTR_07,ECG Report Sharing,Share ECG reports via email or Samsung Health,Sensor Team,GWATCH_FTR_07_ISSUE_04,Resolved,2024-04-19 00:00:00,sam_patel,Medium
+GWATCH_FTR_19,Custom Vibration Patterns,Allow users to set custom haptic alerts,Sensor Team,GWATCH_FTR_19_ISSUE_02,Open,2024-04-22 00:00:00,alex_smith,Medium
+GWATCH_FTR_03,Offline Maps,Downloadable maps for outdoor navigation without internet,Sensor Team,GWATCH_FTR_03_ISSUE_04,Open,2024-04-24 00:00:00,jordan_smith,High
+GWATCH_FTR_19,Custom Vibration Patterns,Allow users to set custom haptic alerts,Sensor Team,GWATCH_FTR_19_ISSUE_02,In Progress,2024-04-24 00:00:00,alex_smith,Medium
+GWATCH_FTR_02,Heart Rate Alerts,Real-time abnormal heart rate notification system,UI/UX Team,GWATCH_FTR_02_ISSUE_06,Open,2024-04-25 00:00:00,lee_nguyen,High
+GWATCH_FTR_02,Heart Rate Alerts,Real-time abnormal heart rate notification system,UI/UX Team,GWATCH_FTR_02_ISSUE_06,In Progress,2024-04-26 00:00:00,lee_nguyen,High
+GWATCH_FTR_03,Offline Maps,Downloadable maps for outdoor navigation without internet,Sensor Team,GWATCH_FTR_03_ISSUE_04,In Progress,2024-04-26 00:00:00,jordan_smith,High
+GWATCH_FTR_03,Offline Maps,Downloadable maps for outdoor navigation without internet,Sensor Team,GWATCH_FTR_03_ISSUE_04,Review,2024-04-26 00:00:00,jordan_smith,High
+GWATCH_FTR_19,Custom Vibration Patterns,Allow users to set custom haptic alerts,Sensor Team,GWATCH_FTR_19_ISSUE_02,Review,2024-04-26 00:00:00,alex_smith,Medium
+GWATCH_FTR_19,Custom Vibration Patterns,Allow users to set custom haptic alerts,Sensor Team,GWATCH_FTR_19_ISSUE_02,Resolved,2024-04-26 00:00:00,alex_smith,Medium
+GWATCH_FTR_03,Offline Maps,Downloadable maps for outdoor navigation without internet,Sensor Team,GWATCH_FTR_03_ISSUE_04,Resolved,2024-04-28 00:00:00,jordan_smith,High
+GWATCH_FTR_14,Watch-to-Watch Ping,Locate your watch using another Galaxy device,Sensor Team,GWATCH_FTR_14_ISSUE_02,Open,2024-04-28 00:00:00,mira_nguyen,High
+GWATCH_FTR_02,Heart Rate Alerts,Real-time abnormal heart rate notification system,UI/UX Team,GWATCH_FTR_02_ISSUE_06,Review,2024-04-29 00:00:00,lee_nguyen,High
+GWATCH_FTR_14,Watch-to-Watch Ping,Locate your watch using another Galaxy device,Sensor Team,GWATCH_FTR_14_ISSUE_02,In Progress,2024-04-29 00:00:00,mira_nguyen,High
+GWATCH_FTR_05,Voice Assistant,Revamped Bixby with natural language enhancements,ML Team,GWATCH_FTR_05_ISSUE_05,Open,2024-04-29 00:00:00,alex_nguyen,Low
+GWATCH_FTR_14,Watch-to-Watch Ping,Locate your watch using another Galaxy device,Sensor Team,GWATCH_FTR_14_ISSUE_02,Review,2024-04-29 00:00:00,mira_nguyen,High
+GWATCH_FTR_02,Heart Rate Alerts,Real-time abnormal heart rate notification system,UI/UX Team,GWATCH_FTR_02_ISSUE_06,Resolved,2024-04-29 00:00:00,lee_nguyen,High
+GWATCH_FTR_20,Cycle Tracking Enhancements,Add skin temp sensor data to cycle tracking,ML Team,GWATCH_FTR_20_ISSUE_02,Open,2024-04-29 00:00:00,alex_smith,Medium
+GWATCH_FTR_05,Voice Assistant,Revamped Bixby with natural language enhancements,ML Team,GWATCH_FTR_05_ISSUE_05,In Progress,2024-04-30 00:00:00,alex_nguyen,Low
+GWATCH_FTR_23,Skin Temp Tracking,Track skin temp during sleep and workouts,Performance Group,GWATCH_FTR_23_ISSUE_02,Open,2024-04-30 00:00:00,lee_nguyen,Low
+GWATCH_FTR_22,Workout Auto-Pause,Auto-pause/resume during runs or walks,UI/UX Team,GWATCH_FTR_22_ISSUE_04,Open,2024-04-30 00:00:00,jordan_patel,Medium
+GWATCH_FTR_20,Cycle Tracking Enhancements,Add skin temp sensor data to cycle tracking,ML Team,GWATCH_FTR_20_ISSUE_02,In Progress,2024-04-30 00:00:00,alex_smith,Medium
+GWATCH_FTR_23,Skin Temp Tracking,Track skin temp during sleep and workouts,Performance Group,GWATCH_FTR_23_ISSUE_02,In Progress,2024-05-01 00:00:00,lee_nguyen,Low
+GWATCH_FTR_20,Cycle Tracking Enhancements,Add skin temp sensor data to cycle tracking,ML Team,GWATCH_FTR_20_ISSUE_02,Review,2024-05-01 00:00:00,alex_smith,Medium
+GWATCH_FTR_22,Workout Auto-Pause,Auto-pause/resume during runs or walks,UI/UX Team,GWATCH_FTR_22_ISSUE_04,In Progress,2024-05-01 00:00:00,jordan_patel,Medium
+GWATCH_FTR_22,Workout Auto-Pause,Auto-pause/resume during runs or walks,UI/UX Team,GWATCH_FTR_22_ISSUE_04,Review,2024-05-02 00:00:00,jordan_patel,Medium
+GWATCH_FTR_23,Skin Temp Tracking,Track skin temp during sleep and workouts,Performance Group,GWATCH_FTR_23_ISSUE_02,Review,2024-05-02 00:00:00,lee_nguyen,Low
+GWATCH_FTR_20,Cycle Tracking Enhancements,Add skin temp sensor data to cycle tracking,ML Team,GWATCH_FTR_20_ISSUE_02,Resolved,2024-05-03 00:00:00,alex_smith,Medium
+GWATCH_FTR_14,Watch-to-Watch Ping,Locate your watch using another Galaxy device,Sensor Team,GWATCH_FTR_14_ISSUE_02,Resolved,2024-05-03 00:00:00,mira_nguyen,High
+GWATCH_FTR_05,Voice Assistant,Revamped Bixby with natural language enhancements,ML Team,GWATCH_FTR_05_ISSUE_05,Resolved,2024-05-04 00:00:00,alex_nguyen,Low
+GWATCH_FTR_05,Voice Assistant,Revamped Bixby with natural language enhancements,ML Team,GWATCH_FTR_05_ISSUE_05,Review,2024-05-04 00:00:00,alex_nguyen,Low
+GWATCH_FTR_23,Skin Temp Tracking,Track skin temp during sleep and workouts,Performance Group,GWATCH_FTR_23_ISSUE_02,Resolved,2024-05-05 00:00:00,lee_nguyen,Low
+GWATCH_FTR_01,Sleep Tracking V2,Improvements to sleep stage detection using deep learning,Sensor Team,GWATCH_FTR_01_ISSUE_04,Open,2024-05-05 00:00:00,jordan_patel,Critical
+GWATCH_FTR_22,Workout Auto-Pause,Auto-pause/resume during runs or walks,UI/UX Team,GWATCH_FTR_22_ISSUE_04,Resolved,2024-05-05 00:00:00,jordan_patel,Medium
+GWATCH_FTR_12,Weather Complication,Hourly forecast widget for watch faces,UI/UX Team,GWATCH_FTR_12_ISSUE_06,Open,2024-05-05 00:00:00,mira_nguyen,Low
+GWATCH_FTR_12,Weather Complication,Hourly forecast widget for watch faces,UI/UX Team,GWATCH_FTR_12_ISSUE_06,In Progress,2024-05-07 00:00:00,mira_nguyen,Low
+GWATCH_FTR_12,Weather Complication,Hourly forecast widget for watch faces,UI/UX Team,GWATCH_FTR_12_ISSUE_06,Review,2024-05-08 00:00:00,mira_nguyen,Low
+GWATCH_FTR_01,Sleep Tracking V2,Improvements to sleep stage detection using deep learning,Sensor Team,GWATCH_FTR_01_ISSUE_04,In Progress,2024-05-08 00:00:00,jordan_patel,Critical
+GWATCH_FTR_01,Sleep Tracking V2,Improvements to sleep stage detection using deep learning,Sensor Team,GWATCH_FTR_01_ISSUE_04,Resolved,2024-05-09 00:00:00,jordan_patel,Critical
+GWATCH_FTR_01,Sleep Tracking V2,Improvements to sleep stage detection using deep learning,Sensor Team,GWATCH_FTR_01_ISSUE_04,Review,2024-05-09 00:00:00,jordan_patel,Critical
+GWATCH_FTR_12,Weather Complication,Hourly forecast widget for watch faces,UI/UX Team,GWATCH_FTR_12_ISSUE_06,Resolved,2024-05-10 00:00:00,mira_nguyen,Low
+GWATCH_FTR_13,Smart Reply AI,Smart replies in notifications based on context,Performance Group,GWATCH_FTR_13_ISSUE_01,Open,2024-05-10 00:00:00,lee_patel,Low
+GWATCH_FTR_13,Smart Reply AI,Smart replies in notifications based on context,Performance Group,GWATCH_FTR_13_ISSUE_01,In Progress,2024-05-11 00:00:00,lee_patel,Low
+GWATCH_FTR_25,Sleep Coaching Tips,Personalized coaching based on sleep trends,Sensor Team,GWATCH_FTR_25_ISSUE_01,Open,2024-05-11 00:00:00,jordan_kim,Low
+GWATCH_FTR_13,Smart Reply AI,Smart replies in notifications based on context,Performance Group,GWATCH_FTR_13_ISSUE_01,Review,2024-05-12 00:00:00,lee_patel,Low
+GWATCH_FTR_16,Hydration Reminders,Timed water intake notifications,Performance Group,GWATCH_FTR_16_ISSUE_02,Open,2024-05-13 00:00:00,alex_patel,Low
+GWATCH_FTR_13,Smart Reply AI,Smart replies in notifications based on context,Performance Group,GWATCH_FTR_13_ISSUE_01,Resolved,2024-05-13 00:00:00,lee_patel,Low
+GWATCH_FTR_07,ECG Report Sharing,Share ECG reports via email or Samsung Health,Sensor Team,GWATCH_FTR_07_ISSUE_03,Open,2024-05-14 00:00:00,jordan_kim,Critical
+GWATCH_FTR_16,Hydration Reminders,Timed water intake notifications,Performance Group,GWATCH_FTR_16_ISSUE_02,In Progress,2024-05-14 00:00:00,alex_patel,Low
+GWATCH_FTR_25,Sleep Coaching Tips,Personalized coaching based on sleep trends,Sensor Team,GWATCH_FTR_25_ISSUE_01,In Progress,2024-05-15 00:00:00,jordan_kim,Low
+GWATCH_FTR_25,Sleep Coaching Tips,Personalized coaching based on sleep trends,Sensor Team,GWATCH_FTR_25_ISSUE_01,Review,2024-05-15 00:00:00,jordan_kim,Low
+GWATCH_FTR_25,Sleep Coaching Tips,Personalized coaching based on sleep trends,Sensor Team,GWATCH_FTR_25_ISSUE_01,Resolved,2024-05-15 00:00:00,jordan_kim,Low
+GWATCH_FTR_07,ECG Report Sharing,Share ECG reports via email or Samsung Health,Sensor Team,GWATCH_FTR_07_ISSUE_03,In Progress,2024-05-15 00:00:00,jordan_kim,Critical
+GWATCH_FTR_16,Hydration Reminders,Timed water intake notifications,Performance Group,GWATCH_FTR_16_ISSUE_02,Review,2024-05-15 00:00:00,alex_patel,Low
+GWATCH_FTR_22,Workout Auto-Pause,Auto-pause/resume during runs or walks,UI/UX Team,GWATCH_FTR_22_ISSUE_03,Open,2024-05-15 00:00:00,sam_kim,Critical
+GWATCH_FTR_22,Workout Auto-Pause,Auto-pause/resume during runs or walks,UI/UX Team,GWATCH_FTR_22_ISSUE_03,In Progress,2024-05-16 00:00:00,sam_kim,Critical
+GWATCH_FTR_13,Smart Reply AI,Smart replies in notifications based on context,Performance Group,GWATCH_FTR_13_ISSUE_03,Open,2024-05-17 00:00:00,lee_smith,Medium
+GWATCH_FTR_22,Workout Auto-Pause,Auto-pause/resume during runs or walks,UI/UX Team,GWATCH_FTR_22_ISSUE_03,Review,2024-05-17 00:00:00,sam_kim,Critical
+GWATCH_FTR_07,ECG Report Sharing,Share ECG reports via email or Samsung Health,Sensor Team,GWATCH_FTR_07_ISSUE_03,Review,2024-05-17 00:00:00,jordan_kim,Critical
+GWATCH_FTR_16,Hydration Reminders,Timed water intake notifications,Performance Group,GWATCH_FTR_16_ISSUE_02,Resolved,2024-05-18 00:00:00,alex_patel,Low
+GWATCH_FTR_07,ECG Report Sharing,Share ECG reports via email or Samsung Health,Sensor Team,GWATCH_FTR_07_ISSUE_03,Resolved,2024-05-19 00:00:00,jordan_kim,Critical
+GWATCH_FTR_22,Workout Auto-Pause,Auto-pause/resume during runs or walks,UI/UX Team,GWATCH_FTR_22_ISSUE_03,Resolved,2024-05-19 00:00:00,sam_kim,Critical
+GWATCH_FTR_13,Smart Reply AI,Smart replies in notifications based on context,Performance Group,GWATCH_FTR_13_ISSUE_03,In Progress,2024-05-20 00:00:00,lee_smith,Medium
+GWATCH_FTR_10,Fall Detection,Automatic SOS on hard falls during exercise,UI/UX Team,GWATCH_FTR_10_ISSUE_02,Open,2024-05-21 00:00:00,alex_kim,Medium
+GWATCH_FTR_13,Smart Reply AI,Smart replies in notifications based on context,Performance Group,GWATCH_FTR_13_ISSUE_02,Open,2024-05-21 00:00:00,jordan_kim,Low
+GWATCH_FTR_13,Smart Reply AI,Smart replies in notifications based on context,Performance Group,GWATCH_FTR_13_ISSUE_03,Review,2024-05-21 00:00:00,lee_smith,Medium
+GWATCH_FTR_11,Multilingual Input,Add multilingual support to on-watch keyboard,Performance Group,GWATCH_FTR_11_ISSUE_03,Open,2024-05-21 00:00:00,lee_smith,Medium
+GWATCH_FTR_20,Cycle Tracking Enhancements,Add skin temp sensor data to cycle tracking,ML Team,GWATCH_FTR_20_ISSUE_03,Open,2024-05-22 00:00:00,mira_patel,Critical
+GWATCH_FTR_10,Fall Detection,Automatic SOS on hard falls during exercise,UI/UX Team,GWATCH_FTR_10_ISSUE_02,In Progress,2024-05-22 00:00:00,alex_kim,Medium
+GWATCH_FTR_13,Smart Reply AI,Smart replies in notifications based on context,Performance Group,GWATCH_FTR_13_ISSUE_03,Resolved,2024-05-22 00:00:00,lee_smith,Medium
+GWATCH_FTR_02,Heart Rate Alerts,Real-time abnormal heart rate notification system,UI/UX Team,GWATCH_FTR_02_ISSUE_05,Open,2024-05-23 00:00:00,alex_kim,Low
+GWATCH_FTR_11,Multilingual Input,Add multilingual support to on-watch keyboard,Performance Group,GWATCH_FTR_11_ISSUE_03,In Progress,2024-05-23 00:00:00,lee_smith,Medium
+GWATCH_FTR_12,Weather Complication,Hourly forecast widget for watch faces,UI/UX Team,GWATCH_FTR_12_ISSUE_05,Open,2024-05-23 00:00:00,lee_patel,Low
+GWATCH_FTR_10,Fall Detection,Automatic SOS on hard falls during exercise,UI/UX Team,GWATCH_FTR_10_ISSUE_02,Review,2024-05-24 00:00:00,alex_kim,Medium
+GWATCH_FTR_02,Heart Rate Alerts,Real-time abnormal heart rate notification system,UI/UX Team,GWATCH_FTR_02_ISSUE_05,In Progress,2024-05-25 00:00:00,alex_kim,Low
+GWATCH_FTR_20,Cycle Tracking Enhancements,Add skin temp sensor data to cycle tracking,ML Team,GWATCH_FTR_20_ISSUE_03,Review,2024-05-25 00:00:00,mira_patel,Critical
+GWATCH_FTR_20,Cycle Tracking Enhancements,Add skin temp sensor data to cycle tracking,ML Team,GWATCH_FTR_20_ISSUE_03,In Progress,2024-05-25 00:00:00,mira_patel,Critical
+GWATCH_FTR_20,Cycle Tracking Enhancements,Add skin temp sensor data to cycle tracking,ML Team,GWATCH_FTR_20_ISSUE_03,Resolved,2024-05-25 00:00:00,mira_patel,Critical
+GWATCH_FTR_10,Fall Detection,Automatic SOS on hard falls during exercise,UI/UX Team,GWATCH_FTR_10_ISSUE_02,Resolved,2024-05-25 00:00:00,alex_kim,Medium
+GWATCH_FTR_13,Smart Reply AI,Smart replies in notifications based on context,Performance Group,GWATCH_FTR_13_ISSUE_02,In Progress,2024-05-25 00:00:00,jordan_kim,Low
+GWATCH_FTR_11,Multilingual Input,Add multilingual support to on-watch keyboard,Performance Group,GWATCH_FTR_11_ISSUE_03,Review,2024-05-25 00:00:00,lee_smith,Medium
+GWATCH_FTR_12,Weather Complication,Hourly forecast widget for watch faces,UI/UX Team,GWATCH_FTR_12_ISSUE_05,In Progress,2024-05-25 00:00:00,lee_patel,Low
+GWATCH_FTR_13,Smart Reply AI,Smart replies in notifications based on context,Performance Group,GWATCH_FTR_13_ISSUE_02,Review,2024-05-26 00:00:00,jordan_kim,Low
+GWATCH_FTR_12,Weather Complication,Hourly forecast widget for watch faces,UI/UX Team,GWATCH_FTR_12_ISSUE_05,Review,2024-05-26 00:00:00,lee_patel,Low
+GWATCH_FTR_13,Smart Reply AI,Smart replies in notifications based on context,Performance Group,GWATCH_FTR_13_ISSUE_02,Resolved,2024-05-26 00:00:00,jordan_kim,Low
+GWATCH_FTR_11,Multilingual Input,Add multilingual support to on-watch keyboard,Performance Group,GWATCH_FTR_11_ISSUE_03,Resolved,2024-05-26 00:00:00,lee_smith,Medium
+GWATCH_FTR_02,Heart Rate Alerts,Real-time abnormal heart rate notification system,UI/UX Team,GWATCH_FTR_02_ISSUE_05,Review,2024-05-27 00:00:00,alex_kim,Low
+GWATCH_FTR_12,Weather Complication,Hourly forecast widget for watch faces,UI/UX Team,GWATCH_FTR_12_ISSUE_05,Resolved,2024-05-27 00:00:00,lee_patel,Low
+GWATCH_FTR_11,Multilingual Input,Add multilingual support to on-watch keyboard,Performance Group,GWATCH_FTR_11_ISSUE_01,Open,2024-05-27 00:00:00,alex_smith,Critical
+GWATCH_FTR_02,Heart Rate Alerts,Real-time abnormal heart rate notification system,UI/UX Team,GWATCH_FTR_02_ISSUE_05,Resolved,2024-05-28 00:00:00,alex_kim,Low
+GWATCH_FTR_01,Sleep Tracking V2,Improvements to sleep stage detection using deep learning,Sensor Team,GWATCH_FTR_01_ISSUE_03,Open,2024-05-29 00:00:00,sam_nguyen,High
+GWATCH_FTR_04,Custom Workouts,Create personalized workout plans and tracking,Sensor Team,GWATCH_FTR_04_ISSUE_02,Open,2024-05-29 00:00:00,mira_smith,Medium
+GWATCH_FTR_12,Weather Complication,Hourly forecast widget for watch faces,UI/UX Team,GWATCH_FTR_12_ISSUE_01,Open,2024-05-30 00:00:00,mira_patel,Low
+GWATCH_FTR_11,Multilingual Input,Add multilingual support to on-watch keyboard,Performance Group,GWATCH_FTR_11_ISSUE_01,In Progress,2024-05-30 00:00:00,alex_smith,Critical
+GWATCH_FTR_01,Sleep Tracking V2,Improvements to sleep stage detection using deep learning,Sensor Team,GWATCH_FTR_01_ISSUE_03,In Progress,2024-05-31 00:00:00,sam_nguyen,High
+GWATCH_FTR_11,Multilingual Input,Add multilingual support to on-watch keyboard,Performance Group,GWATCH_FTR_11_ISSUE_01,Review,2024-05-31 00:00:00,alex_smith,Critical
+GWATCH_FTR_12,Weather Complication,Hourly forecast widget for watch faces,UI/UX Team,GWATCH_FTR_12_ISSUE_01,In Progress,2024-05-31 00:00:00,mira_patel,Low
+GWATCH_FTR_03,Offline Maps,Downloadable maps for outdoor navigation without internet,Sensor Team,GWATCH_FTR_03_ISSUE_03,Open,2024-05-31 00:00:00,mira_patel,Medium
+GWATCH_FTR_03,Offline Maps,Downloadable maps for outdoor navigation without internet,Sensor Team,GWATCH_FTR_03_ISSUE_03,In Progress,2024-06-01 00:00:00,mira_patel,Medium
+GWATCH_FTR_11,Multilingual Input,Add multilingual support to on-watch keyboard,Performance Group,GWATCH_FTR_11_ISSUE_01,Resolved,2024-06-01 00:00:00,alex_smith,Critical
+GWATCH_FTR_04,Custom Workouts,Create personalized workout plans and tracking,Sensor Team,GWATCH_FTR_04_ISSUE_02,In Progress,2024-06-01 00:00:00,mira_smith,Medium
+GWATCH_FTR_01,Sleep Tracking V2,Improvements to sleep stage detection using deep learning,Sensor Team,GWATCH_FTR_01_ISSUE_03,Review,2024-06-02 00:00:00,sam_nguyen,High
+GWATCH_FTR_12,Weather Complication,Hourly forecast widget for watch faces,UI/UX Team,GWATCH_FTR_12_ISSUE_01,Review,2024-06-02 00:00:00,mira_patel,Low
+GWATCH_FTR_01,Sleep Tracking V2,Improvements to sleep stage detection using deep learning,Sensor Team,GWATCH_FTR_01_ISSUE_01,Open,2024-06-02 00:00:00,sam_patel,Critical
+GWATCH_FTR_04,Custom Workouts,Create personalized workout plans and tracking,Sensor Team,GWATCH_FTR_04_ISSUE_02,Resolved,2024-06-03 00:00:00,mira_smith,Medium
+GWATCH_FTR_01,Sleep Tracking V2,Improvements to sleep stage detection using deep learning,Sensor Team,GWATCH_FTR_01_ISSUE_03,Resolved,2024-06-03 00:00:00,sam_nguyen,High
+GWATCH_FTR_23,Skin Temp Tracking,Track skin temp during sleep and workouts,Performance Group,GWATCH_FTR_23_ISSUE_03,Open,2024-06-03 00:00:00,lee_nguyen,High
+GWATCH_FTR_04,Custom Workouts,Create personalized workout plans and tracking,Sensor Team,GWATCH_FTR_04_ISSUE_02,Review,2024-06-03 00:00:00,mira_smith,Medium
+GWATCH_FTR_12,Weather Complication,Hourly forecast widget for watch faces,UI/UX Team,GWATCH_FTR_12_ISSUE_01,Resolved,2024-06-04 00:00:00,mira_patel,Low
+GWATCH_FTR_01,Sleep Tracking V2,Improvements to sleep stage detection using deep learning,Sensor Team,GWATCH_FTR_01_ISSUE_01,In Progress,2024-06-04 00:00:00,sam_patel,Critical
+GWATCH_FTR_23,Skin Temp Tracking,Track skin temp during sleep and workouts,Performance Group,GWATCH_FTR_23_ISSUE_03,In Progress,2024-06-05 00:00:00,lee_nguyen,High
+GWATCH_FTR_01,Sleep Tracking V2,Improvements to sleep stage detection using deep learning,Sensor Team,GWATCH_FTR_01_ISSUE_01,Review,2024-06-05 00:00:00,sam_patel,Critical
+GWATCH_FTR_03,Offline Maps,Downloadable maps for outdoor navigation without internet,Sensor Team,GWATCH_FTR_03_ISSUE_03,Resolved,2024-06-05 00:00:00,mira_patel,Medium
+GWATCH_FTR_03,Offline Maps,Downloadable maps for outdoor navigation without internet,Sensor Team,GWATCH_FTR_03_ISSUE_03,Review,2024-06-05 00:00:00,mira_patel,Medium
+GWATCH_FTR_23,Skin Temp Tracking,Track skin temp during sleep and workouts,Performance Group,GWATCH_FTR_23_ISSUE_03,Review,2024-06-06 00:00:00,lee_nguyen,High
+GWATCH_FTR_01,Sleep Tracking V2,Improvements to sleep stage detection using deep learning,Sensor Team,GWATCH_FTR_01_ISSUE_02,Open,2024-06-07 00:00:00,mira_patel,Critical
+GWATCH_FTR_01,Sleep Tracking V2,Improvements to sleep stage detection using deep learning,Sensor Team,GWATCH_FTR_01_ISSUE_01,Resolved,2024-06-07 00:00:00,sam_patel,Critical
+GWATCH_FTR_21,Gesture Controls,Flick wrist to answer/reject calls,Performance Group,GWATCH_FTR_21_ISSUE_02,Open,2024-06-07 00:00:00,mira_smith,Low
+GWATCH_FTR_23,Skin Temp Tracking,Track skin temp during sleep and workouts,Performance Group,GWATCH_FTR_23_ISSUE_03,Resolved,2024-06-08 00:00:00,lee_nguyen,High
+GWATCH_FTR_01,Sleep Tracking V2,Improvements to sleep stage detection using deep learning,Sensor Team,GWATCH_FTR_01_ISSUE_02,In Progress,2024-06-08 00:00:00,mira_patel,Critical
+GWATCH_FTR_01,Sleep Tracking V2,Improvements to sleep stage detection using deep learning,Sensor Team,GWATCH_FTR_01_ISSUE_02,Review,2024-06-09 00:00:00,mira_patel,Critical
+GWATCH_FTR_21,Gesture Controls,Flick wrist to answer/reject calls,Performance Group,GWATCH_FTR_21_ISSUE_02,In Progress,2024-06-10 00:00:00,mira_smith,Low
+GWATCH_FTR_09,Third-Party App Sync,Support for syncing with Strava and MyFitnessPal,Cloud Sync,GWATCH_FTR_09_ISSUE_01,Open,2024-06-10 00:00:00,mira_kim,Low
+GWATCH_FTR_03,Offline Maps,Downloadable maps for outdoor navigation without internet,Sensor Team,GWATCH_FTR_03_ISSUE_02,Open,2024-06-11 00:00:00,alex_nguyen,Medium
+GWATCH_FTR_21,Gesture Controls,Flick wrist to answer/reject calls,Performance Group,GWATCH_FTR_21_ISSUE_02,Review,2024-06-11 00:00:00,mira_smith,Low
+GWATCH_FTR_09,Third-Party App Sync,Support for syncing with Strava and MyFitnessPal,Cloud Sync,GWATCH_FTR_09_ISSUE_01,In Progress,2024-06-11 00:00:00,mira_kim,Low
+GWATCH_FTR_01,Sleep Tracking V2,Improvements to sleep stage detection using deep learning,Sensor Team,GWATCH_FTR_01_ISSUE_02,Resolved,2024-06-12 00:00:00,mira_patel,Critical
+GWATCH_FTR_21,Gesture Controls,Flick wrist to answer/reject calls,Performance Group,GWATCH_FTR_21_ISSUE_02,Resolved,2024-06-12 00:00:00,mira_smith,Low
+GWATCH_FTR_13,Smart Reply AI,Smart replies in notifications based on context,Performance Group,GWATCH_FTR_13_ISSUE_04,Open,2024-06-12 00:00:00,alex_nguyen,High
+GWATCH_FTR_17,Voice Memos,Record and playback audio notes from the watch,Sensor Team,GWATCH_FTR_17_ISSUE_04,Open,2024-06-12 00:00:00,lee_smith,Critical
+GWATCH_FTR_03,Offline Maps,Downloadable maps for outdoor navigation without internet,Sensor Team,GWATCH_FTR_03_ISSUE_02,Review,2024-06-13 00:00:00,alex_nguyen,Medium
+GWATCH_FTR_24,Quick Launch Tiles,Add new tile UI for faster feature access,Performance Group,GWATCH_FTR_24_ISSUE_02,Open,2024-06-13 00:00:00,mira_nguyen,High
+GWATCH_FTR_03,Offline Maps,Downloadable maps for outdoor navigation without internet,Sensor Team,GWATCH_FTR_03_ISSUE_02,In Progress,2024-06-13 00:00:00,alex_nguyen,Medium
+GWATCH_FTR_20,Cycle Tracking Enhancements,Add skin temp sensor data to cycle tracking,ML Team,GWATCH_FTR_20_ISSUE_01,Open,2024-06-13 00:00:00,mira_nguyen,Critical
+GWATCH_FTR_24,Quick Launch Tiles,Add new tile UI for faster feature access,Performance Group,GWATCH_FTR_24_ISSUE_02,In Progress,2024-06-14 00:00:00,mira_nguyen,High
+GWATCH_FTR_13,Smart Reply AI,Smart replies in notifications based on context,Performance Group,GWATCH_FTR_13_ISSUE_04,In Progress,2024-06-14 00:00:00,alex_nguyen,High
+GWATCH_FTR_17,Voice Memos,Record and playback audio notes from the watch,Sensor Team,GWATCH_FTR_17_ISSUE_04,In Progress,2024-06-14 00:00:00,lee_smith,Critical
+GWATCH_FTR_20,Cycle Tracking Enhancements,Add skin temp sensor data to cycle tracking,ML Team,GWATCH_FTR_20_ISSUE_01,In Progress,2024-06-14 00:00:00,mira_nguyen,Critical
+GWATCH_FTR_24,Quick Launch Tiles,Add new tile UI for faster feature access,Performance Group,GWATCH_FTR_24_ISSUE_02,Review,2024-06-15 00:00:00,mira_nguyen,High
+GWATCH_FTR_09,Third-Party App Sync,Support for syncing with Strava and MyFitnessPal,Cloud Sync,GWATCH_FTR_09_ISSUE_01,Review,2024-06-15 00:00:00,mira_kim,Low
+GWATCH_FTR_09,Third-Party App Sync,Support for syncing with Strava and MyFitnessPal,Cloud Sync,GWATCH_FTR_09_ISSUE_01,Resolved,2024-06-15 00:00:00,mira_kim,Low
+GWATCH_FTR_13,Smart Reply AI,Smart replies in notifications based on context,Performance Group,GWATCH_FTR_13_ISSUE_04,Review,2024-06-15 00:00:00,alex_nguyen,High
+GWATCH_FTR_03,Offline Maps,Downloadable maps for outdoor navigation without internet,Sensor Team,GWATCH_FTR_03_ISSUE_02,Resolved,2024-06-16 00:00:00,alex_nguyen,Medium
+GWATCH_FTR_13,Smart Reply AI,Smart replies in notifications based on context,Performance Group,GWATCH_FTR_13_ISSUE_04,Resolved,2024-06-16 00:00:00,alex_nguyen,High
+GWATCH_FTR_12,Weather Complication,Hourly forecast widget for watch faces,UI/UX Team,GWATCH_FTR_12_ISSUE_03,Open,2024-06-16 00:00:00,alex_kim,High
+GWATCH_FTR_17,Voice Memos,Record and playback audio notes from the watch,Sensor Team,GWATCH_FTR_17_ISSUE_04,Review,2024-06-16 00:00:00,lee_smith,Critical
+GWATCH_FTR_17,Voice Memos,Record and playback audio notes from the watch,Sensor Team,GWATCH_FTR_17_ISSUE_04,Resolved,2024-06-16 00:00:00,lee_smith,Critical
+GWATCH_FTR_05,Voice Assistant,Revamped Bixby with natural language enhancements,ML Team,GWATCH_FTR_05_ISSUE_01,Open,2024-06-17 00:00:00,alex_patel,Low
+GWATCH_FTR_20,Cycle Tracking Enhancements,Add skin temp sensor data to cycle tracking,ML Team,GWATCH_FTR_20_ISSUE_01,Review,2024-06-17 00:00:00,mira_nguyen,Critical
+GWATCH_FTR_12,Weather Complication,Hourly forecast widget for watch faces,UI/UX Team,GWATCH_FTR_12_ISSUE_03,In Progress,2024-06-17 00:00:00,alex_kim,High
+GWATCH_FTR_20,Cycle Tracking Enhancements,Add skin temp sensor data to cycle tracking,ML Team,GWATCH_FTR_20_ISSUE_01,Resolved,2024-06-18 00:00:00,mira_nguyen,Critical
+GWATCH_FTR_09,Third-Party App Sync,Support for syncing with Strava and MyFitnessPal,Cloud Sync,GWATCH_FTR_09_ISSUE_03,Open,2024-06-18 00:00:00,sam_smith,High
+GWATCH_FTR_19,Custom Vibration Patterns,Allow users to set custom haptic alerts,Sensor Team,GWATCH_FTR_19_ISSUE_04,Open,2024-06-18 00:00:00,lee_smith,High
+GWATCH_FTR_24,Quick Launch Tiles,Add new tile UI for faster feature access,Performance Group,GWATCH_FTR_24_ISSUE_02,Resolved,2024-06-18 00:00:00,mira_nguyen,High
+GWATCH_FTR_19,Custom Vibration Patterns,Allow users to set custom haptic alerts,Sensor Team,GWATCH_FTR_19_ISSUE_04,Review,2024-06-19 00:00:00,lee_smith,High
+GWATCH_FTR_05,Voice Assistant,Revamped Bixby with natural language enhancements,ML Team,GWATCH_FTR_05_ISSUE_01,In Progress,2024-06-19 00:00:00,alex_patel,Low
+GWATCH_FTR_19,Custom Vibration Patterns,Allow users to set custom haptic alerts,Sensor Team,GWATCH_FTR_19_ISSUE_04,In Progress,2024-06-19 00:00:00,lee_smith,High
+GWATCH_FTR_12,Weather Complication,Hourly forecast widget for watch faces,UI/UX Team,GWATCH_FTR_12_ISSUE_03,Review,2024-06-19 00:00:00,alex_kim,High
+GWATCH_FTR_19,Custom Vibration Patterns,Allow users to set custom haptic alerts,Sensor Team,GWATCH_FTR_19_ISSUE_04,Resolved,2024-06-20 00:00:00,lee_smith,High
+GWATCH_FTR_12,Weather Complication,Hourly forecast widget for watch faces,UI/UX Team,GWATCH_FTR_12_ISSUE_03,Resolved,2024-06-21 00:00:00,alex_kim,High
+GWATCH_FTR_08,Battery Optimization,Power saver mode for extended workout tracking,ML Team,GWATCH_FTR_08_ISSUE_01,Open,2024-06-21 00:00:00,jordan_kim,High
+GWATCH_FTR_05,Voice Assistant,Revamped Bixby with natural language enhancements,ML Team,GWATCH_FTR_05_ISSUE_01,Resolved,2024-06-21 00:00:00,alex_patel,Low
+GWATCH_FTR_05,Voice Assistant,Revamped Bixby with natural language enhancements,ML Team,GWATCH_FTR_05_ISSUE_01,Review,2024-06-21 00:00:00,alex_patel,Low
+GWATCH_FTR_09,Third-Party App Sync,Support for syncing with Strava and MyFitnessPal,Cloud Sync,GWATCH_FTR_09_ISSUE_03,In Progress,2024-06-22 00:00:00,sam_smith,High
+GWATCH_FTR_09,Third-Party App Sync,Support for syncing with Strava and MyFitnessPal,Cloud Sync,GWATCH_FTR_09_ISSUE_03,Review,2024-06-22 00:00:00,sam_smith,High
+GWATCH_FTR_09,Third-Party App Sync,Support for syncing with Strava and MyFitnessPal,Cloud Sync,GWATCH_FTR_09_ISSUE_03,Resolved,2024-06-22 00:00:00,sam_smith,High
+GWATCH_FTR_08,Battery Optimization,Power saver mode for extended workout tracking,ML Team,GWATCH_FTR_08_ISSUE_01,In Progress,2024-06-24 00:00:00,jordan_kim,High
+GWATCH_FTR_22,Workout Auto-Pause,Auto-pause/resume during runs or walks,UI/UX Team,GWATCH_FTR_22_ISSUE_05,Open,2024-06-25 00:00:00,jordan_kim,Medium
+GWATCH_FTR_08,Battery Optimization,Power saver mode for extended workout tracking,ML Team,GWATCH_FTR_08_ISSUE_01,Review,2024-06-26 00:00:00,jordan_kim,High
+GWATCH_FTR_08,Battery Optimization,Power saver mode for extended workout tracking,ML Team,GWATCH_FTR_08_ISSUE_01,Resolved,2024-06-26 00:00:00,jordan_kim,High
+GWATCH_FTR_10,Fall Detection,Automatic SOS on hard falls during exercise,UI/UX Team,GWATCH_FTR_10_ISSUE_01,Open,2024-06-26 00:00:00,jordan_smith,High
+GWATCH_FTR_22,Workout Auto-Pause,Auto-pause/resume during runs or walks,UI/UX Team,GWATCH_FTR_22_ISSUE_05,In Progress,2024-06-27 00:00:00,jordan_kim,Medium
+GWATCH_FTR_10,Fall Detection,Automatic SOS on hard falls during exercise,UI/UX Team,GWATCH_FTR_10_ISSUE_01,Review,2024-06-27 00:00:00,jordan_smith,High
+GWATCH_FTR_10,Fall Detection,Automatic SOS on hard falls during exercise,UI/UX Team,GWATCH_FTR_10_ISSUE_01,In Progress,2024-06-27 00:00:00,jordan_smith,High
+GWATCH_FTR_22,Workout Auto-Pause,Auto-pause/resume during runs or walks,UI/UX Team,GWATCH_FTR_22_ISSUE_05,Resolved,2024-06-29 00:00:00,jordan_kim,Medium
+GWATCH_FTR_22,Workout Auto-Pause,Auto-pause/resume during runs or walks,UI/UX Team,GWATCH_FTR_22_ISSUE_05,Review,2024-06-29 00:00:00,jordan_kim,Medium
+GWATCH_FTR_10,Fall Detection,Automatic SOS on hard falls during exercise,UI/UX Team,GWATCH_FTR_10_ISSUE_01,Resolved,2024-07-01 00:00:00,jordan_smith,High
