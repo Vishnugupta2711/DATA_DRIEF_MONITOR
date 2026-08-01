@@ -1,0 +1,262 @@
+@import url('https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:wght@400;500;600&family=DM+Sans:opsz,wght@9..40,300;9..40,400;9..40,500;9..40,600;9..40,700&display=swap');
+
+/* ============================================================
+   AUTH NAVBAR — Enterprise ML Monitor
+   ============================================================ */
+
+.auth-navbar {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  height: 58px;
+  z-index: 200;
+
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0 2rem;
+
+  /* Glass morphism backdrop */
+  background: rgba(5, 8, 16, 0.75);
+  backdrop-filter: blur(20px) saturate(180%);
+  -webkit-backdrop-filter: blur(20px) saturate(180%);
+
+  /* Hairline border with subtle glow */
+  border-bottom: 1px solid rgba(255, 255, 255, 0.06);
+  box-shadow:
+    0 1px 0 0 rgba(59, 130, 246, 0.08),
+    0 4px 24px rgba(0, 0, 0, 0.4);
+
+  font-family: 'DM Sans', -apple-system, sans-serif;
+
+  /* Entrance animation */
+  animation: navbarReveal 0.5s cubic-bezier(0.16, 1, 0.3, 1) both;
+}
+
+@keyframes navbarReveal {
+  from {
+    opacity: 0;
+    transform: translateY(-100%);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+/* Scanning light line effect */
+.auth-navbar::after {
+  content: '';
+  position: absolute;
+  bottom: 0;
+  left: -100%;
+  width: 40%;
+  height: 1px;
+  background: linear-gradient(
+    90deg,
+    transparent,
+    rgba(59, 130, 246, 0.6),
+    rgba(96, 165, 250, 0.8),
+    transparent
+  );
+  animation: scanLine 4s ease-in-out infinite 1s;
+}
+
+@keyframes scanLine {
+  0%   { left: -40%; opacity: 0; }
+  10%  { opacity: 1; }
+  90%  { opacity: 1; }
+  100% { left: 100%; opacity: 0; }
+}
+
+/* ============================================================
+   LEFT — Brand
+   ============================================================ */
+
+.auth-navbar-left {
+  display: flex;
+  align-items: center;
+  gap: 0.75rem;
+  text-decoration: none;
+  animation: fadeSlideLeft 0.5s cubic-bezier(0.16, 1, 0.3, 1) 0.1s both;
+}
+
+@keyframes fadeSlideLeft {
+  from { opacity: 0; transform: translateX(-12px); }
+  to   { opacity: 1; transform: translateX(0); }
+}
+
+/* Logo mark */
+.auth-navbar-left .logo-icon-small {
+  position: relative;
+  width: 32px;
+  height: 32px;
+  border-radius: 7px;
+  background: linear-gradient(135deg, #2563eb 0%, #4f46e5 100%);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-shrink: 0;
+  box-shadow:
+    0 2px 8px rgba(59, 130, 246, 0.35),
+    0 0 0 1px rgba(59, 130, 246, 0.2);
+  transition: transform 0.2s cubic-bezier(0.34, 1.56, 0.64, 1),
+              box-shadow 0.2s ease;
+}
+
+.auth-navbar-left:hover .logo-icon-small {
+  transform: scale(1.08) rotate(-3deg);
+  box-shadow:
+    0 4px 16px rgba(59, 130, 246, 0.5),
+    0 0 0 1px rgba(59, 130, 246, 0.35);
+}
+
+.auth-navbar-left .logo-icon-small svg {
+  width: 17px;
+  height: 17px;
+  color: #fff;
+  filter: drop-shadow(0 1px 2px rgba(0,0,0,0.2));
+}
+
+/* Brand name */
+.brand-text {
+  font-size: 0.9rem;
+  font-weight: 700;
+  color: #f1f5f9;
+  letter-spacing: -0.02em;
+  white-space: nowrap;
+
+  /* Subtle gradient shimmer on the text */
+  background: linear-gradient(90deg, #f1f5f9 60%, #93c5fd 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+}
+
+/* ============================================================
+   RIGHT — Nav links
+   ============================================================ */
+
+.auth-navbar-right {
+  display: flex;
+  align-items: center;
+  gap: 0.25rem;
+  animation: fadeSlideRight 0.5s cubic-bezier(0.16, 1, 0.3, 1) 0.15s both;
+}
+
+@keyframes fadeSlideRight {
+  from { opacity: 0; transform: translateX(12px); }
+  to   { opacity: 1; transform: translateX(0); }
+}
+
+.auth-navbar-right a {
+  position: relative;
+  display: flex;
+  align-items: center;
+  gap: 0.375rem;
+
+  padding: 0.4rem 0.875rem;
+  border-radius: 6px;
+  border: 1px solid transparent;
+
+  font-size: 0.8rem;
+  font-weight: 500;
+  font-family: 'DM Sans', sans-serif;
+  color: #64748b;
+  text-decoration: none;
+  white-space: nowrap;
+  letter-spacing: 0.005em;
+
+  transition:
+    color 0.15s ease,
+    background 0.15s ease,
+    border-color 0.15s ease,
+    transform 0.15s cubic-bezier(0.34, 1.56, 0.64, 1);
+}
+
+.auth-navbar-right a:hover {
+  color: #e2e8f0;
+  background: rgba(255, 255, 255, 0.05);
+  border-color: rgba(255, 255, 255, 0.08);
+  transform: translateY(-1px);
+}
+
+/* Underline indicator on hover */
+.auth-navbar-right a::after {
+  content: '';
+  position: absolute;
+  bottom: 4px;
+  left: 50%;
+  transform: translateX(-50%) scaleX(0);
+  width: calc(100% - 1.5rem);
+  height: 1.5px;
+  background: linear-gradient(90deg, #3b82f6, #60a5fa);
+  border-radius: 1px;
+  transition: transform 0.2s cubic-bezier(0.34, 1.56, 0.64, 1);
+}
+
+.auth-navbar-right a:hover::after {
+  transform: translateX(-50%) scaleX(1);
+}
+
+/* GitHub link — distinguished style */
+.auth-navbar-right a[href*="github"] {
+  color: #94a3b8;
+  background: rgba(255, 255, 255, 0.03);
+  border-color: rgba(255, 255, 255, 0.07);
+  font-family: 'IBM Plex Mono', monospace;
+  font-size: 0.75rem;
+  font-weight: 500;
+  letter-spacing: 0.02em;
+  padding: 0.375rem 0.875rem;
+}
+
+.auth-navbar-right a[href*="github"]:hover {
+  color: #f1f5f9;
+  background: rgba(255, 255, 255, 0.07);
+  border-color: rgba(255, 255, 255, 0.14);
+}
+
+/* Optional: GitHub icon via pseudo-element */
+.auth-navbar-right a[href*="github"]::before {
+  content: '⌥';
+  font-size: 0.8rem;
+  opacity: 0.5;
+  font-family: system-ui;
+}
+
+/* Staggered entrance for each link */
+.auth-navbar-right a:nth-child(1) { animation: fadeSlideRight 0.4s cubic-bezier(0.16, 1, 0.3, 1) 0.2s both; }
+.auth-navbar-right a:nth-child(2) { animation: fadeSlideRight 0.4s cubic-bezier(0.16, 1, 0.3, 1) 0.28s both; }
+.auth-navbar-right a:nth-child(3) { animation: fadeSlideRight 0.4s cubic-bezier(0.16, 1, 0.3, 1) 0.36s both; }
+
+/* ============================================================
+   Responsive
+   ============================================================ */
+
+@media (max-width: 640px) {
+  .auth-navbar {
+    padding: 0 1.25rem;
+  }
+
+  .brand-text {
+    font-size: 0.825rem;
+  }
+
+  .auth-navbar-right a[href*="features"],
+  .auth-navbar-right a[href*="about"] {
+    display: none;
+  }
+}
+
+@media (max-width: 380px) {
+  .auth-navbar-left .logo-icon-small {
+    width: 28px;
+    height: 28px;
+  }
+
+  .auth-navbar-right a[href*="github"] {
+    padding: 0.375rem 0.625rem;
+  }
+}
